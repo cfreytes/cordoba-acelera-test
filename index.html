@@ -163,7 +163,7 @@
 #cba .web .arc{fill:none;stroke-width:2.4;stroke-linecap:round;transform-box:fill-box;transform-origin:center;animation:cbaSpin 16s linear infinite}
 #cba .web .arc.a2{stroke-width:1.8;animation-duration:24s;animation-direction:reverse}
 #cba .web .node{cursor:pointer;outline:none;transition:opacity .25s}
-#cba .web .node .disc{fill:#fff;stroke-width:2.2}
+#cba .web .node .disc{stroke-width:2.2}
 #cba .web .node .lbl{fill:#1D1D1B;font-family:Montserrat,sans-serif;font-weight:700;paint-order:stroke;stroke:#fff;stroke-width:6px;stroke-linejoin:round}
 #cba .web .node .ini{font:800 18px Montserrat,sans-serif}
 #cba .web .node:focus-visible .disc{stroke-width:5}
@@ -438,6 +438,92 @@
 }
 #cba .net-tip .tip-go{background:var(--pc,var(--orange))}
 #cba .net-tip{border-top:4px solid var(--pc,var(--orange))}
+
+/* ---------- Agenda ---------- */
+#cba .ag-intro{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:start;margin-top:32px}
+#cba .ag-intro .claim{font-size:clamp(34px,4vw,52px);font-weight:800;letter-spacing:-.04em;line-height:1;color:var(--orange)}
+#cba .ag-intro .fx-text + .fx-text{margin-top:14px}
+#cba .ag-tools{position:sticky;top:calc(72px + env(safe-area-inset-top,0px));z-index:6;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);margin:48px 0 0;padding:16px 0;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+#cba .ag-tools .filters{margin:0}
+#cba .ag-search{flex:1 1 240px;max-width:360px;margin-left:auto;position:relative}
+#cba .ag-search input{width:100%;min-height:44px;padding:10px 16px 10px 42px;border-radius:999px;border:1px solid var(--line);font:inherit;font-size:15px;background:#fff;color:var(--text)}
+#cba .ag-search input:focus{outline:2px solid var(--orange-hi);outline-offset:1px;border-color:transparent}
+#cba .ag-search svg{position:absolute;left:15px;top:50%;width:18px;height:18px;transform:translateY(-50%);color:var(--soft)}
+#cba .ag-count{font-size:14px;color:var(--muted);margin-top:18px}
+#cba .ag-month{font-size:clamp(24px,2.6vw,32px);font-weight:800;letter-spacing:-.03em;margin:44px 0 6px}
+#cba .ag-list{list-style:none;padding:0;margin:0}
+#cba .ev{display:grid;grid-template-columns:92px minmax(0,1fr) auto;gap:24px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}
+#cba .ev .d{width:92px;height:92px;border-radius:var(--radius-m);background:var(--surface);border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1}
+#cba .ev .d b{font-size:36px;font-weight:800;letter-spacing:-.04em;color:var(--cat,var(--orange))}
+#cba .ev .d span{font-size:12px;font-weight:700;color:var(--muted);margin-top:6px;text-transform:capitalize}
+#cba .ev.today .d{background:var(--cat,var(--orange));border-color:transparent}
+#cba .ev.today .d b,#cba .ev.today .d span{color:var(--ink)}
+#cba .ev .cat{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;color:var(--muted);margin-bottom:6px}
+#cba .ev .cat i{width:9px;height:9px;border-radius:50%;background:var(--cat,var(--orange))}
+#cba .ev h3{font-size:19px;font-weight:700;line-height:1.3;letter-spacing:-.01em}
+#cba .ev .where{font-size:14px;color:var(--muted);margin-top:4px}
+#cba .ev .acts{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+#cba .ev .acts a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 16px;border-radius:999px;border:1px solid var(--line);font-size:14px;font-weight:700;text-decoration:none;white-space:nowrap}
+#cba .ev .acts a:hover{border-color:var(--orange)}
+#cba .ev .acts a.info{background:var(--ink);color:#fff;border-color:var(--ink)}
+#cba .ev .acts a.info:hover{background:#000}
+#cba .ev .acts svg{width:15px;height:15px}
+#cba .ag-empty{padding:48px 32px;margin-top:32px;border:1px dashed #CFCAC2;border-radius:var(--radius-l);color:var(--muted);text-align:center}
+#cba .ag-more{display:flex;justify-content:center;margin-top:32px}
+#cba .ag-cal{margin-top:72px;padding:36px;border-radius:var(--radius-l);background:var(--surface);border:1px solid var(--line)}
+#cba .ag-cal .sec-head p{color:var(--muted);margin-top:8px;max-width:56ch}
+#cba .ag-cal .frame{margin-top:24px;border-radius:var(--radius-m);overflow:hidden;border:1px solid var(--line);background:#fff}
+#cba .ag-cal iframe{display:block;width:100%;height:640px;border:0}
+#cba .ag-legal{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:28px;font-size:14px}
+#cba .ag-legal a{color:var(--orange-hi);font-weight:700}
+#cba .band-ev{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-direction:column;gap:8px}
+#cba .band-ev li{display:flex;gap:14px;align-items:baseline;font-size:15px;font-weight:600}
+#cba .band-ev b{min-width:62px;font-weight:800}
+@media (max-width:1000px){#cba .ag-intro{grid-template-columns:minmax(0,1fr);gap:20px}}
+@media (max-width:640px){
+  #cba .ev{grid-template-columns:64px minmax(0,1fr);gap:14px}
+  #cba .ev .d{width:64px;height:64px}
+  #cba .ev .d b{font-size:26px}
+  #cba .ev .acts{grid-column:1/-1;justify-content:flex-start}
+  #cba .ag-search{max-width:none;margin-left:0}
+  #cba .ag-cal{padding:22px}
+  #cba .ag-cal iframe{height:520px}
+}
+
+/* ---------- Ajustes v3 ---------- */
+#cba .que-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:56px;align-items:start}
+#cba .ficha{position:sticky;top:110px;margin-top:24px;padding:30px;border-radius:var(--radius-l);background:var(--ink) var(--net-light) no-repeat right -70px top -60px/260px auto;color:#fff;display:flex;flex-direction:column;gap:22px}
+#cba .ficha-top{display:flex;align-items:baseline;gap:14px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.18)}
+#cba .ficha-mark{font-size:64px;font-weight:800;letter-spacing:-.05em;line-height:.9;color:var(--orange)}
+#cba .ficha-top span:last-child{font-size:14px;font-weight:700;color:#D8D6D0}
+#cba .ficha dl{margin:0;display:flex;flex-direction:column;gap:16px}
+#cba .ficha dt{font-size:12.5px;font-weight:700;color:var(--orange)}
+#cba .ficha dd{margin:2px 0 0;font-size:16px;font-weight:600;line-height:1.4}
+#cba .ficha dd a{color:#fff}
+#cba .ficha-go{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 18px;border-radius:999px;background:var(--orange);color:var(--ink);font-weight:800;font-size:14px;text-decoration:none}
+#cba .ficha-go:hover{background:#fff}
+#cba .ficha-go svg{width:16px;height:16px}
+#cba .drop.progs{min-width:600px;left:50%;transform:translateX(-50%);padding:14px}
+#cba .drop.progs .all{justify-content:space-between;font-weight:700;color:var(--orange-hi);border-bottom:1px solid var(--line);border-radius:12px 12px 0 0;margin-bottom:8px;padding:12px 14px}
+#cba .drop.progs .all svg{width:16px;height:16px}
+#cba .pgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+#cba .drop .pitem{display:flex;align-items:center;gap:12px;padding:10px;border-radius:14px;line-height:1.25}
+#cba .drop .pitem:hover{background:var(--surface)}
+#cba .pl{width:48px;height:48px;border-radius:50%;flex:none;display:grid;place-items:center;overflow:hidden;color:#fff;font-size:12px;font-weight:800}
+#cba .pl img{width:78%;height:78%;object-fit:contain;display:block}
+#cba .net-tip .tip-logo{height:auto;padding:10px 14px;border-radius:12px;align-self:flex-start}
+#cba .net-tip .tip-logo img{max-height:40px}
+#cba .web .node .disc{stroke-width:3}
+#cba .web .node.on .disc,#cba .web .node:focus-visible .disc{stroke:var(--ink)}
+#cba .flip.mini,#cba .flip.mini .flip-inner{min-height:236px}
+#cba .flip.mini .face{padding:22px;gap:12px}
+#cba .flip.mini .back{justify-content:space-between}
+#cba .flip.mini .front .ft{font-size:24px}
+#cba .flip.mini .back .desc{font-size:14.5px;font-weight:700;line-height:1.45}
+#cba .flip.mini .back .go{margin-top:0}
+#cba .flip.mini .go a{background:var(--ink);color:#fff}
+@media (max-width:1120px){#cba .drop.progs{min-width:0;transform:none}#cba .pgrid{grid-template-columns:1fr}}
+@media (max-width:1000px){#cba .que-grid{grid-template-columns:minmax(0,1fr);gap:32px}#cba .ficha{position:static}}
 </style>
 </head>
 <body style="margin:0;background:#FFFFFF">
@@ -464,7 +550,6 @@
       </div>
       <div class="actions">
         <a class="btn btn-primary" href="https://v3.envialosimple.com/form/renderwidget/format/html/AdministratorID/186890/FormID/1/Lang/es" target="_blank" rel="noopener">Suscribirme</a>
-        <a class="btn btn-ghost" href="https://cordobaacelera.com.ar/wp-content/uploads/2025/12/Brochure-Cordoba-Acelera-ES.pdf" target="_blank" rel="noopener">Brochure de Córdoba Acelera</a>
         <a class="btn btn-ghost" href="mailto:hola@cordobaacelera.com.ar?subject=%C2%A1Quiero%20saber%20m%C3%A1s%20de%20C%C3%B3rdoba%20Acelera!">Contacto</a>
       </div>
     </div>
@@ -487,6 +572,48 @@
 
   var AGENDA_URL = 'https://cordobaacelera.com.ar/eventos/';
 
+  /* AGENDA MULTISECTORIAL
+     Los eventos se leen de agenda/eventos.json, que un robot de GitHub
+     (.github/workflows/agenda.yml) actualiza todos los días desde el
+     Google Calendar público de la Agenda. Si el archivo no se puede leer
+     (por ejemplo, al abrir la página desde tu computadora), se usan los
+     eventos de respaldo de abajo. */
+  var AGENDA = {
+    calendarId: 'c_c16bbd7577ece12468dd84a69b324d123049a48d977bd671fc7a1dbae22a00be@group.calendar.google.com',
+    json: 'agenda/eventos.json',
+    legales: UP + '2026/07/TERMINOS-CONDICIONES-DE-USO-Y-EXCLUSION-DE-RESPONSABILIDAD-–-AGENDA-MULTISECTORIAL-DE-EVENTOS.docx.pdf',
+    // Color de cada categoría. Las que no estén acá se ven en gris.
+    colores: { 'Espectáculos': '#EC6907', 'Deportivo': '#6BAF4A', 'M.i.c.e': '#3D8FD1' },
+    textos: ['La Agenda Multisectorial complementa la Agenda Turística de la Municipalidad de Córdoba incorporando eventos de interés para el ecosistema productivo, académico, científico, tecnológico e institucional de Córdoba.',
+      'Este relevamiento permite identificar oportunidades de articulación, evitar superposiciones y contribuir a la planificación estratégica de la ciudad.']
+  };
+  // [fecha AAAA-MM-DD, categoría, título, lugar, link]
+  var AGENDA_RESPALDO = [
+    ['2026-11-19', 'Espectáculos', 'Quality Tango Club: tributo a Julio Sosa', 'Quality Arena (Córdoba)', 'https://qualitycenter.com/shows/quality-tango-club/'],
+    ['2026-11-19', 'Espectáculos', 'Mario Alonso Puig', 'Quality Arena (Córdoba)', 'https://qualitycenter.com/shows/mario-alonso-puig/'],
+    ['2026-11-20', 'Espectáculos', 'Jairo', 'Quality Teatro (Córdoba)', 'https://qualitycenter.com/shows/jairo/'],
+    ['2026-11-20', 'Espectáculos', 'Moscow State Ballet', 'Quality Espacio (Córdoba)', 'https://qualitycenter.com/shows/moscow-state-ballet/'],
+    ['2026-11-20', 'Espectáculos', 'Valeria Lynch', 'Quality Arena (Córdoba)', 'https://qualitycenter.com/shows/valeria-lynch/'],
+    ['2026-11-20', 'Espectáculos', 'Coti', 'Club Paraguay (Córdoba)', 'https://www.edenentradas.ar/event/coti-201126'],
+    ['2026-11-21', 'Espectáculos', 'María Becerra', 'Quality Arena (Córdoba)', 'https://qualitycenter.com/shows/maria-becerra/'],
+    ['2026-11-21', 'Espectáculos', 'Sabroso', 'Quality Arena (Córdoba)', 'https://qualitycenter.com/shows/sabroso/'],
+    ['2026-11-21', 'Espectáculos', 'The Jury Experience: El Asesinato del Millón de Dólares', 'Teatro Cultural de la Cañada (Córdoba)', 'https://feverup.com/m/603773'],
+    ['2026-11-21', 'Espectáculos', 'Dani La Chepi', 'Quality Arena (Córdoba)', 'https://qualitycenter.com/shows/dani-la-chepi/'],
+    ['2026-11-21', 'Espectáculos', 'Mamá soy un idiota', 'Quality Teatro (Córdoba)', 'https://qualitycenter.com/shows/mama-soy-un-idiota/'],
+    ['2026-11-21', 'Espectáculos', 'Nonpalidece', 'Club Paraguay (Córdoba)', 'https://www.edenentradas.ar/event/nonpalidece-211126'],
+    ['2026-11-22', 'Espectáculos', 'Parásitas', 'Quality Espacio (Córdoba)', 'https://qualitycenter.com/shows/parasitas/'],
+    ['2026-11-22', 'Espectáculos', 'Banda XXI', 'Quality Arena (Córdoba)', 'https://qualitycenter.com/shows/banda-xxi/'],
+    ['2026-11-22', 'Deportivo', 'Instituto (1A) – Huracán (8B)', 'Estadio Presidente Perón (Córdoba)', 'https://www.afa.com.ar/es/posts/la-agenda-de-la-afa'],
+    ['2026-11-22', 'Espectáculos', 'The Jazz Room: Tributo a Frank Sinatra y Louis Armstrong', 'Nido Club', 'https://feverup.com/m/671987'],
+    ['2026-11-22', 'Espectáculos', 'Gabriel Rolón', 'Quality Arena (Córdoba)', 'https://qualitycenter.com/shows/gabriel-rolon/'],
+    ['2026-11-22', 'Espectáculos', 'Benja Torres', 'Quality Teatro (Córdoba)', 'https://qualitycenter.com/shows/benja-torres/'],
+    ['2026-11-26', 'Espectáculos', 'Lena Burke', 'Quality Teatro (Córdoba)', 'https://qualitycenter.com/shows/lena-burke/'],
+    ['2026-11-26', 'Espectáculos', 'Gorillaz', 'Estadio Mario Alberto Kempes (Córdoba)', 'https://www.enigmatickets.com/event/3fe80ea4-579d-45e7-80e4-8ee8cb49902b'],
+    ['2026-11-26', 'Espectáculos', 'Myriam Hernández', 'Quality Espacio (Córdoba)', 'https://qualitycenter.com/shows/myriam-hernandez/'],
+    ['2026-11-27', 'Espectáculos', 'La fiesta de los jóvenes', 'Plaza de la Música (Córdoba)', 'https://www.edenentradas.ar/event/la-noche-de-los-jovenes-wh-20261127'],
+    ['2026-11-27', 'Espectáculos', 'Candlelight: Homenaje a Charly', 'Centro Cultural UNC (Córdoba)', 'https://feverup.com/m/657040']
+  ].map(function (e) { return { fecha: e[0], categoria: e[1], titulo: e[2], lugar: e[3], link: e[4] }; });
+
   // Programas, con los textos de la web actual. "color" es el color del anillo en la red.
   var PROGRAMAS = [
     { id: 'invest', short: 'Invest', ini: 'INV', name: 'Invest Córdoba', color: '#3D8FD1',
@@ -495,8 +622,7 @@
       extra: [['Why Córdoba Capital', 'https://cordobaacelera.com.ar/why-cordoba-capital/']] },
     { id: 'clusters', short: 'Clusters', ini: 'ICC', name: 'Iniciativa Clusters Córdoba', color: '#EC6907',
       logo: UP + '2024/03/Iniciativa-Clusters-1024x466.png', url: 'clusters/',
-      desc: 'Es el programa que impulsa el desarrollo, la competitividad y la internacionalización del sector productivo de la ciudad de Córdoba.',
-      extra: [['Tecnoteca', 'https://cordobaacelera.com.ar/tecnoteca/'], ['Monitor de Oportunidades Cluster', 'https://oportunidades.vectorlogico.com.ar/']] },
+      desc: 'Es el programa que impulsa el desarrollo, la competitividad y la internacionalización del sector productivo de la ciudad de Córdoba.' },
     { id: 'accion', short: 'CBA Acción', ini: 'CBA', name: 'Córdoba Acción', color: '#6BAF4A',
       logo: UP + '2024/03/Cordoba-Audiovisual-300x105.png', url: 'https://audiovisual.cordoba.gob.ar/',
       desc: 'Es un régimen de fomento y promoción de la actividad audiovisual para incentivar el rodaje de producciones en la ciudad. Cuenta con un sistema de Cash Rebate y una Film Commission.' },
@@ -521,6 +647,15 @@
   var QUE_ES = ['Córdoba Acelera es un ente autárquico de la Municipalidad de Córdoba creado en agosto de 2022 por <a href="' + UP + '2024/09/Ordenanza-13.197.pdf" target="_blank" rel="noopener">ordenanza N.º 13.197</a>. Tiene por objeto potenciar el desarrollo productivo de la ciudad de Córdoba a través de la innovación, las nuevas economías y el desarrollo emprendedor, entre otros, generando acciones, programas y proyectos con el sector público, privado y académico.',
     'El directorio de Córdoba Acelera está compuesto por funcionarios municipales y un consejo consultivo, conformado por representantes del sector privado que participan de manera ad honorem.'];
 
+  // Ficha al costado de "Qué es Córdoba Acelera" (datos de la web actual)
+  var FICHA = [
+    ['Naturaleza', 'Ente autárquico de la Municipalidad de Córdoba'],
+    ['Creación', 'Agosto de 2022, por <a href="' + UP + '2024/09/Ordenanza-13.197.pdf" target="_blank" rel="noopener">ordenanza N.º 13.197</a>'],
+    ['Directorio', 'Funcionarios municipales'],
+    ['Consejo consultivo', 'Representantes del sector privado, ad honorem'],
+    ['Trabaja con', 'Sector público, privado y académico']
+  ];
+
   // Ecosistema (de la placa “Córdoba, ecosistema de negocios fluido, sincronizado y potente”)
   var HELICE = {
     titulo: 'Córdoba, ecosistema de negocios fluido, sincronizado y potente',
@@ -536,6 +671,12 @@
     ['Competitividad', 'Estimulamos el desarrollo, la competitividad y la internacionalización del sector productivo a través de las iniciativas clusters.'],
     ['Vinculamos la ciudad con el mundo', 'Vinculamos la ciudad con el mundo mediante los programas internacionales para posicionar a Córdoba a nivel global.'],
     ['Atraemos nuevas inversiones', 'Atraemos nuevas inversiones y facilitamos el softlanding a través de la marca Córdoba.']
+  ];
+  // Resumen que aparece al dar vuelta las tarjetas del inicio
+  var RESUMENES = [
+    ['#proposito', 'Propósito', 'Estimulamos la competitividad, vinculamos la ciudad con el mundo y atraemos nuevas inversiones.'],
+    ['#cultura', 'Cultura', 'Trabajamos en coordinación, tomamos decisiones basadas en evidencia y planificamos a largo plazo.'],
+    ['#equipo', 'Equipo', 'Un directorio de funcionarios municipales y un consejo consultivo del sector privado.']
   ];
   var ASPIRACION = 'Aspiramos a posicionar a Córdoba como hub líder en materia de innovación, modelo de negocios y sustentabilidad.';
   var CULTURA = [
@@ -612,6 +753,8 @@
     down: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>',
     turn: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8M21 3v5h-5M21 12a9 9 0 0 1-15.5 6.2L3 16M3 21v-5h5"/></svg>',
     file: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>',
+    cal: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/></svg>',
+    search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>',
     pause: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>',
     play: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5v14l12-7z"/></svg>',
     ordenanza: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg>',
@@ -675,6 +818,14 @@
       '<h3 class="h-m">' + title + '</h3>' +
       '<span class="open">Abrir<span class="sr"> ' + title + '</span>' + ICONS.arrow + '</span></a>';
   }
+  function miniFlip(r) {
+    return '<article class="flip mini" tabindex="0" data-href="' + r[0] + '" aria-label="' + r[1] + '">' +
+      '<span class="flip-inner">' +
+        '<span class="face front motif"><span class="ft">' + r[1] + '</span><span class="turn">' + ICONS.turn + 'Pasá el mouse</span></span>' +
+        '<span class="face back"><span class="desc">' + r[2] + '</span>' +
+          '<span class="go"><a href="' + r[0] + '">Abrir detalle ' + ICONS.right + '</a></span></span>' +
+      '</span></article>';
+  }
   function quienesTabs(cur) {
     var t = [['que-es', 'Qué es Córdoba Acelera'], ['proposito', 'Propósito'], ['cultura', 'Cultura'], ['equipo', 'Equipo']];
     return '<nav class="tabs" aria-label="Quiénes somos">' + t.map(function (x) {
@@ -695,19 +846,18 @@
   function buildMenu() {
     var dropQ = '<a href="#que-es"><span class="dot"></span>Qué es Córdoba Acelera</a>' +
       '<a href="#proposito"><span class="dot"></span>Propósito</a><a href="#cultura"><span class="dot"></span>Cultura</a><a href="#equipo"><span class="dot"></span>Equipo</a>';
-    var dropP = '<a href="#programas"><span class="dot"></span>Todos los programas</a>' +
+    var dropP = '<a class="all" href="#programas">Todos los programas ' + ICONS.right + '</a><div class="pgrid">' +
       PROGRAMAS.map(function (p) {
-        var subs = (p.extra || []).filter(function (e) { return p.id === 'clusters'; });
-        return '<a href="' + p.url + '"' + ext(p.url) + '><span class="dot" style="background:' + p.color + '"></span>' + p.name + '</a>' +
-          (subs.length ? '<div class="sub">' + subs.map(function (e) { return '<a href="' + e[1] + '"' + ext(e[1]) + '>' + e[0] + '</a>'; }).join('') + '</div>' : '');
-      }).join('');
+        return '<a class="pitem" href="' + p.url + '"' + ext(p.url) + '><span class="pl" style="background:' + p.color + '">' +
+          (p.logo ? '<img src="' + p.logo + '" alt="" onerror="this.replaceWith(document.createTextNode(\'' + p.ini + '\'))">' : p.ini) + '</span><span>' + p.name + '</span></a>';
+      }).join('') + '</div>';
     document.getElementById('cba-menu').innerHTML =
       '<li><a class="nl" href="#inicio" data-nav="inicio">Inicio</a></li>' +
       '<li><button type="button" class="nl" data-nav="quienes" aria-expanded="false" aria-controls="cba-dq">Quiénes somos ' + ICONS.down + '</button><div class="drop" id="cba-dq">' + dropQ + '</div></li>' +
-      '<li><button type="button" class="nl" data-nav="programas" aria-expanded="false" aria-controls="cba-dp">Programas ' + ICONS.down + '</button><div class="drop" id="cba-dp">' + dropP + '</div></li>' +
+      '<li><button type="button" class="nl" data-nav="programas" aria-expanded="false" aria-controls="cba-dp">Programas ' + ICONS.down + '</button><div class="drop progs" id="cba-dp">' + dropP + '</div></li>' +
       '<li><a class="nl" href="#novedades" data-nav="novedades">Novedades</a></li>' +
       '<li><a class="nl" href="#documentos" data-nav="documentos">Documentos</a></li>' +
-      '<li><a class="nl pill-agenda" href="' + AGENDA_URL + '" target="_blank" rel="noopener">Agenda multisectorial</a></li>' +
+      '<li><a class="nl pill-agenda" href="#agenda" data-nav="agenda">Agenda multisectorial</a></li>' +
       '<li><a class="nl pill-metas" href="#metas" data-nav="metas">Metas públicas</a></li>';
   }
   function buildFoot() {
@@ -719,7 +869,7 @@
         '<a href="https://www.youtube.com/@CordobaAcelera" target="_blank" rel="noopener" aria-label="YouTube">' + ICONS.yt + '</a></div></div>' +
       '<div><h4>Quiénes somos</h4><ul><li><a href="#que-es">Qué es Córdoba Acelera</a></li><li><a href="#proposito">Propósito</a></li><li><a href="#cultura">Cultura</a></li><li><a href="#equipo">Equipo</a></li><li><a href="#metas">Metas públicas</a></li></ul></div>' +
       '<div><h4>Programas</h4><ul>' + PROGRAMAS.map(function (p) { return '<li><a href="' + p.url + '"' + ext(p.url) + '>' + p.name + '</a></li>'; }).join('') + '</ul></div>' +
-      '<div><h4>Contacto</h4><ul><li><a href="mailto:hola@cordobaacelera.com.ar">hola@cordobaacelera.com.ar</a></li><li><a href="' + AGENDA_URL + '" target="_blank" rel="noopener">Agenda multisectorial</a></li><li><a href="#documentos">Documentos</a></li></ul>' +
+      '<div><h4>Contacto</h4><ul><li><a href="mailto:hola@cordobaacelera.com.ar">hola@cordobaacelera.com.ar</a></li><li><a href="#agenda">Agenda multisectorial</a></li><li><a href="#documentos">Documentos</a></li></ul>' +
         '<div class="tci" style="margin-top:20px"><img src="' + UP + '2024/03/TCI-Network-1024x724.png' + '" alt="TCI Network" onerror="this.remove()"><span>Somos miembros de <a href="https://www.tci-network.org/" target="_blank" rel="noopener">TCI Network</a></span></div></div>' +
       '</div><div class="legal"><span>Todos los derechos © 2026 Córdoba Acelera</span><span>Municipalidad de Córdoba</span></div></div>';
   }
@@ -736,7 +886,7 @@
         '<section class="home-que" aria-labelledby="cba-q">' +
           '<div><h2 class="h-l" id="cba-q">¿Qué es Córdoba Acelera?</h2></div>' +
           '<div><p class="fx-text">' + HOME_QUE_ES[0] + '</p><p class="fx-text muted">' + HOME_QUE_ES[1] + '</p>' +
-            '<div class="doors three">' + door('#proposito', 'Propósito') + door('#cultura', 'Cultura') + door('#equipo', 'Equipo') + '</div></div>' +
+            '<div class="doors three">' + RESUMENES.map(miniFlip).join('') + '</div></div>' +
         '</section>' +
         '<section class="eco" aria-labelledby="cba-p">' +
           '<div class="eco-head"><h2 class="h-l" id="cba-p">Programas</h2><p class="body">' + PROGRAMAS_TXT + '</p></div>' +
@@ -744,8 +894,8 @@
           '<p class="graph-hint">Pasá el mouse por un programa para ver de qué se trata.</p>' +
         '</section>' +
         '<section class="band" aria-labelledby="cba-agenda">' +
-          '<div><h2 id="cba-agenda">Agenda Multisectorial de Eventos</h2><p>Navegá por un calendario que centraliza los principales eventos del ecosistema cordobés para impulsar la coordinación, la planificación y las oportunidades de vinculación.</p></div>' +
-          '<div class="actions"><a class="btn btn-dark" href="' + AGENDA_URL + '" target="_blank" rel="noopener">Ver más eventos ' + ICONS.arrow + '</a></div>' +
+          '<div><h2 id="cba-agenda">Agenda Multisectorial de Eventos</h2><p>Navegá por un calendario que centraliza los principales eventos del ecosistema cordobés para impulsar la coordinación, la planificación y las oportunidades de vinculación.</p><ul class="band-ev" data-band-ev></ul></div>' +
+          '<div class="actions"><a class="btn btn-dark" href="#agenda">Ver más eventos ' + ICONS.right + '</a></div>' +
         '</section>' +
         '<section class="section-gap" aria-labelledby="cba-nov">' +
           '<div class="sec-head"><h2 class="h-l" id="cba-nov">Novedades</h2><a class="btn btn-ghost" href="#novedades">Ver todas</a></div>' +
@@ -760,11 +910,17 @@
     }).join('');
     return '<div class="wrap">' + crumbs([['Inicio', '#inicio'], ['Quiénes somos']]) + quienesTabs('que-es') +
       '<h1 class="h-xl" tabindex="-1">Qué es Córdoba Acelera</h1>' +
+      '<div class="que-grid"><div>' +
       '<div class="que-txt">' + QUE_ES.map(function (t, i) { return '<p class="fx-text' + (i ? ' muted' : '') + '">' + t + '</p>'; }).join('') + '</div>' +
       '<div class="hero-actions" style="margin-top:28px">' +
         '<a class="btn btn-primary" href="' + UP + '2026/01/Anuario-Cordoba-Acelera-2025.pdf" target="_blank" rel="noopener">Anuario Córdoba Acelera 2025</a>' +
         '<a class="btn btn-ghost" href="' + UP + '2025/01/Anuario-Cordoba-Acelera-2024.pdf" target="_blank" rel="noopener">Anuario Córdoba Acelera 2024</a>' +
-        '<a class="btn btn-ghost" href="#programas">Conocé nuestros programas</a></div>' +
+        '<a class="btn btn-ghost" href="#programas">Conocé nuestros programas</a></div></div>' +
+      '<aside class="ficha" aria-label="Datos de Córdoba Acelera">' +
+        '<div class="ficha-top"><span class="ficha-mark" aria-hidden="true">2022</span><span>Año de creación</span></div>' +
+        '<dl>' + FICHA.map(function (f) { return '<div><dt>' + f[0] + '</dt><dd>' + f[1] + '</dd></div>'; }).join('') + '</dl>' +
+        '<a class="ficha-go" href="#equipo">Conocé al equipo ' + ICONS.right + '</a>' +
+      '</aside></div>' +
       '<section class="section-gap" aria-labelledby="cba-eco">' +
         '<h2 class="h-l" id="cba-eco" style="max-width:24ch">' + HELICE.titulo + '</h2>' +
         '<div class="helix">' + act + '<div class="fig">' + helixSvg() + '</div></div>' +
@@ -799,10 +955,109 @@
   }
 
   function vProgramas() {
+    setTimeout(startOrbit, 0);
     return vhero('programas',
         '<h1 class="h-xl" tabindex="-1">Programas</h1>' +
         '<p class="lead">' + PROGRAMAS_TXT + '</p>', 'short') +
-      '<div class="wrap"><div class="flips four" style="margin-top:56px">' + PROGRAMAS.map(progCard).join('') + '</div></div>';
+      '<div class="wrap"><section class="eco" style="padding-top:56px">' + netMarkup() +
+        '<p class="graph-hint">Pasá el mouse por un programa para ver de qué se trata y hacé clic para visitarlo.</p></section></div>';
+  }
+
+  /* =========================================================
+     AGENDA
+     ========================================================= */
+  var EVENTOS = null, agCat = 'Todos', agQ = '', agMax = 30;
+  function hoyISO() { var d = new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
+  function fechaDe(iso) { var p = iso.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }
+  function norm(t) { return (t || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, ''); }
+  function catColor(c) { return AGENDA.colores[c] || '#86837C'; }
+  function cargarEventos(cb) {
+    if (EVENTOS) return cb(EVENTOS);
+    var urls = [];
+    // En GitHub Pages se lee primero la versión más reciente del repo (no espera a que se publique la página)
+    var m = location.hostname.match(/^([^.]+)\.github\.io$/);
+    if (m) { var repo = location.pathname.split('/')[1]; if (repo) urls.push('https://raw.githubusercontent.com/' + m[1] + '/' + repo + '/main/' + AGENDA.json); }
+    urls.push(AGENDA.json);
+    (function next(i) {
+      if (i >= urls.length) { EVENTOS = AGENDA_RESPALDO; return cb(EVENTOS); }
+      fetch(urls[i], { cache: 'no-store' }).then(function (r) { if (!r.ok) throw 0; return r.json(); })
+        .then(function (d) { var ev = d.eventos || d; if (!ev.length) throw 0; EVENTOS = ev; cb(EVENTOS); })
+        .catch(function () { next(i + 1); });
+    })(0);
+  }
+  function proximos() {
+    var hoy = hoyISO();
+    return EVENTOS.filter(function (e) { return (e.fin || e.fecha) >= hoy; })
+      .sort(function (a, b) { return (a.fecha + (a.hora || '')).localeCompare(b.fecha + (b.hora || '')); });
+  }
+  function gcalLink(e) {
+    var d1 = e.fecha.replace(/-/g, ''), f = fechaDe(e.fin || e.fecha); f.setDate(f.getDate() + 1);
+    var d2 = f.getFullYear() + ('0' + (f.getMonth() + 1)).slice(-2) + ('0' + f.getDate()).slice(-2);
+    var dates = e.hora ? d1 + 'T' + e.hora.replace(':', '') + '00/' + d1 + 'T' + (e.horaFin || e.hora).replace(':', '') + '00' : d1 + '/' + d2;
+    return 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=' + encodeURIComponent(e.titulo) + '&dates=' + dates +
+      '&ctz=America/Argentina/Cordoba' + (e.lugar ? '&location=' + encodeURIComponent(e.lugar) : '') + (e.link ? '&details=' + encodeURIComponent(e.link) : '');
+  }
+  function evItem(e, hoy) {
+    var d = fechaDe(e.fecha), dia = d.toLocaleDateString('es-AR', { weekday: 'short' }).replace('.', ''), c = e.categoria || '';
+    return '<li class="ev' + (e.fecha === hoy ? ' today' : '') + '" style="--cat:' + catColor(c) + '">' +
+      '<div class="d" aria-hidden="true"><b>' + d.getDate() + '</b><span>' + (e.fecha === hoy ? 'hoy' : dia) + '</span></div>' +
+      '<div>' + (c ? '<span class="cat"><i></i>' + c + '</span>' : '') + '<h3>' + e.titulo + '</h3>' +
+        '<p class="where"><span class="sr">' + d.toLocaleDateString('es-AR', { weekday: 'long', day: 'numeric', month: 'long' }) + '. </span>' +
+        (e.hora ? e.hora + ' h · ' : '') + (e.lugar || '') + '</p></div>' +
+      '<div class="acts">' + (e.link ? '<a class="info" href="' + e.link + '" target="_blank" rel="noopener">+ Info<span class="sr"> sobre ' + e.titulo + '</span></a>' : '') +
+        '<a href="' + gcalLink(e) + '" target="_blank" rel="noopener" aria-label="Agendar ' + e.titulo + ' en mi calendario">' + ICONS.cal + 'Agendar</a></div></li>';
+  }
+  function agendaList() {
+    var hoy = hoyISO(), q = norm(agQ);
+    var list = proximos().filter(function (e) {
+      return (agCat === 'Todos' || e.categoria === agCat) && (!q || norm(e.titulo + ' ' + e.lugar + ' ' + e.categoria).indexOf(q) >= 0);
+    });
+    var cnt = view.querySelector('[data-ag-count]');
+    if (cnt) cnt.textContent = list.length === 1 ? '1 evento' : list.length + ' eventos';
+    if (!list.length) return '<p class="ag-empty">No hay eventos con esos filtros. Probá con otra categoría o borrá la búsqueda.</p>';
+    var out = '', mes = '';
+    list.slice(0, agMax).forEach(function (e) {
+      var m = fechaDe(e.fecha).toLocaleDateString('es-AR', { month: 'long', year: 'numeric' }).replace(' de ', ' '); m = m.charAt(0).toUpperCase() + m.slice(1);
+      if (m !== mes) { out += (mes ? '</ul>' : '') + '<h2 class="ag-month">' + m + '</h2><ul class="ag-list">'; mes = m; }
+      out += evItem(e, hoy);
+    });
+    out += '</ul>';
+    if (list.length > agMax) out += '<div class="ag-more"><button type="button" class="btn btn-ghost" data-ag-more>Ver más eventos (' + (list.length - agMax) + ')</button></div>';
+    return out;
+  }
+  function vAgenda() {
+    agMax = 30;
+    setTimeout(function () { cargarEventos(pintarAgenda); }, 0);
+    var calSrc = 'https://calendar.google.com/calendar/embed?src=' + encodeURIComponent(AGENDA.calendarId) + '&ctz=America%2FArgentina%2FCordoba&hl=es&showTitle=0&showPrint=0&showCalendars=0&showTz=0&mode=MONTH';
+    return '<div class="wrap">' + crumbs([['Inicio', '#inicio'], ['Agenda multisectorial']]) +
+      '<h1 class="h-xl" tabindex="-1">Agenda Multisectorial de Eventos</h1>' +
+      '<div class="ag-intro"><p class="claim">Córdoba no para.</p><div>' + AGENDA.textos.map(function (t, i) { return '<p class="fx-text' + (i ? ' muted' : '') + '">' + t + '</p>'; }).join('') + '</div></div>' +
+      '<div class="ag-tools"><div class="filters" role="group" aria-label="Filtrar por categoría" data-ag-cats></div>' +
+        '<label class="ag-search"><span class="sr">Buscar evento o lugar</span>' + ICONS.search + '<input type="search" placeholder="Buscar evento o lugar" data-ag-q value="' + agQ.replace(/"/g, '&quot;') + '"></label></div>' +
+      '<p class="ag-count" data-ag-count aria-live="polite">Cargando eventos…</p>' +
+      '<div data-ag-list></div>' +
+      '<section class="ag-cal" aria-labelledby="cba-cal"><div class="sec-head"><div><h2 class="h-l" id="cba-cal">Calendario</h2><p>Sumá la agenda a tu Google Calendar y recibí los eventos nuevos automáticamente.</p></div>' +
+        '<a class="btn btn-primary" href="https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(AGENDA.calendarId) + '" target="_blank" rel="noopener">' + ICONS.cal + 'Sumar a mi calendario</a></div>' +
+        '<div class="frame"><iframe src="' + calSrc + '" title="Calendario de la Agenda Multisectorial" loading="lazy"></iframe></div></section>' +
+      '<div class="ag-legal"><a href="' + AGENDA.legales + '" target="_blank" rel="noopener">Ver términos legales</a>' +
+        '<a href="mailto:hola@cordobaacelera.com.ar?subject=Agenda%20Multisectorial">¿Sos el organizador y querés modificar o dar de baja un evento? Escribinos aquí</a></div></div>';
+  }
+  function pintarAgenda() {
+    var box = view.querySelector('[data-ag-list]'); if (!box) return;
+    var cats = ['Todos'].concat(proximos().map(function (e) { return e.categoria; }).filter(function (c, i, a) { return c && a.indexOf(c) === i; }).sort());
+    view.querySelector('[data-ag-cats]').innerHTML = cats.map(function (c) {
+      return '<button type="button" data-ag-cat="' + c + '" aria-pressed="' + (c === agCat) + '">' + c + '</button>';
+    }).join('');
+    box.innerHTML = agendaList();
+  }
+  function pintarBanda() {
+    var ul = view.querySelector('[data-band-ev]'); if (!ul) return;
+    cargarEventos(function () {
+      ul.innerHTML = proximos().slice(0, 3).map(function (e) {
+        var d = fechaDe(e.fecha);
+        return '<li><b>' + d.getDate() + ' ' + d.toLocaleDateString('es-AR', { month: 'short' }).replace('.', '') + '</b><span>' + e.titulo + '</span></li>';
+      }).join('');
+    });
   }
 
   function vMetas() {
@@ -936,8 +1191,8 @@
       var g = el('g', {}, a), r = n.r;
       el('circle', { 'class': 'arc a1', r: r + 10, stroke: n.p.color, 'stroke-dasharray': (r + 10) * 1.5 + ' ' + (r + 10) * 4.8 }, g);
       el('circle', { 'class': 'arc a2', r: r + 18, stroke: COLORS[(n.k + 1) % 3], 'stroke-dasharray': (r + 18) * 0.7 + ' ' + (r + 18) * 5.6 }, g);
-      el('circle', { 'class': 'disc', r: r, stroke: n.p.color }, g);
-      var ini = el('text', { 'class': 'ini', y: 6, 'text-anchor': 'middle', fill: n.p.color }, g); ini.textContent = n.p.ini;
+      el('circle', { 'class': 'disc', r: r, fill: n.p.color, stroke: '#fff' }, g);
+      var ini = el('text', { 'class': 'ini', y: 6, 'text-anchor': 'middle', fill: '#fff' }, g); ini.textContent = n.p.ini;
       if (n.p.logo) {
         ini.style.display = 'none';
         var s = r * 1.5, im = el('image', { href: n.p.logo, x: -s / 2, y: -s / 2, width: s, height: s, preserveAspectRatio: 'xMidYMid meet' }, g);
@@ -960,7 +1215,7 @@
       if (k < 0) { tip.hidden = true; return; }
       var p = PROGRAMAS[k];
       tip.style.setProperty('--pc', p.color);
-      tip.innerHTML = (p.logo ? '<span class="tip-logo"><img src="' + p.logo + '" alt="" onerror="this.parentNode.remove()"></span>' : '') +
+      tip.innerHTML = (p.logo ? '<span class="tip-logo" style="background:' + p.color + '"><img src="' + p.logo + '" alt="" onerror="this.parentNode.remove()"></span>' : '') +
         '<b class="tip-name">' + p.name + '</b><p>' + p.desc + '</p>' +
         '<a class="tip-go" href="' + p.url + '"' + ext(p.url) + '>Ver más ' + ICONS.right + '</a>';
       tip.hidden = false; placeTip();
@@ -1034,11 +1289,12 @@
       case 'metas': html = vMetas(); break;
       case 'novedades': html = vNovedades(); break;
       case 'documentos': html = vDocumentos(); break;
+      case 'agenda': case 'eventos': html = vAgenda(); section = 'agenda'; break;
       default: html = vInicio(); section = 'inicio';
     }
     view.className = 'view v-' + section;
     view.innerHTML = html;
-    wireLogos(); wireVideos();
+    wireLogos(); wireVideos(); pintarBanda();
     void view.offsetWidth;
     view.className = 'view enter v-' + section;
     closeDrops(); nav.classList.remove('open'); burger.setAttribute('aria-expanded', 'false');
@@ -1094,6 +1350,7 @@
   // Clics dentro de las vistas: tarjetas que giran y filtros
   view.addEventListener('click', function (e) {
     var fl = e.target.closest('.flip');
+    if (fl && fl.dataset.href && !e.target.closest('a') && window.matchMedia('(hover: hover)').matches) { location.hash = fl.dataset.href; return; }
     if (fl && !e.target.closest('a')) {
       var on = !fl.classList.contains('is-flipped');
       fl.classList.toggle('is-flipped', on);
@@ -1102,11 +1359,17 @@
     var f = e.target.closest('[data-filter]');
     if (f) { docFilter = f.getAttribute('data-filter'); view.querySelector('.docs').innerHTML = docsList();
       view.querySelectorAll('[data-filter]').forEach(function (b) { b.setAttribute('aria-pressed', String(b === f)); }); return; }
+    var ac = e.target.closest('[data-ag-cat]');
+    if (ac) { agCat = ac.getAttribute('data-ag-cat'); agMax = 30; pintarAgenda(); return; }
+    if (e.target.closest('[data-ag-more]')) { agMax += 30; view.querySelector('[data-ag-list]').innerHTML = agendaList(); return; }
     var mf = e.target.closest('[data-mfilter]');
     if (mf) { view.querySelector('.mlist').innerHTML = metasList(mf.getAttribute('data-mfilter'));
       view.querySelectorAll('[data-mfilter]').forEach(function (b) { b.setAttribute('aria-pressed', String(b === mf)); }); }
   });
 
+  view.addEventListener('input', function (e) {
+    if (e.target.matches('[data-ag-q]')) { agQ = e.target.value; agMax = 30; view.querySelector('[data-ag-list]').innerHTML = agendaList(); }
+  });
   window.addEventListener('hashchange', route);
   route();
 })();
