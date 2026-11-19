@@ -1,0 +1,1115 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Córdoba Acelera</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+<style>
+/* Todo el estilo vive dentro de #cba para no chocar con el tema de WordPress.
+   Mismo sistema visual que la web de Iniciativa Clusters Córdoba. */
+#cba{
+  --bg:#FFFFFF; --ink:#1D1D1B; --surface:#F7F5F2; --surface-2:#EFECE7; --line:#E5E1DA;
+  --text:#1D1D1B; --muted:#55534E; --soft:#86837C;
+  --orange:#EC6907; --orange-hi:#C45A06; --orange-wash:rgba(236,105,7,.10);
+  --blue:#3D8FD1; --green:#6BAF4A;
+  --net:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 520'%3E%3Cg opacity='0.55'%3E%3Ccircle cx='247' cy='106' r='36' fill='none' stroke='%23EC6907' stroke-width='2' stroke-linecap='round' stroke-dasharray='71 43' transform='rotate%2848 247 106%29'/%3E%3Ccircle cx='247' cy='106' r='45' fill='none' stroke='%23EC6907' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='39 245' transform='rotate%28259 247 106%29'/%3E%3Ccircle cx='177' cy='78' r='30' fill='none' stroke='%23EC6907' stroke-width='2' stroke-linecap='round' stroke-dasharray='36 57' transform='rotate%28217 177 78%29'/%3E%3Ccircle cx='177' cy='78' r='39' fill='none' stroke='%236BAF4A' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='26 217' transform='rotate%2863 177 78%29'/%3E%3Ccircle cx='646' cy='317' r='34' fill='none' stroke='%23EC6907' stroke-width='2' stroke-linecap='round' stroke-dasharray='59 49' transform='rotate%28203 646 317%29'/%3E%3Ccircle cx='646' cy='317' r='43' fill='none' stroke='%23EC6907' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='29 244' transform='rotate%2823 646 317%29'/%3E%3Ccircle cx='396' cy='99' r='30' fill='none' stroke='%236BAF4A' stroke-width='2' stroke-linecap='round' stroke-dasharray='37 56' transform='rotate%28157 396 99%29'/%3E%3Ccircle cx='396' cy='99' r='39' fill='none' stroke='%236BAF4A' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='38 205' transform='rotate%2892 396 99%29'/%3E%3Ccircle cx='106' cy='291' r='23' fill='none' stroke='%23EC6907' stroke-width='2' stroke-linecap='round' stroke-dasharray='39 34' transform='rotate%2832 106 291%29'/%3E%3Ccircle cx='106' cy='291' r='32' fill='none' stroke='%236BAF4A' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='32 171' transform='rotate%28105 106 291%29'/%3E%3Ccircle cx='358' cy='274' r='40' fill='none' stroke='%233D8FD1' stroke-width='2' stroke-linecap='round' stroke-dasharray='68 57' transform='rotate%28232 358 274%29'/%3E%3Ccircle cx='358' cy='274' r='49' fill='none' stroke='%23EC6907' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='42 265' transform='rotate%2892 358 274%29'/%3E%3Ccircle cx='487' cy='147' r='34' fill='none' stroke='%236BAF4A' stroke-width='2' stroke-linecap='round' stroke-dasharray='56 52' transform='rotate%28175 487 147%29'/%3E%3Ccircle cx='487' cy='147' r='43' fill='none' stroke='%233D8FD1' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='47 224' transform='rotate%28311 487 147%29'/%3E%3Ccircle cx='667' cy='92' r='30' fill='none' stroke='%233D8FD1' stroke-width='2' stroke-linecap='round' stroke-dasharray='38 55' transform='rotate%28250 667 92%29'/%3E%3Ccircle cx='667' cy='92' r='39' fill='none' stroke='%236BAF4A' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='35 209' transform='rotate%2839 667 92%29'/%3E%3Ccircle cx='529' cy='292' r='43' fill='none' stroke='%233D8FD1' stroke-width='2' stroke-linecap='round' stroke-dasharray='63 71' transform='rotate%28179 529 292%29'/%3E%3Ccircle cx='529' cy='292' r='52' fill='none' stroke='%236BAF4A' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='52 272' transform='rotate%28233 529 292%29'/%3E%3Ccircle cx='58' cy='57' r='4.2' fill='%233D8FD1'/%3E%3Ccircle cx='52' cy='361' r='6.7' fill='none' stroke='%236BAF4A' stroke-width='1.5'/%3E%3Ccircle cx='322' cy='368' r='4.9' fill='%236BAF4A'/%3E%3Ccircle cx='259' cy='315' r='4.4' fill='%233D8FD1'/%3E%3Ccircle cx='101' cy='134' r='6.0' fill='none' stroke='%233D8FD1' stroke-width='1.5'/%3E%3Ccircle cx='126' cy='211' r='7.3' fill='none' stroke='%233D8FD1' stroke-width='1.5'/%3E%3Ccircle cx='615' cy='149' r='6.7' fill='none' stroke='%233D8FD1' stroke-width='1.5'/%3E%3Ccircle cx='276' cy='125' r='3.1' fill='%23EC6907'/%3E%3Ccircle cx='173' cy='252' r='3.2' fill='%236BAF4A'/%3E%3Ccircle cx='112' cy='277' r='7.8' fill='none' stroke='%236BAF4A' stroke-width='1.5'/%3E%3Ccircle cx='493' cy='268' r='7.0' fill='none' stroke='%236BAF4A' stroke-width='1.5'/%3E%3Ccircle cx='330' cy='445' r='5.6' fill='none' stroke='%236BAF4A' stroke-width='1.5'/%3E%3Ccircle cx='289' cy='62' r='3.0' fill='%236BAF4A'/%3E%3Ccircle cx='699' cy='230' r='2.6' fill='%23EC6907'/%3E%3Ccircle cx='10' cy='86' r='6.5' fill='none' stroke='%23EC6907' stroke-width='1.5'/%3E%3Ccircle cx='59' cy='114' r='3.1' fill='%233D8FD1'/%3E%3Ccircle cx='253' cy='192' r='3.7' fill='%23EC6907'/%3E%3Ccircle cx='694' cy='250' r='2.8' fill='%233D8FD1'/%3E%3Ccircle cx='250' cy='142' r='2.6' fill='%236BAF4A'/%3E%3Ccircle cx='676' cy='274' r='7.7' fill='none' stroke='%23EC6907' stroke-width='1.5'/%3E%3Ccircle cx='541' cy='159' r='6.8' fill='none' stroke='%236BAF4A' stroke-width='1.5'/%3E%3Ccircle cx='193' cy='193' r='3.1' fill='%23EC6907'/%3E%3Ccircle cx='389' cy='261' r='4.5' fill='%236BAF4A'/%3E%3Ccircle cx='699' cy='436' r='7.0' fill='none' stroke='%23EC6907' stroke-width='1.5'/%3E%3Ccircle cx='169' cy='269' r='8.0' fill='none' stroke='%233D8FD1' stroke-width='1.5'/%3E%3Ccircle cx='563' cy='246' r='7.8' fill='none' stroke='%23EC6907' stroke-width='1.5'/%3E%3C/g%3E%3C/svg%3E");
+  --net-light:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 720 520'%3E%3Cg opacity='0.55'%3E%3Ccircle cx='330' cy='286' r='44' fill='none' stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-dasharray='70 68' transform='rotate%28300 330 286%29'/%3E%3Ccircle cx='330' cy='286' r='53' fill='none' stroke='%23FFFFFF' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='40 293' transform='rotate%28322 330 286%29'/%3E%3Ccircle cx='433' cy='122' r='31' fill='none' stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-dasharray='37 59' transform='rotate%28355 433 122%29'/%3E%3Ccircle cx='433' cy='122' r='40' fill='none' stroke='%23FFFFFF' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='41 208' transform='rotate%28231 433 122%29'/%3E%3Ccircle cx='459' cy='311' r='22' fill='none' stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-dasharray='44 26' transform='rotate%2832 459 311%29'/%3E%3Ccircle cx='459' cy='311' r='31' fill='none' stroke='%23FFFFFF' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='21 176' transform='rotate%28123 459 311%29'/%3E%3Ccircle cx='424' cy='382' r='27' fill='none' stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-dasharray='45 40' transform='rotate%28327 424 382%29'/%3E%3Ccircle cx='424' cy='382' r='36' fill='none' stroke='%23FFFFFF' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='29 198' transform='rotate%28339 424 382%29'/%3E%3Ccircle cx='94' cy='328' r='29' fill='none' stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-dasharray='54 38' transform='rotate%28161 94 328%29'/%3E%3Ccircle cx='94' cy='328' r='38' fill='none' stroke='%23FFFFFF' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='42 199' transform='rotate%2815 94 328%29'/%3E%3Ccircle cx='85' cy='377' r='29' fill='none' stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-dasharray='44 47' transform='rotate%288 85 377%29'/%3E%3Ccircle cx='85' cy='377' r='38' fill='none' stroke='%23FFFFFF' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='44 196' transform='rotate%28109 85 377%29'/%3E%3Ccircle cx='174' cy='441' r='31' fill='none' stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-dasharray='48 50' transform='rotate%28289 174 441%29'/%3E%3Ccircle cx='174' cy='441' r='40' fill='none' stroke='%23FFFFFF' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='41 211' transform='rotate%28172 174 441%29'/%3E%3Ccircle cx='96' cy='186' r='45' fill='none' stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-dasharray='57 84' transform='rotate%2851 96 186%29'/%3E%3Ccircle cx='96' cy='186' r='54' fill='none' stroke='%23FFFFFF' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='34 305' transform='rotate%28249 96 186%29'/%3E%3Ccircle cx='154' cy='286' r='31' fill='none' stroke='%23FFFFFF' stroke-width='2' stroke-linecap='round' stroke-dasharray='65 31' transform='rotate%2867 154 286%29'/%3E%3Ccircle cx='154' cy='286' r='40' fill='none' stroke='%23FFFFFF' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='35 213' transform='rotate%2859 154 286%29'/%3E%3Ccircle cx='286' cy='505' r='4.9' fill='%23FFFFFF'/%3E%3Ccircle cx='572' cy='162' r='3.5' fill='%23FFFFFF'/%3E%3Ccircle cx='608' cy='331' r='2.9' fill='%23FFFFFF'/%3E%3Ccircle cx='319' cy='15' r='5.5' fill='none' stroke='%23FFFFFF' stroke-width='1.5'/%3E%3Ccircle cx='62' cy='114' r='3.4' fill='%23FFFFFF'/%3E%3Ccircle cx='446' cy='74' r='4.5' fill='none' stroke='%23FFFFFF' stroke-width='1.5'/%3E%3Ccircle cx='280' cy='324' r='7.3' fill='none' stroke='%23FFFFFF' stroke-width='1.5'/%3E%3Ccircle cx='185' cy='105' r='5.6' fill='none' stroke='%23FFFFFF' stroke-width='1.5'/%3E%3Ccircle cx='348' cy='49' r='2.6' fill='%23FFFFFF'/%3E%3Ccircle cx='684' cy='129' r='4.6' fill='%23FFFFFF'/%3E%3Ccircle cx='428' cy='157' r='7.9' fill='none' stroke='%23FFFFFF' stroke-width='1.5'/%3E%3Ccircle cx='98' cy='250' r='4.8' fill='%23FFFFFF'/%3E%3Ccircle cx='153' cy='18' r='3.1' fill='%23FFFFFF'/%3E%3Ccircle cx='43' cy='151' r='2.8' fill='%23FFFFFF'/%3E%3Ccircle cx='325' cy='175' r='7.7' fill='none' stroke='%23FFFFFF' stroke-width='1.5'/%3E%3Ccircle cx='342' cy='189' r='4.1' fill='none' stroke='%23FFFFFF' stroke-width='1.5'/%3E%3Ccircle cx='455' cy='251' r='5.0' fill='%23FFFFFF'/%3E%3Ccircle cx='63' cy='283' r='6.9' fill='none' stroke='%23FFFFFF' stroke-width='1.5'/%3E%3Ccircle cx='503' cy='407' r='4.2' fill='%23FFFFFF'/%3E%3Ccircle cx='641' cy='446' r='4.1' fill='none' stroke='%23FFFFFF' stroke-width='1.5'/%3E%3Ccircle cx='360' cy='17' r='2.5' fill='%23FFFFFF'/%3E%3Ccircle cx='61' cy='55' r='7.5' fill='none' stroke='%23FFFFFF' stroke-width='1.5'/%3E%3Ccircle cx='520' cy='204' r='4.6' fill='%23FFFFFF'/%3E%3Ccircle cx='69' cy='385' r='2.7' fill='%23FFFFFF'/%3E%3Ccircle cx='26' cy='489' r='4.0' fill='%23FFFFFF'/%3E%3Ccircle cx='654' cy='138' r='2.9' fill='%23FFFFFF'/%3E%3C/g%3E%3C/svg%3E");
+  --radius-l:22px; --radius-m:14px; --radius-s:8px;
+  color-scheme:light;
+  background:var(--bg); color:var(--text);
+  font-family:Montserrat, "Helvetica Neue", Arial, sans-serif;
+  font-size:16px; line-height:1.55; -webkit-font-smoothing:antialiased;
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+#cba *,#cba *::before,#cba *::after{box-sizing:border-box}
+#cba a{color:inherit}
+#cba button{font-family:inherit;cursor:pointer}
+#cba img{max-width:100%}
+#cba :focus-visible{outline:2px solid var(--orange-hi);outline-offset:3px;border-radius:6px}
+#cba h1[tabindex="-1"]:focus{outline:none}
+#cba .wrap{max-width:1240px;margin:0 auto;padding:0 40px}
+#cba h1,#cba h2,#cba h3,#cba p,#cba ul,#cba ol{margin:0}
+#cba .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- Barra superior ---------- */
+#cba .bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
+#cba .bar .wrap{display:flex;align-items:center;gap:20px;min-height:72px}
+#cba .brand{display:flex;align-items:center;flex:none}
+#cba .brand img{height:42px;width:auto;display:block}
+#cba .nav{display:flex;align-items:center;gap:2px;margin-left:auto}
+#cba .nav > ul{list-style:none;padding:0;display:flex;align-items:center;gap:2px}
+#cba .nav li{position:relative}
+#cba .nav a.nl,#cba .nav button.nl{white-space:nowrap;text-decoration:none;font-size:14px;font-weight:600;color:var(--muted);padding:10px 14px;border-radius:999px;min-height:44px;display:inline-flex;align-items:center;gap:6px;background:none;border:0}
+#cba .nav .nl:hover{color:var(--text);background:var(--surface)}
+#cba .nav .nl[aria-current="page"]{color:var(--ink);background:var(--orange-wash)}
+#cba .nav .nl svg{width:12px;height:12px;transition:transform .2s}
+#cba .nav button.nl[aria-expanded="true"] svg{transform:rotate(180deg)}
+#cba .nav .pill-agenda{border:1px solid #CFCAC2 !important;color:var(--text) !important;margin-left:8px}
+#cba .nav .pill-agenda:hover{border-color:var(--orange) !important;background:transparent !important}
+#cba .nav .pill-metas{background:var(--orange) !important;color:var(--ink) !important;font-weight:700 !important;margin-left:6px}
+#cba .nav .pill-metas:hover,#cba .nav .pill-metas[aria-current="page"]{background:var(--orange-hi) !important;color:#fff !important}
+#cba .drop{position:absolute;top:calc(100% + 8px);left:0;min-width:320px;padding:10px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 24px 60px rgba(29,29,27,.16);display:none}
+#cba .drop.open{display:block}
+#cba .drop a{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:12px;text-decoration:none;font-size:14px;font-weight:600}
+#cba .drop a:hover{background:var(--surface)}
+#cba .drop a small{display:block;font-size:12.5px;font-weight:500;color:var(--soft);line-height:1.35}
+#cba .drop .dot{width:8px;height:8px;border-radius:50%;background:var(--orange);flex:none}
+#cba .drop .sub a{padding:6px 12px 6px 32px;font-weight:500;color:var(--muted)}
+#cba .drop .glabel{font-size:12px;font-weight:700;color:var(--orange-hi);padding:12px 12px 4px;border-top:1px solid var(--line);margin-top:6px}
+#cba .burger{display:none;margin-left:auto;width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:#fff;place-items:center}
+#cba .burger svg{width:20px;height:20px}
+@media (max-width:1120px){
+  #cba .burger{display:grid}
+  #cba .nav{position:fixed;left:0;right:0;bottom:0;top:calc(72px + env(safe-area-inset-top,0px));background:#fff;display:none;flex-direction:column;align-items:stretch;padding:16px 20px 40px;overflow-y:auto;margin:0}
+  #cba .nav.open{display:flex}
+  #cba .nav > ul{flex-direction:column;align-items:stretch;gap:4px}
+  #cba .nav a.nl,#cba .nav button.nl{width:100%;justify-content:space-between;font-size:17px;padding:14px 16px}
+  #cba .drop{position:static;box-shadow:none;border:0;border-left:2px solid var(--line);border-radius:0;margin:0 0 8px 16px;min-width:0;padding:4px 0}
+  #cba .nav .pill-agenda,#cba .nav .pill-metas{justify-content:center;margin:8px 0 0}
+}
+
+/* ---------- Vistas y tipografía ---------- */
+#cba .view{padding:56px 0 0;position:relative;overflow-x:clip}
+#cba .view.enter{animation:cbaIn .38s cubic-bezier(.2,.7,.2,1)}
+@keyframes cbaIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+#cba .view::before{content:"";position:absolute;top:-40px;right:-60px;width:min(760px,62vw);height:560px;background:var(--net) no-repeat right top/contain;opacity:.6;pointer-events:none;-webkit-mask-image:linear-gradient(200deg,#000 35%,transparent 80%);mask-image:linear-gradient(200deg,#000 35%,transparent 80%)}
+#cba .view.v-inicio::before,#cba .view.v-programas::before{display:none}
+#cba .view.v-inicio,#cba .view.v-programas{padding-top:0}
+#cba .view > .wrap,#cba .view > section{position:relative;z-index:1}
+#cba .crumbs{display:flex;flex-wrap:wrap;gap:8px;font-size:14px;color:var(--soft);margin-bottom:28px}
+#cba .crumbs a{color:var(--muted);text-decoration:none}
+#cba .crumbs a:hover{color:var(--orange-hi)}
+#cba .display{font-size:clamp(40px,5.4vw,72px);line-height:.98;font-weight:800;letter-spacing:-.045em}
+#cba .h-xl{font-size:clamp(34px,4.4vw,54px);line-height:1.03;font-weight:800;letter-spacing:-.035em}
+#cba .h-l{font-size:clamp(28px,3.2vw,40px);line-height:1.08;font-weight:800;letter-spacing:-.03em}
+#cba .h-m{font-size:22px;line-height:1.2;font-weight:700;letter-spacing:-.015em}
+#cba .lead{font-size:19px;color:#3A3936;max-width:62ch}
+#cba .body{font-size:16px;color:var(--muted);max-width:68ch}
+#cba .fx-text{font-size:clamp(19px,1.8vw,22px);line-height:1.5;color:#2A2927;max-width:60ch}
+#cba .section-gap{margin-top:96px}
+
+#cba .btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;border:1px solid transparent;transition:background .15s,border-color .15s}
+#cba .btn-primary{background:var(--orange);color:var(--ink)}
+#cba .btn-primary:hover{background:var(--orange-hi)}
+#cba .btn-ghost{border-color:#CFCAC2;color:var(--text);background:transparent}
+#cba .btn-ghost:hover{border-color:var(--orange)}
+#cba .btn-light{border-color:rgba(255,255,255,.55);color:#fff;background:transparent}
+#cba .btn-light:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+#cba .btn svg{width:18px;height:18px;flex:none}
+
+/* ---------- Sub-navegación (tabs) ---------- */
+#cba .tabs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 40px}
+#cba .tabs a{min-height:44px;padding:10px 18px;border-radius:999px;border:1px solid var(--line);color:#3A3936;font-weight:600;font-size:14px;text-decoration:none;display:inline-flex;align-items:center;background:#fff}
+#cba .tabs a:hover{border-color:var(--orange)}
+#cba .tabs a[aria-current="page"]{background:var(--orange);border-color:var(--orange);color:var(--ink);font-weight:700}
+
+/* ---------- Hero con video ---------- */
+#cba .vhero{position:relative;min-height:min(82vh,760px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--ink)}
+#cba .vhero.short{min-height:min(56vh,520px)}
+#cba .vhero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#cba .vhero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,29,27,.15) 0%,rgba(29,29,27,.35) 45%,rgba(29,29,27,.86) 100%)}
+#cba .vhero .wrap{position:relative;z-index:2;width:100%;padding-top:120px;padding-bottom:64px}
+#cba .vhero .lead{color:rgba(255,255,255,.88);margin-top:24px}
+#cba .vhero .display{max-width:22ch;font-size:clamp(34px,4.6vw,62px);line-height:1.04}
+#cba .vhero .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+#cba .vhero .underline{display:inline;background:linear-gradient(var(--orange),var(--orange)) no-repeat 0 92%/100% .14em;padding-bottom:.04em}
+#cba .vplay{position:absolute;right:24px;bottom:24px;z-index:3;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.5);background:rgba(29,29,27,.35);color:#fff;display:grid;place-items:center}
+#cba .vplay:hover{background:rgba(29,29,27,.6)}
+#cba .vplay svg{width:18px;height:18px}
+
+/* ---------- Red de programas ---------- */
+#cba .home-que{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:56px;padding:88px 0 0;align-items:start}
+#cba .home-que .fx-text + .fx-text{margin-top:14px}
+#cba .fx-text.muted{color:var(--muted)}
+#cba .doors.three{grid-template-columns:repeat(3,minmax(0,1fr));padding-top:32px}
+#cba .door.mini{grid-column:auto;min-height:150px;background:var(--surface) var(--net) no-repeat right -90px top -60px/420px auto}
+#cba .door.mini:hover{background-color:var(--surface-2)}
+#cba .eco{padding:96px 0 8px}
+#cba .eco-head{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:56px;align-items:start;margin-bottom:12px}
+#cba .eco-head .body{font-size:18px;max-width:62ch}
+#cba .que-txt{margin-top:24px;display:flex;flex-direction:column;gap:16px;max-width:64ch}
+#cba .que-txt a{color:var(--orange-hi);font-weight:700}
+#cba .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+#cba .eco-copy{display:flex;flex-direction:column;gap:24px}
+#cba .actors{display:flex;flex-wrap:wrap;gap:8px}
+#cba .actors span{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;padding:8px 14px;border-radius:999px;background:var(--surface);border:1px solid var(--line)}
+#cba .actors i{width:10px;height:10px;border-radius:50%}
+#cba .net-wrap{position:relative;width:100%;max-width:760px;margin:0 auto}
+#cba svg.orbit{width:100%;display:block;overflow:visible}
+#cba .orbit .m{stroke:#CFC9C0;stroke-width:1}
+#cba .orbit .dot{fill:#BDB7AE}
+#cba .orbit .ring{fill:none;stroke:#D9D4CC;stroke-width:1.2;stroke-dasharray:3 6}
+#cba .orbit .spoke{stroke:var(--orange);stroke-width:1.4}
+#cba .orbit .spoke.on{stroke-width:3}
+#cba .orbit .peer{stroke:#BDB7AE;stroke-width:1;stroke-dasharray:2 5}
+#cba .orbit .spark{fill:var(--orange)}
+#cba .orbit .node{cursor:pointer;outline:none}
+#cba .orbit .node .disc{fill:#fff;stroke:#E2C7B0;stroke-width:1.5;transition:stroke .2s}
+#cba .orbit .node .halo{fill:none;stroke:var(--orange);stroke-width:2.5;opacity:0;transition:opacity .2s}
+#cba .orbit .node.on .halo,#cba .orbit .node:focus-visible .halo{opacity:1}
+#cba .orbit .node .lbl{fill:#1D1D1B;font:700 15px Montserrat,sans-serif;paint-order:stroke;stroke:#fff;stroke-width:5px}
+#cba .orbit .node .ini{fill:#1D1D1B;font:800 15px Montserrat,sans-serif}
+#cba .orbit .core .disc{fill:var(--orange)}
+#cba .orbit .core .word{fill:#fff;font:800 22px Montserrat,sans-serif;letter-spacing:-.02em}
+#cba .orbit .ring-pulse{fill:none;stroke:var(--orange);stroke-width:2;transform-box:fill-box;transform-origin:center;animation:cbaPulse 3.2s ease-out infinite}
+@keyframes cbaPulse{0%{transform:scale(1);opacity:.5}100%{transform:scale(1.7);opacity:0}}
+#cba svg.web{width:100%;height:auto;display:block;overflow:visible;max-width:1080px;margin:0 auto}
+#cba .web .peer{stroke:#CFC9C0;stroke-width:1.4;stroke-dasharray:2 6;stroke-linecap:round}
+#cba .web .spoke{stroke-width:1.8;stroke-linecap:round;transition:opacity .2s}
+#cba .web .tick{stroke-width:2;stroke-linecap:round}
+#cba .web .arc{fill:none;stroke-width:2.4;stroke-linecap:round;transform-box:fill-box;transform-origin:center;animation:cbaSpin 16s linear infinite}
+#cba .web .arc.a2{stroke-width:1.8;animation-duration:24s;animation-direction:reverse}
+#cba .web .node{cursor:pointer;outline:none;transition:opacity .25s}
+#cba .web .node .disc{fill:#fff;stroke-width:2.2}
+#cba .web .node .lbl{fill:#1D1D1B;font-family:Montserrat,sans-serif;font-weight:700;paint-order:stroke;stroke:#fff;stroke-width:6px;stroke-linejoin:round}
+#cba .web .node .ini{font:800 18px Montserrat,sans-serif}
+#cba .web .node:focus-visible .disc{stroke-width:5}
+#cba .web .hub .disc{fill:var(--orange)}
+#cba .web .hub .word{fill:#fff;font:800 23px Montserrat,sans-serif;letter-spacing:-.02em}
+#cba .web .hub .pulse{fill:none;stroke:var(--orange);stroke-width:2;transform-box:fill-box;transform-origin:center;animation:cbaPulse 3.2s ease-out infinite}
+#cba .graph-hint{font-size:13px;color:var(--soft);text-align:center;margin-top:4px}
+#cba .net-tip{position:absolute;z-index:5;width:320px;padding:20px 22px;border-radius:18px;background:#fff;color:#1D1D1B;border:1px solid var(--line);box-shadow:0 24px 60px rgba(29,29,27,.18);display:flex;flex-direction:column;gap:10px}
+#cba .net-tip[hidden]{display:none}
+#cba .net-tip .tip-logo{height:48px;display:flex;align-items:center}
+#cba .net-tip .tip-logo img{max-height:48px;max-width:190px;object-fit:contain}
+#cba .net-tip .tip-sector{font-size:12px;font-weight:700;color:var(--orange-hi)}
+#cba .net-tip .tip-name{font-size:17px;font-weight:800;line-height:1.2;letter-spacing:-.01em}
+#cba .net-tip p{font-size:14px;color:var(--muted);line-height:1.45;padding-top:10px;border-top:1px solid var(--line)}
+#cba .net-tip .tip-go{display:inline-flex;align-self:flex-start;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:var(--orange);color:var(--ink);font-size:13px;font-weight:800;text-decoration:none}
+#cba .net-tip .tip-go:hover{background:var(--ink);color:#fff}
+#cba .net-tip .tip-go svg{width:14px;height:14px}
+
+/* ---------- Puertas ---------- */
+#cba .doors{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;padding:56px 0 0}
+#cba .door{grid-column:span 2;display:flex;flex-direction:column;gap:14px;min-height:200px;padding:28px;border-radius:var(--radius-l);background:var(--surface);border:1px solid var(--line);text-decoration:none;transition:border-color .2s,background .2s}
+#cba .door:hover{border-color:var(--orange);background:var(--surface-2)}
+#cba .door.wide{grid-column:span 3}
+#cba .door .h-m{font-size:24px}
+#cba .door p{color:var(--muted);font-size:15px;max-width:40ch}
+#cba .door .open{margin-top:auto;display:flex;align-items:center;justify-content:space-between;font-weight:700;font-size:14px}
+#cba .door .open svg{width:22px;height:22px;color:var(--orange);transition:transform .2s}
+#cba .door:hover .open svg{transform:translate(3px,-3px)}
+
+/* ---------- Banda naranja ---------- */
+#cba .band{margin-top:14px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px 56px;align-items:center;padding:48px;border-radius:var(--radius-l);background:var(--orange) var(--net-light) no-repeat right -40px center/auto 150%;color:var(--ink)}
+#cba .band h2{font-size:clamp(26px,3vw,38px);font-weight:800;letter-spacing:-.035em;line-height:1.05;margin:0 0 12px;max-width:22ch}
+#cba .band p{font-size:16px;font-weight:600;line-height:1.5;max-width:56ch}
+#cba .band .actions{display:flex;flex-wrap:wrap;gap:12px}
+#cba .band .btn-dark{background:var(--ink);color:#fff}
+#cba .band .btn-dark:hover{background:#000}
+#cba .band .btn-ghost{border-color:rgba(29,29,27,.45);color:var(--ink)}
+#cba .band .btn-ghost:hover{border-color:var(--ink)}
+
+/* ---------- Split con columna fija ---------- */
+#cba .split{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:56px;align-items:start}
+#cba .sticky-col{position:sticky;top:110px;display:flex;flex-direction:column;gap:24px}
+#cba .lines{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+#cba .line{padding:28px;border-radius:var(--radius-l);background:var(--surface);border:1px solid var(--line);display:flex;flex-direction:column;gap:14px}
+#cba .line-icon{width:52px;height:52px;border-radius:50%;background:var(--orange-wash);color:var(--orange);display:grid;place-items:center}
+#cba .line-icon svg{width:24px;height:24px}
+#cba .line p{color:var(--muted);font-size:15px}
+#cba .line a.more{margin-top:auto;font-size:14px;font-weight:700;color:var(--orange-hi);text-decoration:none;display:inline-flex;align-items:center;gap:6px;min-height:44px}
+#cba .line a.more:hover{text-decoration:underline}
+#cba .line a.more svg{width:16px;height:16px;flex:none}
+#cba .line.hl a.more{color:var(--ink)}
+#cba .line.hl{background:var(--orange);border-color:var(--orange)}
+#cba .line.hl p{color:var(--ink);font-weight:600}
+#cba .line.hl .line-icon{background:rgba(29,29,27,.12);color:var(--ink)}
+
+/* ---------- Tarjetas que giran ---------- */
+#cba .flips{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:40px}
+#cba .flips.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+#cba .flip{perspective:1400px;background:none;border:0;padding:0;color:inherit;font:inherit;text-align:left;min-height:320px;display:block;width:100%;border-radius:var(--radius-l)}
+#cba .flip-inner{display:block;position:relative;width:100%;height:100%;min-height:320px;transition:transform .65s cubic-bezier(.3,.7,.2,1);transform-style:preserve-3d}
+#cba .flip.is-flipped .flip-inner{transform:rotateY(180deg)}
+@media (hover:hover){#cba .flip:hover .flip-inner{transform:rotateY(180deg)}}
+#cba .flip:focus-within .flip-inner{transform:rotateY(180deg)}
+#cba .flip{cursor:pointer}
+#cba .face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:var(--radius-l);padding:30px;display:flex;flex-direction:column;gap:14px;overflow:hidden}
+#cba .front{background:var(--surface);border:1px solid var(--line)}
+#cba .front .num{display:block;font-size:88px;font-weight:800;letter-spacing:-.06em;line-height:.85;color:var(--orange)}
+#cba .front .ft{display:block;margin-top:auto;font-size:26px;font-weight:800;letter-spacing:-.025em;line-height:1.1}
+#cba .front .turn{font-size:13px;font-weight:600;color:var(--soft);display:flex;align-items:center;gap:8px}
+#cba .front .turn svg{width:16px;height:16px}
+#cba .back{background:var(--orange);color:var(--ink);transform:rotateY(180deg)}
+#cba .back .ft{display:block;font-size:20px;font-weight:800;letter-spacing:-.015em;line-height:1.2}
+#cba .back .desc{display:block;font-size:15px;font-weight:600;line-height:1.5}
+#cba .back .desc.lg{font-size:clamp(18px,1.7vw,21px);font-weight:700;line-height:1.4;margin:auto 0}
+#cba .front.motif{background:var(--surface) var(--net) no-repeat right -90px top -70px/150%}
+#cba .front.motif .ft{font-size:28px;max-width:14ch}
+#cba .flip.prog .back{background:var(--pc,var(--orange))}
+#cba .flip.prog .front{border-bottom:4px solid var(--pc,var(--orange))}
+#cba .back .go{margin-top:auto;display:flex;flex-wrap:wrap;gap:8px}
+#cba .back .go a{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:8px 14px;border-radius:999px;background:var(--ink);color:#fff;font-size:13px;font-weight:800;text-decoration:none}
+#cba .back .go a.alt{background:rgba(29,29,27,.12);color:var(--ink)}
+#cba .back .go a:hover{background:#000;color:#fff}
+#cba .back .go svg{width:14px;height:14px}
+/* Programa: logo al frente */
+#cba .flip.prog .front{background:#fff}
+#cba .flip.prog .plogo{height:96px;display:flex;align-items:center}
+#cba .flip.prog .plogo img{max-height:84px;max-width:85%;object-fit:contain;display:block}
+#cba .flip.prog .plogo .ini{display:none;width:84px;height:84px;border-radius:50%;background:var(--orange-wash);color:var(--orange-hi);font-weight:800;font-size:22px;place-items:center}
+#cba .flip.prog .plogo.nologo img{display:none}
+#cba .flip.prog .plogo.nologo .ini{display:grid}
+#cba .flip.prog .aporte{display:inline-flex;align-self:flex-start;padding:6px 12px;border-radius:999px;background:var(--orange-wash);color:var(--orange-hi);font-size:12.5px;font-weight:700}
+#cba .flip.prog .front .ft{font-size:22px}
+/* Persona */
+#cba .flip.person,#cba .flip.person .flip-inner{min-height:400px}
+#cba .flip.person .front{padding:0;background:var(--surface-2)}
+#cba .flip.person .front img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#cba .flip.person .front .cap{position:absolute;left:0;right:0;bottom:0;padding:60px 24px 22px;background:linear-gradient(180deg,transparent,rgba(29,29,27,.82));color:#fff}
+#cba .flip.person .front .cap b{display:block;font-size:20px;font-weight:800;letter-spacing:-.015em;line-height:1.15}
+#cba .flip.person .front .cap span{display:flex;align-items:center;gap:6px;margin-top:6px;font-size:12.5px;font-weight:600;opacity:.85}
+#cba .flip.person .front .cap svg{width:14px;height:14px}
+#cba .flip.person .back .role{font-size:17px;font-weight:700;line-height:1.4}
+
+/* ---------- Ecosistema (hélice) ---------- */
+#cba .helix{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,420px) minmax(0,1fr);gap:24px 40px;align-items:center;margin-top:40px}
+#cba .helix svg{width:100%;height:auto;display:block}
+#cba .helix .r{fill:none;stroke-width:26;stroke-linecap:round}
+#cba .helix .flow{fill:none;stroke:#1D1D1B;stroke-width:2;stroke-dasharray:6 8;opacity:.55}
+#cba .helix .spin{transform-origin:210px 215px;animation:cbaSpin 40s linear infinite}
+@keyframes cbaSpin{to{transform:rotate(360deg)}}
+#cba .actor{padding:26px 28px;border-radius:var(--radius-l);background:var(--surface);border:1px solid var(--line);display:flex;flex-direction:column;gap:8px;transition:border-color .2s,transform .2s}
+#cba .actor:hover{transform:translateY(-3px)}
+#cba .actor .who{font-size:13px;font-weight:800;display:flex;align-items:center;gap:8px}
+#cba .actor .who i{width:12px;height:12px;border-radius:50%}
+#cba .actor b{font-size:22px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+#cba .actor p{font-size:15px;color:var(--muted)}
+#cba .actor.a-estado{grid-column:2;grid-row:1}
+#cba .actor.a-uni{grid-column:1;grid-row:2}
+#cba .actor.a-emp{grid-column:3;grid-row:2}
+#cba .helix .fig{grid-column:2;grid-row:2}
+#cba .actor.a-estado:hover{border-color:var(--orange)}
+#cba .actor.a-uni:hover{border-color:var(--blue)}
+#cba .actor.a-emp:hover{border-color:var(--green)}
+#cba .rel{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:28px}
+#cba .rel p{padding:22px 26px;border-radius:var(--radius-m);border:1px dashed #CFCAC2;color:#3A3936;font-size:15px}
+
+/* ---------- Cifras / datos institucionales ---------- */
+#cba .cifras{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius-l);overflow:hidden;margin-top:40px}
+#cba .cifra{background:var(--bg);padding:26px 28px;display:flex;flex-direction:column;gap:6px}
+#cba .cifra strong{font-size:40px;font-weight:800;letter-spacing:-.04em;color:var(--orange);line-height:1.05}
+#cba .cifra span{font-size:14px;color:#45433F}
+#cba .destacado{margin-top:14px;padding:40px 44px;border-radius:var(--radius-l);background:var(--orange) var(--net-light) no-repeat right -40px center/auto 160%;color:var(--ink);font-size:clamp(22px,2.4vw,30px);font-weight:800;line-height:1.3;letter-spacing:-.02em}
+#cba .destacado small{display:block;font-size:14px;font-weight:700;margin-bottom:10px;opacity:.8;letter-spacing:0}
+#cba .chips{display:flex;flex-wrap:wrap;gap:10px}
+#cba .chip{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:999px;border:1px solid var(--line);font-weight:600;font-size:15px;background:#fff;text-decoration:none}
+#cba .chip::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--orange)}
+#cba a.chip:hover{border-color:var(--orange)}
+#cba .fx-sec{display:grid;grid-template-columns:220px minmax(0,1fr);gap:40px;padding:56px 0;border-bottom:1px solid var(--line)}
+#cba .fx-sec:first-of-type{border-top:1px solid var(--line)}
+#cba .fx-label{font-size:14px;font-weight:700;color:var(--orange-hi);padding-top:6px}
+
+/* ---------- Metas públicas ---------- */
+#cba .msum{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius-l);overflow:hidden;margin-top:36px}
+#cba .msum div{background:var(--bg);padding:24px 26px}
+#cba .msum strong{display:block;font-size:40px;font-weight:800;letter-spacing:-.04em;line-height:1}
+#cba .msum span{display:block;margin-top:8px;font-size:14px;color:var(--muted)}
+#cba .msum .ok strong{color:#2E7D4F}
+#cba .msum .run strong{color:var(--orange)}
+#cba .filters{display:flex;flex-wrap:wrap;gap:8px;margin:32px 0 0}
+#cba .filters button{min-height:44px;padding:10px 18px;border-radius:999px;border:1px solid var(--line);background:transparent;color:#3A3936;font-weight:600;font-size:14px}
+#cba .filters button:hover{border-color:var(--orange)}
+#cba .filters button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+#cba .mlist{display:flex;flex-direction:column;gap:14px;margin-top:24px}
+#cba .mrow{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:28px 40px;padding:30px 32px;border-radius:var(--radius-l);background:var(--bg);border:1px solid var(--line)}
+#cba .mrow .mtop{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:14px}
+#cba .mrow .mid{font-size:13px;font-weight:800;padding:5px 11px;border-radius:999px;background:var(--ink);color:#fff}
+#cba .mrow .mprog{font-size:13px;font-weight:700;padding:5px 11px;border-radius:999px;background:var(--orange-wash);color:var(--orange-hi)}
+#cba .mrow .meje{font-size:13px;font-weight:600;color:var(--muted)}
+#cba .mrow h3{font-size:19px;font-weight:700;line-height:1.4;letter-spacing:-.01em}
+#cba .mrow .mind{margin-top:12px;font-size:14px;color:var(--muted)}
+#cba .mrow .mind b{color:var(--text)}
+#cba .mrow .mside{display:flex;flex-direction:column;gap:12px;padding-left:32px;border-left:1px solid var(--line)}
+#cba .mrow .mlbl{font-size:13px;font-weight:700;color:var(--muted);margin-bottom:-6px}
+#cba .mrow .mpct{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+#cba .mrow .mpct strong{font-size:44px;font-weight:800;letter-spacing:-.045em;line-height:1}
+#cba .mbadge{font-size:12px;font-weight:800;padding:5px 11px;border-radius:999px;white-space:nowrap}
+#cba .mbadge.s-superada,#cba .mbadge.s-alcanzada{background:#E3F2E8;color:#1F6A3E}
+#cba .mbadge.s-en-curso{background:var(--orange-wash);color:var(--orange-hi)}
+#cba .mbadge.s-no-iniciada{background:var(--surface-2);color:var(--muted)}
+#cba .mrow .pbar{height:10px;border-radius:99px;background:var(--surface-2);overflow:hidden}
+#cba .mrow .pbar i{display:block;height:100%;border-radius:99px;background:var(--orange);transform-origin:left;animation:cbaGrow 1s cubic-bezier(.3,.7,.2,1) both}
+@keyframes cbaGrow{from{transform:scaleX(0)}to{transform:none}}
+#cba .mrow.done .pbar i{background:#2E7D4F}
+#cba .mrow .manios{display:flex;flex-direction:column;gap:8px;padding-top:12px;border-top:1px solid var(--line)}
+#cba .mrow .manios div{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:14px;font-weight:700}
+#cba .mrow .mev{margin-top:4px;display:inline-flex;align-items:center;gap:8px;align-self:flex-start;font-size:14px;font-weight:800;color:var(--orange-hi);text-decoration:none;min-height:40px}
+#cba .mrow .mev:hover{text-decoration:underline}
+#cba .mrow .mev svg{width:16px;height:16px}
+#cba .mrow.todo{border-style:dashed;border-color:#CFCAC2;grid-template-columns:minmax(0,1fr)}
+#cba .mrow.todo h3{color:var(--muted)}
+
+/* ---------- Novedades ---------- */
+#cba .news{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:28px}
+#cba .new{display:flex;flex-direction:column;border-radius:var(--radius-l);background:var(--bg);border:1px solid var(--line);overflow:hidden;text-decoration:none;transition:border-color .2s,box-shadow .2s}
+#cba a.new:hover{border-color:var(--orange);box-shadow:0 16px 40px rgba(29,29,27,.08)}
+#cba .new .img{aspect-ratio:16/9;background:var(--orange-wash) var(--net) no-repeat center/cover;overflow:hidden}
+#cba .new .img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+#cba a.new:hover .img img{transform:scale(1.04)}
+#cba .new .txt{padding:24px 26px 28px;display:flex;flex-direction:column;gap:10px;flex:1}
+#cba .new .meta-n{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:13px;color:var(--soft)}
+#cba .new .meta-n b{color:var(--orange-hi);font-weight:700}
+#cba .new h3{font-size:20px;font-weight:800;line-height:1.25;letter-spacing:-.015em}
+#cba .new p{color:var(--muted);font-size:15px}
+#cba .new .go{margin-top:auto;padding-top:8px;font-size:14px;font-weight:800;color:var(--orange-hi);display:inline-flex;gap:6px;align-items:center}
+#cba .new .go svg{width:16px;height:16px}
+#cba .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+
+/* ---------- Documentos ---------- */
+#cba .doc{display:grid;grid-template-columns:84px 140px minmax(0,1fr) 170px;gap:24px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}
+#cba .doc .cover{width:84px;height:108px;border-radius:10px;background:var(--surface) var(--net) no-repeat center/cover;border:1px solid var(--line);overflow:hidden}
+#cba .doc .cover img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+#cba .doc .kind{font-size:13px;font-weight:700;color:var(--orange-hi)}
+#cba .doc h3{font-size:19px;font-weight:700;line-height:1.3}
+#cba .doc .who{font-size:14px;color:var(--muted);margin-top:4px}
+#cba .doc .act{font-size:14px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;min-height:44px}
+#cba .doc .act:hover{color:var(--orange-hi)}
+#cba .doc .act svg{width:16px;height:16px}
+
+/* ---------- Cierre y pie ---------- */
+#cba .close{margin:96px 0 0;padding:56px 0 64px;background:var(--orange) var(--net-light) no-repeat right -40px center/auto 150%;color:var(--ink)}
+#cba .close .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:center}
+#cba .close h2{font-size:32px;font-weight:800;letter-spacing:-.03em;line-height:1.1}
+#cba .close p{margin-top:10px;max-width:56ch;font-weight:500}
+#cba .close .actions{display:flex;gap:12px;flex-wrap:wrap}
+#cba .close .btn-primary{background:var(--ink);color:#fff}
+#cba .close .btn-primary:hover{background:#000}
+#cba .close .btn-ghost{border-color:rgba(29,29,27,.45);color:var(--ink)}
+#cba .close .btn-ghost:hover{border-color:var(--ink)}
+#cba .foot{background:var(--ink);color:#B8B7B0;padding:56px 0 28px;font-size:14px}
+#cba .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+#cba .foot h4{margin:0 0 14px;font-size:14px;font-weight:700;color:#fff}
+#cba .foot ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:8px}
+#cba .foot a{color:#B8B7B0;text-decoration:none}
+#cba .foot a:hover{color:#fff}
+#cba .foot .flogo{display:inline-flex;background:#fff;border-radius:12px;padding:8px 12px;margin-bottom:16px}
+#cba .foot .flogo img{height:34px;width:auto;display:block}
+#cba .social{display:flex;gap:8px;margin-top:16px}
+#cba .social a{width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.25);display:grid;place-items:center;color:#fff}
+#cba .social a:hover{background:var(--orange);border-color:var(--orange);color:var(--ink)}
+#cba .social svg{width:18px;height:18px}
+#cba .tci{display:flex;align-items:center;gap:12px;margin-top:4px}
+#cba .tci img{height:40px;width:auto;background:#fff;border-radius:8px;padding:4px}
+#cba .legal{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:13px}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1000px){
+  #cba .eco,#cba .split,#cba .home-que,#cba .eco-head{grid-template-columns:minmax(0,1fr);gap:20px}
+  #cba .sticky-col{position:static}
+  #cba .door,#cba .door.wide{grid-column:span 3}
+  #cba .flips,#cba .flips.four,#cba .news,#cba .cifras{grid-template-columns:repeat(2,minmax(0,1fr))}
+  #cba .band,#cba .close .wrap{grid-template-columns:minmax(0,1fr)}
+  #cba .mrow{grid-template-columns:minmax(0,1fr)}
+  #cba .mrow .mside{padding-left:0;border-left:0;padding-top:20px;border-top:1px solid var(--line)}
+  #cba .helix{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  #cba .helix .fig{grid-column:1/-1;grid-row:1;max-width:380px;justify-self:center;width:100%}
+  #cba .actor.a-estado{grid-column:1/-1;grid-row:2}
+  #cba .actor.a-uni{grid-column:1;grid-row:3}
+  #cba .actor.a-emp{grid-column:2;grid-row:3}
+  #cba .doc{grid-template-columns:72px minmax(0,1fr);row-gap:6px}
+  #cba .doc .cover{grid-row:span 3;width:72px;height:92px}
+  #cba .foot-grid{grid-template-columns:1fr 1fr}
+  #cba .fx-sec{grid-template-columns:minmax(0,1fr);gap:16px}
+}
+@media (max-width:640px){
+  #cba .wrap{padding:0 20px}
+  #cba .bar .wrap{gap:12px}
+  #cba .brand img{height:34px}
+  #cba .view{padding-top:36px}
+  #cba .door,#cba .door.wide{grid-column:1/-1}
+  #cba .doors.three,#cba .lines,#cba .flips,#cba .flips.four,#cba .news,#cba .cifras,#cba .msum,#cba .rel{grid-template-columns:minmax(0,1fr)}
+  #cba .flip,#cba .flip .flip-inner{min-height:280px}
+  #cba .flip.person,#cba .flip.person .flip-inner{min-height:360px}
+  #cba .helix{grid-template-columns:minmax(0,1fr)}
+  #cba .actor.a-uni,#cba .actor.a-emp{grid-column:1;grid-row:auto}
+  #cba .band,#cba .destacado{padding:32px 28px}
+  #cba .mrow{padding:24px}
+  #cba .foot-grid{grid-template-columns:minmax(0,1fr)}
+  #cba .vhero .wrap{padding-bottom:48px}
+}
+@media (prefers-reduced-motion:reduce){
+  #cba .view.enter,#cba .ring-pulse,#cba .helix .spin,#cba .mrow .pbar i{animation:none}
+  #cba *{transition:none!important}
+}
+#cba .net-tip .tip-go{background:var(--pc,var(--orange))}
+#cba .net-tip{border-top:4px solid var(--pc,var(--orange))}
+</style>
+</head>
+<body style="margin:0;background:#FFFFFF">
+
+<div id="cba">
+  <header class="bar">
+    <div class="wrap">
+      <a class="brand" href="#inicio" aria-label="Córdoba Acelera, inicio">
+        <img src="https://cordobaacelera.com.ar/wp-content/uploads/2025/06/Cordoba-Acelera-horizontal-Fondo-Blanco.png" alt="Córdoba Acelera">
+      </a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="cba-nav" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav" id="cba-nav" aria-label="Principal"><ul id="cba-menu"></ul></nav>
+    </div>
+  </header>
+
+  <main id="cba-view" aria-live="polite"></main>
+
+  <section class="close" aria-labelledby="cba-join">
+    <div class="wrap">
+      <div>
+        <h2 id="cba-join">Suscribite a nuestro newsletter</h2>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://v3.envialosimple.com/form/renderwidget/format/html/AdministratorID/186890/FormID/1/Lang/es" target="_blank" rel="noopener">Suscribirme</a>
+        <a class="btn btn-ghost" href="https://cordobaacelera.com.ar/wp-content/uploads/2025/12/Brochure-Cordoba-Acelera-ES.pdf" target="_blank" rel="noopener">Brochure de Córdoba Acelera</a>
+        <a class="btn btn-ghost" href="mailto:hola@cordobaacelera.com.ar?subject=%C2%A1Quiero%20saber%20m%C3%A1s%20de%20C%C3%B3rdoba%20Acelera!">Contacto</a>
+      </div>
+    </div>
+  </section>
+  <footer class="foot" id="cba-foot"></footer>
+</div>
+
+<script>
+(function () {
+  /* =========================================================
+     DATOS. Todo el contenido se edita acá, en un solo lugar.
+     ========================================================= */
+  var UP = 'https://cordobaacelera.com.ar/wp-content/uploads/';
+
+  // Videos que ya tiene la web actual (se reproducen de fondo, sin sonido)
+  var VIDEOS = {
+    inicio: UP + '2026/03/Resumen-CA-Web_1_PC.mp4',
+    programas: UP + '2026/03/DJI_0026_1_PC.mp4'
+  };
+
+  var AGENDA_URL = 'https://cordobaacelera.com.ar/eventos/';
+
+  // Programas, con los textos de la web actual. "color" es el color del anillo en la red.
+  var PROGRAMAS = [
+    { id: 'invest', short: 'Invest', ini: 'INV', name: 'Invest Córdoba', color: '#3D8FD1',
+      logo: UP + '2024/06/invest-300x128.png', url: 'https://cordobaacelera.com.ar/investcordoba/',
+      desc: 'Es el programa de promoción y atracción de la inversión, que trabaja en estrategias comerciales para convertir a la ciudad en un polo de inversión.',
+      extra: [['Why Córdoba Capital', 'https://cordobaacelera.com.ar/why-cordoba-capital/']] },
+    { id: 'clusters', short: 'Clusters', ini: 'ICC', name: 'Iniciativa Clusters Córdoba', color: '#EC6907',
+      logo: UP + '2024/03/Iniciativa-Clusters-1024x466.png', url: 'clusters/',
+      desc: 'Es el programa que impulsa el desarrollo, la competitividad y la internacionalización del sector productivo de la ciudad de Córdoba.',
+      extra: [['Tecnoteca', 'https://cordobaacelera.com.ar/tecnoteca/'], ['Monitor de Oportunidades Cluster', 'https://oportunidades.vectorlogico.com.ar/']] },
+    { id: 'accion', short: 'CBA Acción', ini: 'CBA', name: 'Córdoba Acción', color: '#6BAF4A',
+      logo: UP + '2024/03/Cordoba-Audiovisual-300x105.png', url: 'https://audiovisual.cordoba.gob.ar/',
+      desc: 'Es un régimen de fomento y promoción de la actividad audiovisual para incentivar el rodaje de producciones en la ciudad. Cuenta con un sistema de Cash Rebate y una Film Commission.' },
+    { id: 'acento', short: 'Acento Global', ini: 'AG', name: 'Acento Global', color: '#EC6907',
+      logo: UP + '2024/03/Acento-Global-300x109.png', url: 'https://cordobaacelera.com.ar/acentoglobal/',
+      desc: 'Es una red de cordobeses destacados que viven en el exterior que transfiere conocimientos, fortalece relaciones, participa en proyectos e integra a la ciudad con el mundo.' },
+    { id: 'nomads', short: 'Digital Nomads', ini: 'DN', name: 'Digital Nomads Córdoba', color: '#3D8FD1',
+      logo: UP + '2024/06/nomads-300x128.png', url: 'https://nomadscordoba.com/',
+      desc: 'Es una iniciativa que atrae a talentos y profesionales que eligen trabajar y viajar por el mundo al mismo tiempo. Ofrece información, beneficios, espacios de coworking y actividades en comunidad.' },
+    { id: 'study', short: 'Study Córdoba', ini: 'STU', name: 'Study Córdoba Capital', color: '#6BAF4A',
+      logo: UP + '2024/06/Diseno-sin-titulo-2-300x128.png', url: 'https://studycordoba.com/',
+      desc: 'Es el programa que, con el acompañamiento de las universidades, posiciona a Córdoba como un destino académico de prestigio para estudiantes internacionales de grado y posgrado.' },
+    { id: 'loc', short: 'LOC', ini: 'LOC', name: 'Localizador de Oportunidades Comerciales', color: '#EC6907',
+      logo: UP + '2024/03/LOC-e1710944219670-copia-1-300x217.png', url: 'https://cordobaacelera.com.ar/localizador-oportunidades-comerciales/',
+      desc: 'Es una herramienta que combina capas de información para identificar oportunidades de negocios antes de abrir un nuevo emprendimiento en la ciudad de Córdoba.' }
+  ];
+  var PROGRAMAS_TXT = 'Desarrollamos iniciativas y regímenes con impronta propia, los cuales están interconectados en un mismo ecosistema. Estos programas, impulsados en colaboración con el sector privado y académico, buscan lograr una integración económica y propiciar el intercambio de experiencias a nivel internacional.';
+
+  // Textos institucionales de la web actual
+  var HOME_QUE_ES = ['Somos la institución público-privada que impulsa el desarrollo productivo y conecta a Córdoba Capital con el mundo.',
+    'Diseñamos estrategias e implementamos políticas en articulación con el sector privado, para estimular la competitividad de la ciudad.'];
+  var QUE_ES = ['Córdoba Acelera es un ente autárquico de la Municipalidad de Córdoba creado en agosto de 2022 por <a href="' + UP + '2024/09/Ordenanza-13.197.pdf" target="_blank" rel="noopener">ordenanza N.º 13.197</a>. Tiene por objeto potenciar el desarrollo productivo de la ciudad de Córdoba a través de la innovación, las nuevas economías y el desarrollo emprendedor, entre otros, generando acciones, programas y proyectos con el sector público, privado y académico.',
+    'El directorio de Córdoba Acelera está compuesto por funcionarios municipales y un consejo consultivo, conformado por representantes del sector privado que participan de manera ad honorem.'];
+
+  // Ecosistema (de la placa “Córdoba, ecosistema de negocios fluido, sincronizado y potente”)
+  var HELICE = {
+    titulo: 'Córdoba, ecosistema de negocios fluido, sincronizado y potente',
+    actores: [
+      { k: 'estado', who: 'Estado', color: 'var(--orange)', b: 'Creador de políticas conjuntas', p: '' },
+      { k: 'uni', who: 'Universidad y centros de investigación', color: 'var(--blue)', b: 'Investigan, desarrollan y forman', p: 'Participa, estimula y nutre de talento al sector privado. Da prestigio nacional e internacional.' },
+      { k: 'emp', who: 'Comunidad empresaria', color: 'var(--green)', b: 'Emprende, crea negocios y coopera entre sí', p: 'El sector privado y el Estado funcionan interconectados y tienen influencia mutua, manteniendo identidades y objetivos propios.' }
+    ]
+  };
+
+  // [frente de la tarjeta, texto completo]
+  var PROPOSITO = [
+    ['Competitividad', 'Estimulamos el desarrollo, la competitividad y la internacionalización del sector productivo a través de las iniciativas clusters.'],
+    ['Vinculamos la ciudad con el mundo', 'Vinculamos la ciudad con el mundo mediante los programas internacionales para posicionar a Córdoba a nivel global.'],
+    ['Atraemos nuevas inversiones', 'Atraemos nuevas inversiones y facilitamos el softlanding a través de la marca Córdoba.']
+  ];
+  var ASPIRACION = 'Aspiramos a posicionar a Córdoba como hub líder en materia de innovación, modelo de negocios y sustentabilidad.';
+  var CULTURA = [
+    ['Trabajamos en coordinación', 'Trabajamos de manera intra e intergubernamental y en coordinación con el sector privado, instituciones y el ámbito académico.'],
+    ['Decisiones basadas en evidencia', 'Contamos con un área de Estudios Estratégicos para recoger y analizar datos, y tomar decisiones basadas en evidencia.'],
+    ['Planificamos a largo plazo', 'Planificamos estrategias y proyectos a largo plazo, que trascienden gestiones y generan un triple impacto social.']
+  ];
+
+  var DIRECTORIO = [
+    ['Mariela Bercovich', 'Presidenta de Córdoba Acelera.', UP + '2025/03/MIEMBROS-BOARD-300-x-300-px.png', 'https://www.linkedin.com/in/marielabercovich/'],
+    ['María Gabriela Sibilla', 'Vocal de Córdoba Acelera – Programas Internacionales.', UP + '2024/09/2.png', 'https://www.linkedin.com/in/gsibilla/']
+  ];
+  var AREAS = ['Asuntos Legales', 'Coordinación Administrativa', 'Comunicación', 'Relaciones Institucionales', 'Iniciativa Clusters Córdoba', 'Programas Internacionales', 'Planificación y Estudios Estratégicos'];
+  var CONSEJO = [
+    ['Juan Carlos Rabbat', 'Presidente de la Fundación Universidad Siglo 21. Presidente del Consejo Consultivo.', UP + '2024/07/1.png', 'https://ar.linkedin.com/in/juan-carlos-rabbat'],
+    ['Pía Astori', 'Presidenta de Grupo Astori.', UP + '2024/07/2.png', 'https://www.linkedin.com/company/grupoastori/'],
+    ['Juan Santiago', 'CEO de Santex y cofundador de Incutex.', UP + '2024/07/3.png', 'https://www.linkedin.com/in/juan-santiago-'],
+    ['Luciana Periales', 'CEO de Neverland.', UP + '2024/07/4.png', 'https://ar.linkedin.com/in/luciana-periales-60312745'],
+    ['Luciano Nícora', 'Vicepresidente de Endeavor Argentina y General Partner de Pampa Start.', UP + '2024/07/5.png', 'https://ar.linkedin.com/in/luciano-nicora-792248'],
+    ['Mery Lunge', 'Fundadora de Moconá y presidenta de la Fundación Universitaria de Oficios.', UP + '2024/07/6.png', 'https://ar.linkedin.com/in/mery-lunge'],
+    ['Esteban Mezzano', 'General Counsel Corporate Operations & Sustainability, Nestlé Sede Global, Suiza.', UP + '2024/07/7.png', 'https://ch.linkedin.com/in/esteban-mezzano']
+  ];
+
+  // Metas públicas en el Plan de Metas de la Municipalidad. Una entrada por meta.
+  // "programa" agrupa los filtros. Estados: Alcanzada, Superada, En curso, No iniciada.
+  // Metas anuales: "anios" = [[año, estado, avance %], ...]. Metas a 2027: "acumulado" + "estado".
+  var METAS_CORTE = '2025';
+  var METAS = [
+    { id: '3.4.5', programa: 'Iniciativa Clusters', eje: 'Ciudad Inteligente',
+      meta: 'Desarrollar 3 capacitaciones anuales, enfocadas en iniciativas de clusters con el objetivo de potenciar y fortalecer su desarrollo para 2027',
+      indicador: 'Cantidad de capacitaciones', fin: 'Anual hasta 2027',
+      anios: [['2024', 'Superada', 200], ['2025', 'Superada', 167]],
+      evidencia: 'https://drive.google.com/drive/folders/1jxXXbUAprEfSGBMWzv-E1FFwj2dYciq2?usp=drive_link' },
+    { id: '3.4.8', programa: 'Iniciativa Clusters', eje: 'Ciudad Inteligente',
+      meta: 'Fomentar al menos 13 acciones conjuntas, con otros entes u organismos, públicos, privados, y académicos, que permitan potenciar el alcance de las actividades de cada clúster, para el 2027',
+      indicador: 'N.º de acciones concretadas', fin: '2027', acumulado: 123.08, estado: 'Superada',
+      evidencia: 'https://drive.google.com/drive/folders/1cc0ep5Xx_CfqfvLRTHkNfT3pSEaKfVG3?usp=drive_link' },
+    { id: '3.4.9', programa: 'Iniciativa Clusters', eje: 'Ciudad Inteligente',
+      meta: 'Fomentar la firma y ejecución de convenios, así como la realización de acciones con clústeres relevantes de la ciudad de Córdoba, para alcanzar 32 proyectos presentados para el año 2027',
+      indicador: 'Cantidad de proyectos ejecutados a través de convenio con clusters', fin: '2027', acumulado: 185.71, estado: 'Superada',
+      evidencia: 'https://drive.google.com/drive/folders/1fve6g5x1gebaxm3DXGIi-7_9bkotijkU?usp=drive_link' }
+  ];
+  // Mientras falten las metas de otros programas, se muestra un aviso punteado. Dejalo en '' para ocultarlo.
+  var METAS_PENDIENTE = '[Metas de Invest Córdoba, Programas Internacionales y demás áreas: a completar con la planilla del Plan de Metas]';
+
+  var NOVEDADES = [
+    { fecha: '16 noviembre, 2026', titulo: 'Se presentó el primer Monitor de la Industria Publicitaria y Creativa de Córdoba',
+      resumen: 'El relevamiento aporta datos inéditos sobre la dimensión, las capacidades y el potencial de crecimiento de una industria clave para…',
+      img: UP + '2026/11/Fotos-Prensa-Muni.jpg', href: 'https://cordobaacelera.com.ar/se-presento-el-primer-monitor-de-la-industria-publicitaria-y-creativa-de-cordoba/' },
+    { fecha: '12 noviembre, 2026', titulo: '“Valorar el propio trabajo implica reconocer la inversión de tiempo”',
+      resumen: 'Vanesa Durán, miembro de la red de Acento Global, participó del encuentro «Mujeres con ADN Emprendedor: Potenciá tu marca, escalá…',
+      img: UP + '2026/11/Linkedin-Portada-1-800x450.jpg', href: 'https://cordobaacelera.com.ar/valorar-el-propio-trabajo-implica-reconocer-la-inversion-de-tiempo/' },
+    { fecha: '12 noviembre, 2026', titulo: 'Seguimos ampliando las conexiones académicas internacionales',
+      resumen: 'A través de nuestro programa de internacionalización Study Córdoba generamos un encuentro para identificar oportunidades, además de fortalecer la movilidad…',
+      img: UP + '2026/11/Linkedin-Portada-800x450.jpg', href: 'https://cordobaacelera.com.ar/seguimos-ampliando-las-conexiones-academicas-internacionales/' }
+  ];
+  var NOVEDADES_URL = 'https://cordobaacelera.com.ar/novedades/';
+
+  var DOCUMENTOS = [
+    { kind: 'Inversiones', titulo: 'Guía del Inversor 2026', who: 'Invest Córdoba Capital', href: UP + '2026/11/Guia-del-Inversor-2026-1.pdf', cover: UP + '2026/11/Guia-del-Inversor-2026-1_pages-to-jpg-0001.jpg' },
+    { kind: 'Institucional', titulo: 'Brochure de Córdoba Acelera', who: 'Córdoba Acelera', href: UP + '2025/12/Brochure-Cordoba-Acelera-ES.pdf', cover: '' },
+    { kind: 'Institucional', titulo: 'Anuario Córdoba Acelera 2025', who: 'Córdoba Acelera', href: UP + '2026/01/Anuario-Cordoba-Acelera-2025.pdf', cover: '' },
+    { kind: 'Institucional', titulo: 'Anuario Córdoba Acelera 2024', who: 'Córdoba Acelera', href: UP + '2025/01/Anuario-Cordoba-Acelera-2024.pdf', cover: '' },
+    { kind: 'Normativa', titulo: 'Ordenanza N.º 13.562', who: 'Municipalidad de Córdoba', href: UP + '2025/12/Ordenanza-N-13562-PPAP.pdf', cover: UP + '2025/12/Diseno-sin-titulo.jpg' },
+    { kind: 'Normativa', titulo: 'Ordenanza N.º 13.197 de creación de Córdoba Acelera', who: 'Municipalidad de Córdoba', href: UP + '2024/09/Ordenanza-13.197.pdf', cover: '' },
+    { kind: 'Estudios', titulo: 'Cuadernillo de buenas prácticas de clusters', who: 'Iniciativa Clusters Córdoba', href: UP + '2025/10/CuaderniilloBPCluster.pdf', cover: UP + '2025/12/CuaderniilloBPCluster_page-0001.jpg' },
+    { kind: 'Estudios', titulo: 'Identificación de oportunidades productivas para el Municipio de Córdoba', who: 'Fundar', href: 'https://fund.ar/serie/complejidad-economica-cordoba/', cover: UP + '2025/12/Fundar_Identificacion-de-oportunidades-productivas-para-el-Municipio-de-Cordoba-CC-BY-NC-ND-4.0_page-0001-1087x1536-1.jpg' },
+    { kind: 'Estudios', titulo: 'Foro Internacional Digital Nomads Córdoba', who: 'Digital Nomads Córdoba', href: 'https://nomadscordoba.com/wp-content/uploads/2025/08/Foro-Internacional-Digital-Nomads-Cordoba-ES.pdf', cover: UP + '2025/12/Foro-Internacional-Digital-Nomads-Cordoba-ES_page-0001.jpg' }
+  ];
+
+  var ICONS = {
+    right: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
+    arrow: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>',
+    down: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>',
+    turn: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15.5-6.2L21 8M21 3v5h-5M21 12a9 9 0 0 1-15.5 6.2L3 16M3 21v-5h5"/></svg>',
+    file: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>',
+    pause: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>',
+    play: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5v14l12-7z"/></svg>',
+    ordenanza: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg>',
+    people: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6"/></svg>',
+    spark: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17l6-6 4 4 7-7M15 8h6v6"/></svg>',
+    globe: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>',
+    in: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>',
+    ig: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>',
+    x: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 4l16 16M20 4 4 20"/></svg>',
+    yt: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z" fill="currentColor"/></svg>'
+  };
+
+  /* =========================================================
+     UTILIDADES
+     ========================================================= */
+  var root = document.getElementById('cba'), view = document.getElementById('cba-view');
+  var first = true;
+  function ext(href) { return /^https?:/.test(href) ? ' target="_blank" rel="noopener"' : ''; }
+  function isTodo(t) { return /^\[/.test(t || ''); }
+  function crumbs(items) {
+    return '<nav class="crumbs" aria-label="Ubicación">' + items.map(function (it, i) {
+      return (i ? '<span aria-hidden="true">/</span>' : '') + (it[1] ? '<a href="' + it[1] + '">' + it[0] + '</a>' : '<span aria-current="page">' + it[0] + '</span>');
+    }).join('') + '</nav>';
+  }
+  function vhero(key, inner, cls) {
+    return '<section class="vhero ' + (cls || '') + '">' +
+      '<video autoplay muted loop playsinline preload="metadata" src="' + VIDEOS[key] + '" aria-hidden="true"></video>' +
+      '<div class="wrap">' + inner + '</div>' +
+      '<button type="button" class="vplay" data-vplay aria-label="Pausar video">' + ICONS.pause + '</button></section>';
+  }
+  function linksHtml(links) {
+    return '<span class="go">' + links.map(function (l, k) { return '<a class="' + (k ? 'alt' : '') + '" href="' + l[1] + '"' + ext(l[1]) + '>' + l[0] + ' ' + ICONS.arrow + '</a>'; }).join('') + '</span>';
+  }
+  function flipCard(title, desc) {
+    return '<article class="flip" tabindex="0" aria-label="' + title + '">' +
+      '<span class="flip-inner">' +
+        '<span class="face front motif"><span class="ft">' + title + '</span>' +
+          '<span class="turn">' + ICONS.turn + 'Pasá el mouse o tocá para ver</span></span>' +
+        '<span class="face back"><span class="desc lg">' + desc + '</span></span>' +
+      '</span></article>';
+  }
+  function progCard(p) {
+    var links = [['Ver más', p.url]].concat(p.extra || []);
+    return '<article class="flip prog" tabindex="0" aria-label="' + p.name + '" style="--pc:' + p.color + '">' +
+      '<span class="flip-inner">' +
+        '<span class="face front"><span class="plogo' + (p.logo ? '' : ' nologo') + '">' + (p.logo ? '<img data-logo src="' + p.logo + '" alt="" loading="lazy">' : '') + '<span class="ini">' + p.ini + '</span></span>' +
+          '<span class="ft">' + p.name + '</span>' +
+          '<span class="turn">' + ICONS.turn + 'Pasá el mouse o tocá para ver</span></span>' +
+        '<span class="face back"><span class="ft">' + p.name + '</span><span class="desc">' + p.desc + '</span>' + linksHtml(links) + '</span>' +
+      '</span></article>';
+  }
+  function personCard(p) {
+    return '<article class="flip person" tabindex="0" aria-label="' + p[0] + '">' +
+      '<span class="flip-inner">' +
+        '<span class="face front"><img src="' + p[2] + '" alt="" loading="lazy"><span class="cap"><b>' + p[0] + '</b><span>' + ICONS.turn + 'Ver cargo</span></span></span>' +
+        '<span class="face back"><span class="ft">' + p[0] + '</span><span class="role">' + p[1] + '</span>' + linksHtml([['LinkedIn', p[3]]]) + '</span>' +
+      '</span></article>';
+  }
+  function door(href, title, cls) {
+    return '<a class="door mini ' + (cls || '') + '" href="' + href + '"' + ext(href) + '>' +
+      '<h3 class="h-m">' + title + '</h3>' +
+      '<span class="open">Abrir<span class="sr"> ' + title + '</span>' + ICONS.arrow + '</span></a>';
+  }
+  function quienesTabs(cur) {
+    var t = [['que-es', 'Qué es Córdoba Acelera'], ['proposito', 'Propósito'], ['cultura', 'Cultura'], ['equipo', 'Equipo']];
+    return '<nav class="tabs" aria-label="Quiénes somos">' + t.map(function (x) {
+      return '<a href="#' + x[0] + '"' + (x[0] === cur ? ' aria-current="page"' : '') + '>' + x[1] + '</a>';
+    }).join('') + '</nav>';
+  }
+  function newsCards(list) {
+    return '<div class="news">' + list.map(function (n) {
+      return '<a class="new" href="' + n.href + '"' + ext(n.href) + '><div class="img">' + (n.img ? '<img src="' + n.img + '" alt="" loading="lazy" onerror="this.remove()">' : '') + '</div>' +
+        '<div class="txt"><div class="meta-n"><span>' + n.fecha + '</span></div><h3>' + n.titulo + '</h3><p>' + n.resumen + '</p>' +
+        '<span class="go">Leer más ' + ICONS.right + '</span></div></a>';
+    }).join('') + '</div>';
+  }
+
+  /* =========================================================
+     MENÚ Y PIE
+     ========================================================= */
+  function buildMenu() {
+    var dropQ = '<a href="#que-es"><span class="dot"></span>Qué es Córdoba Acelera</a>' +
+      '<a href="#proposito"><span class="dot"></span>Propósito</a><a href="#cultura"><span class="dot"></span>Cultura</a><a href="#equipo"><span class="dot"></span>Equipo</a>';
+    var dropP = '<a href="#programas"><span class="dot"></span>Todos los programas</a>' +
+      PROGRAMAS.map(function (p) {
+        var subs = (p.extra || []).filter(function (e) { return p.id === 'clusters'; });
+        return '<a href="' + p.url + '"' + ext(p.url) + '><span class="dot" style="background:' + p.color + '"></span>' + p.name + '</a>' +
+          (subs.length ? '<div class="sub">' + subs.map(function (e) { return '<a href="' + e[1] + '"' + ext(e[1]) + '>' + e[0] + '</a>'; }).join('') + '</div>' : '');
+      }).join('');
+    document.getElementById('cba-menu').innerHTML =
+      '<li><a class="nl" href="#inicio" data-nav="inicio">Inicio</a></li>' +
+      '<li><button type="button" class="nl" data-nav="quienes" aria-expanded="false" aria-controls="cba-dq">Quiénes somos ' + ICONS.down + '</button><div class="drop" id="cba-dq">' + dropQ + '</div></li>' +
+      '<li><button type="button" class="nl" data-nav="programas" aria-expanded="false" aria-controls="cba-dp">Programas ' + ICONS.down + '</button><div class="drop" id="cba-dp">' + dropP + '</div></li>' +
+      '<li><a class="nl" href="#novedades" data-nav="novedades">Novedades</a></li>' +
+      '<li><a class="nl" href="#documentos" data-nav="documentos">Documentos</a></li>' +
+      '<li><a class="nl pill-agenda" href="' + AGENDA_URL + '" target="_blank" rel="noopener">Agenda multisectorial</a></li>' +
+      '<li><a class="nl pill-metas" href="#metas" data-nav="metas">Metas públicas</a></li>';
+  }
+  function buildFoot() {
+    document.getElementById('cba-foot').innerHTML = '<div class="wrap"><div class="foot-grid">' +
+      '<div><a class="flogo" href="#inicio"><img src="https://cordobaacelera.com.ar/wp-content/uploads/2025/06/Cordoba-Acelera-horizontal-Fondo-Blanco.png" alt="Córdoba Acelera"></a>' +
+        '<div class="social"><a href="https://www.instagram.com/cordobaacelera/" target="_blank" rel="noopener" aria-label="Instagram">' + ICONS.ig + '</a>' +
+        '<a href="https://www.linkedin.com/company/cordobaacelera" target="_blank" rel="noopener" aria-label="LinkedIn">' + ICONS.in + '</a>' +
+        '<a href="https://twitter.com/CordobaAcelera_" target="_blank" rel="noopener" aria-label="X">' + ICONS.x + '</a>' +
+        '<a href="https://www.youtube.com/@CordobaAcelera" target="_blank" rel="noopener" aria-label="YouTube">' + ICONS.yt + '</a></div></div>' +
+      '<div><h4>Quiénes somos</h4><ul><li><a href="#que-es">Qué es Córdoba Acelera</a></li><li><a href="#proposito">Propósito</a></li><li><a href="#cultura">Cultura</a></li><li><a href="#equipo">Equipo</a></li><li><a href="#metas">Metas públicas</a></li></ul></div>' +
+      '<div><h4>Programas</h4><ul>' + PROGRAMAS.map(function (p) { return '<li><a href="' + p.url + '"' + ext(p.url) + '>' + p.name + '</a></li>'; }).join('') + '</ul></div>' +
+      '<div><h4>Contacto</h4><ul><li><a href="mailto:hola@cordobaacelera.com.ar">hola@cordobaacelera.com.ar</a></li><li><a href="' + AGENDA_URL + '" target="_blank" rel="noopener">Agenda multisectorial</a></li><li><a href="#documentos">Documentos</a></li></ul>' +
+        '<div class="tci" style="margin-top:20px"><img src="' + UP + '2024/03/TCI-Network-1024x724.png' + '" alt="TCI Network" onerror="this.remove()"><span>Somos miembros de <a href="https://www.tci-network.org/" target="_blank" rel="noopener">TCI Network</a></span></div></div>' +
+      '</div><div class="legal"><span>Todos los derechos © 2026 Córdoba Acelera</span><span>Municipalidad de Córdoba</span></div></div>';
+  }
+
+  /* =========================================================
+     VISTAS
+     ========================================================= */
+  function vInicio() {
+    setTimeout(startOrbit, 0);
+    return vhero('inicio',
+        '<h1 class="display" tabindex="-1">Potenciando el desarrollo productivo de Córdoba Capital, a través de la innovación y las nuevas economías</h1>' +
+        '<div class="hero-actions"><a class="btn btn-primary" href="#programas">Conocé nuestros programas ' + ICONS.right + '</a><a class="btn btn-light" href="#que-es">Quiénes somos</a></div>') +
+      '<div class="wrap">' +
+        '<section class="home-que" aria-labelledby="cba-q">' +
+          '<div><h2 class="h-l" id="cba-q">¿Qué es Córdoba Acelera?</h2></div>' +
+          '<div><p class="fx-text">' + HOME_QUE_ES[0] + '</p><p class="fx-text muted">' + HOME_QUE_ES[1] + '</p>' +
+            '<div class="doors three">' + door('#proposito', 'Propósito') + door('#cultura', 'Cultura') + door('#equipo', 'Equipo') + '</div></div>' +
+        '</section>' +
+        '<section class="eco" aria-labelledby="cba-p">' +
+          '<div class="eco-head"><h2 class="h-l" id="cba-p">Programas</h2><p class="body">' + PROGRAMAS_TXT + '</p></div>' +
+          netMarkup() +
+          '<p class="graph-hint">Pasá el mouse por un programa para ver de qué se trata.</p>' +
+        '</section>' +
+        '<section class="band" aria-labelledby="cba-agenda">' +
+          '<div><h2 id="cba-agenda">Agenda Multisectorial de Eventos</h2><p>Navegá por un calendario que centraliza los principales eventos del ecosistema cordobés para impulsar la coordinación, la planificación y las oportunidades de vinculación.</p></div>' +
+          '<div class="actions"><a class="btn btn-dark" href="' + AGENDA_URL + '" target="_blank" rel="noopener">Ver más eventos ' + ICONS.arrow + '</a></div>' +
+        '</section>' +
+        '<section class="section-gap" aria-labelledby="cba-nov">' +
+          '<div class="sec-head"><h2 class="h-l" id="cba-nov">Novedades</h2><a class="btn btn-ghost" href="#novedades">Ver todas</a></div>' +
+          newsCards(NOVEDADES) +
+        '</section>' +
+      '</div>';
+  }
+
+  function vQueEs() {
+    var act = HELICE.actores.map(function (a) {
+      return '<article class="actor a-' + a.k + '"><span class="who"><i style="background:' + a.color + '"></i>' + a.who + '</span><b>' + a.b + '</b>' + (a.p ? '<p>' + a.p + '</p>' : '') + '</article>';
+    }).join('');
+    return '<div class="wrap">' + crumbs([['Inicio', '#inicio'], ['Quiénes somos']]) + quienesTabs('que-es') +
+      '<h1 class="h-xl" tabindex="-1">Qué es Córdoba Acelera</h1>' +
+      '<div class="que-txt">' + QUE_ES.map(function (t, i) { return '<p class="fx-text' + (i ? ' muted' : '') + '">' + t + '</p>'; }).join('') + '</div>' +
+      '<div class="hero-actions" style="margin-top:28px">' +
+        '<a class="btn btn-primary" href="' + UP + '2026/01/Anuario-Cordoba-Acelera-2025.pdf" target="_blank" rel="noopener">Anuario Córdoba Acelera 2025</a>' +
+        '<a class="btn btn-ghost" href="' + UP + '2025/01/Anuario-Cordoba-Acelera-2024.pdf" target="_blank" rel="noopener">Anuario Córdoba Acelera 2024</a>' +
+        '<a class="btn btn-ghost" href="#programas">Conocé nuestros programas</a></div>' +
+      '<section class="section-gap" aria-labelledby="cba-eco">' +
+        '<h2 class="h-l" id="cba-eco" style="max-width:24ch">' + HELICE.titulo + '</h2>' +
+        '<div class="helix">' + act + '<div class="fig">' + helixSvg() + '</div></div>' +
+      '</section></div>';
+  }
+  function helixSvg() {
+    return '<svg viewBox="0 0 420 430" role="img" aria-label="Tres anillos entrelazados: Estado, universidad y comunidad empresaria">' +
+      '<g class="spin"><circle class="flow" cx="210" cy="215" r="196"/></g>' +
+      '<circle class="r" cx="145" cy="262" r="78" stroke="#3D8FD1"/>' +
+      '<circle class="r" cx="275" cy="262" r="78" stroke="#6BAF4A" style="mix-blend-mode:multiply"/>' +
+      '<circle class="r" cx="210" cy="140" r="78" stroke="#EC6907" style="mix-blend-mode:multiply"/>' +
+      '</svg>';
+  }
+
+  function vProposito() {
+    return '<div class="wrap">' + crumbs([['Inicio', '#inicio'], ['Quiénes somos', '#que-es'], ['Propósito']]) + quienesTabs('proposito') +
+      '<h1 class="h-xl" tabindex="-1">Propósito</h1>' +
+      '<div class="flips">' + PROPOSITO.map(function (p) { return flipCard(p[0], p[1]); }).join('') + '</div>' +
+      '<div class="destacado">' + ASPIRACION + '</div></div>';
+  }
+  function vCultura() {
+    return '<div class="wrap">' + crumbs([['Inicio', '#inicio'], ['Quiénes somos', '#que-es'], ['Cultura']]) + quienesTabs('cultura') +
+      '<h1 class="h-xl" tabindex="-1">Cultura</h1>' +
+      '<div class="flips">' + CULTURA.map(function (c) { return flipCard(c[0], c[1]); }).join('') + '</div></div>';
+  }
+  function vEquipo() {
+    return '<div class="wrap">' + crumbs([['Inicio', '#inicio'], ['Quiénes somos', '#que-es'], ['Equipo']]) + quienesTabs('equipo') +
+      '<h1 class="h-xl" tabindex="-1">Equipo</h1>' +
+      '<section class="fx-sec" style="margin-top:40px"><div class="fx-label">Directorio</div><div class="flips" style="margin-top:0">' + DIRECTORIO.map(personCard).join('') + '</div></section>' +
+      '<section class="fx-sec"><div class="fx-label">Áreas</div><div class="chips">' + AREAS.map(function (a) { return '<span class="chip">' + a + '</span>'; }).join('') + '</div></section>' +
+      '<section class="fx-sec"><div class="fx-label">Consejo Consultivo</div><div class="flips" style="margin-top:0">' + CONSEJO.map(personCard).join('') + '</div></section></div>';
+  }
+
+  function vProgramas() {
+    return vhero('programas',
+        '<h1 class="h-xl" tabindex="-1">Programas</h1>' +
+        '<p class="lead">' + PROGRAMAS_TXT + '</p>', 'short') +
+      '<div class="wrap"><div class="flips four" style="margin-top:56px">' + PROGRAMAS.map(progCard).join('') + '</div></div>';
+  }
+
+  function vMetas() {
+    function last(m) { return m.anios ? m.anios[m.anios.length - 1] : [METAS_CORTE, m.estado, m.acumulado]; }
+    var ok = METAS.filter(function (m) { return /superada|alcanzada/i.test(last(m)[1]); }).length;
+    var run = METAS.filter(function (m) { return /en curso/i.test(last(m)[1]); }).length;
+    var progs = ['Todas'].concat(METAS.map(function (m) { return m.programa; }).filter(function (k, i, a) { return a.indexOf(k) === i; }));
+    return '<div class="wrap">' + crumbs([['Inicio', '#inicio'], ['Metas públicas']]) +
+      '<h1 class="h-xl" tabindex="-1">Metas públicas</h1>' +
+      '<p class="lead" style="margin-top:18px">Plan de Metas de la Municipalidad de Córdoba. Avance publicado a ' + METAS_CORTE + '.</p>' +
+      '<div class="msum"><div><strong>' + METAS.length + '</strong><span>metas publicadas</span></div><div class="ok"><strong>' + ok + '</strong><span>alcanzadas o superadas</span></div><div class="run"><strong>' + run + '</strong><span>en curso</span></div></div>' +
+      (progs.length > 2 ? '<div class="filters" role="group" aria-label="Filtrar por programa">' + progs.map(function (k, i) { return '<button type="button" data-mfilter="' + k + '" aria-pressed="' + (i === 0) + '">' + k + '</button>'; }).join('') + '</div>' : '') +
+      '<div class="mlist">' + metasList('Todas') + '</div></div>';
+  }
+  function slug(t) { return t.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, '-'); }
+  function pctTxt(n) { return String(Math.round(n * 100) / 100).replace('.', ',') + '%'; }
+  function metasList(f) {
+    function last(m) { return m.anios ? m.anios[m.anios.length - 1] : [METAS_CORTE, m.estado, m.acumulado]; }
+    var rows = METAS.filter(function (m) { return f === 'Todas' || m.programa === f; }).map(function (m) {
+      var l = last(m), done = /superada|alcanzada/i.test(l[1]);
+      return '<article class="mrow' + (done ? ' done' : '') + '"><div>' +
+        '<div class="mtop"><span class="mid">' + m.id + '</span><span class="mprog">' + m.programa + '</span><span class="meje">' + m.eje + '</span></div>' +
+        '<h3>' + m.meta + '</h3><p class="mind"><b>Indicador:</b> ' + m.indicador + '. <b>Plazo:</b> ' + m.fin + '.</p></div>' +
+        '<div class="mside"><span class="mlbl">' + (m.anios ? 'Avance ' + l[0] : 'Avance acumulado a ' + l[0]) + '</span>' +
+          '<div class="mpct"><strong>' + pctTxt(l[2]) + '</strong><span class="mbadge s-' + slug(l[1]) + '">' + l[1] + '</span></div>' +
+          '<div class="pbar"><i style="width:' + Math.min(100, l[2]) + '%"></i></div>' +
+          (m.anios && m.anios.length > 1 ? '<div class="manios">' + m.anios.map(function (a) { return '<div><span>' + a[0] + '</span><span class="mbadge s-' + slug(a[1]) + '">' + pctTxt(a[2]) + '</span></div>'; }).join('') + '</div>' : '') +
+          (m.evidencia ? '<a class="mev" href="' + m.evidencia + '" target="_blank" rel="noopener">Ver evidencia ' + ICONS.arrow + '</a>' : '') +
+        '</div></article>';
+    }).join('');
+    if (METAS_PENDIENTE && f === 'Todas') rows += '<article class="mrow todo"><h3>' + METAS_PENDIENTE + '</h3></article>';
+    return rows;
+  }
+
+  function vNovedades() {
+    return '<div class="wrap">' + crumbs([['Inicio', '#inicio'], ['Novedades']]) +
+      '<div class="sec-head"><h1 class="h-xl" tabindex="-1">Novedades</h1>' +
+      '<a class="btn btn-ghost" href="' + NOVEDADES_URL + '" target="_blank" rel="noopener">Ver todas las novedades ' + ICONS.arrow + '</a></div>' +
+      newsCards(NOVEDADES) + '</div>';
+  }
+
+  var docFilter = 'Todos';
+  function vDocumentos() {
+    var kinds = ['Todos'].concat(DOCUMENTOS.map(function (d) { return d.kind; }).filter(function (k, i, a) { return a.indexOf(k) === i; }));
+    return '<div class="wrap">' + crumbs([['Inicio', '#inicio'], ['Documentos']]) +
+      '<h1 class="h-xl" tabindex="-1">Documentos destacados</h1>' +
+      '<div class="filters" role="group" aria-label="Filtrar por tipo">' + kinds.map(function (k) { return '<button type="button" data-filter="' + k + '" aria-pressed="' + (k === docFilter) + '">' + k + '</button>'; }).join('') + '</div>' +
+      '<div class="docs" style="margin-top:16px">' + docsList() + '</div></div>';
+  }
+  function docsList() {
+    return DOCUMENTOS.filter(function (d) { return docFilter === 'Todos' || d.kind === docFilter; }).map(function (d) {
+      return '<article class="doc"><div class="cover">' + (d.cover ? '<img src="' + d.cover + '" alt="" loading="lazy" onerror="this.remove()">' : '') + '</div>' +
+        '<span class="kind">' + d.kind + '</span><div><h3>' + d.titulo + '</h3><p class="who">' + d.who + '</p></div>' +
+        '<a class="act" href="' + d.href + '" target="_blank" rel="noopener">' + (/\.pdf$/i.test(d.href) ? 'Descargar PDF ' + ICONS.file : 'Abrir ' + ICONS.arrow) + '</a></article>';
+    }).join('');
+  }
+
+  /* =========================================================
+     RED DE PROGRAMAS: constelación con Córdoba Acelera al centro.
+     Cada programa flota, con anillos que giran a su alrededor;
+     los vínculos llevan pulsos desde el centro.
+     ========================================================= */
+  // Posiciones [x, y, radio] por programa: ancho (escritorio) y alto (celular)
+  var NET_LAYOUT = {
+    wide: { w: 1000, h: 640, hub: [500, 330, 78], lbl: 16,
+      p: { invest: [190, 150, 60], clusters: [500, 92, 54], accion: [815, 155, 56], acento: [905, 410, 50], nomads: [690, 555, 50], study: [310, 555, 52], loc: [95, 410, 48] } },
+    tall: { w: 600, h: 920, hub: [300, 460, 74], lbl: 24,
+      p: { invest: [140, 140, 62], clusters: [440, 120, 58], accion: [505, 360, 54], acento: [470, 640, 56], nomads: [300, 820, 54], study: [115, 690, 56], loc: [100, 410, 52] } }
+  };
+  var NET_PEERS = [['invest', 'clusters'], ['clusters', 'accion'], ['accion', 'acento'], ['acento', 'nomads'], ['nomads', 'study'], ['study', 'loc'], ['loc', 'invest'], ['clusters', 'study'], ['invest', 'acento']];
+
+  function netMarkup() {
+    return '<div class="net-wrap"><svg class="web" role="group" aria-label="Programas de Córdoba Acelera conectados en un mismo ecosistema">' +
+      '<g class="w-decor"></g><g class="w-peer"></g><g class="w-spoke"></g><g class="w-spark"></g><g class="w-nodes"></g></svg>' +
+      '<div class="net-tip" aria-live="polite" hidden></div></div>';
+  }
+  function startOrbit() { view.querySelectorAll('svg.web').forEach(function (svg) { runNet(svg); }); }
+  function runNet(svg) {
+    var wrap = svg.parentNode, tip = wrap.querySelector('.net-tip');
+    var mode = wrap.clientWidth < 620 ? 'tall' : 'wide', L = NET_LAYOUT[mode];
+    var token = (svg._t = (svg._t || 0) + 1);
+    svg.setAttribute('viewBox', '0 0 ' + L.w + ' ' + L.h);
+    svg.querySelectorAll('g').forEach(function (g) { g.innerHTML = ''; });
+    var NS = 'http://www.w3.org/2000/svg';
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function el(tag, attrs, parent) { var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; }
+    var G = {}; ['decor', 'peer', 'spoke', 'spark', 'nodes'].forEach(function (k) { G[k] = svg.querySelector('.w-' + k); });
+    var HX = L.hub[0], HY = L.hub[1], HR = L.hub[2];
+    var COLORS = ['#EC6907', '#3D8FD1', '#6BAF4A'];
+
+    // Programas
+    var N = PROGRAMAS.map(function (p, k) {
+      var pos = L.p[p.id] || [HX, HY, 40];
+      return { p: p, k: k, x: pos[0], y: pos[1], r: pos[2], ph: k * 1.7, cx: pos[0], cy: pos[1] };
+    });
+    var byId = {}; N.forEach(function (n) { byId[n.p.id] = n; });
+
+    // Decoración: puntos y aros que flotan, sin pisar los nodos
+    var seed = 7; function rnd() { seed = (seed * 9301 + 49297) % 233280; return seed / 233280; }
+    var decor = [];
+    for (var t = 0; decor.length < (mode === 'wide' ? 38 : 30) && t < 800; t++) {
+      var x = 20 + rnd() * (L.w - 40), y = 20 + rnd() * (L.h - 40), ok = Math.hypot(x - HX, y - HY) > HR + 40;
+      N.forEach(function (n) { if (Math.hypot(x - n.x, y - n.y) < n.r + 46) ok = false; });
+      if (!ok) continue;
+      var c = COLORS[Math.floor(rnd() * 3)], ring = rnd() < 0.45, rr = ring ? 5 + rnd() * 6 : 2.5 + rnd() * 3.5;
+      var e = el('circle', ring ? { r: rr.toFixed(1), fill: 'none', stroke: c, 'stroke-width': 1.6 } : { r: rr.toFixed(1), fill: c }, G.decor);
+      decor.push({ e: e, x: x, y: y, a: 4 + rnd() * 8, ph: rnd() * 6.3, sp: 0.0004 + rnd() * 0.0005 });
+    }
+
+    // Vínculos entre programas (punteados) y desde el centro (en el color de cada programa)
+    var peers = NET_PEERS.map(function (pr) { return { a: byId[pr[0]], b: byId[pr[1]], e: el('line', { 'class': 'peer' }, G.peer) }; }).filter(function (o) { return o.a && o.b; });
+    N.forEach(function (n) {
+      n.spoke = el('line', { 'class': 'spoke', stroke: n.p.color }, G.spoke);
+      n.tick = el('line', { 'class': 'tick', stroke: n.p.color }, G.spoke);
+      n.spark = el('circle', { 'class': 'spark', r: mode === 'wide' ? 4 : 5, fill: n.p.color }, G.spark);
+    });
+
+    // Centro: Córdoba Acelera
+    var hub = el('g', { 'class': 'hub', transform: 'translate(' + HX + ' ' + HY + ')' }, G.nodes);
+    el('circle', { 'class': 'pulse', r: HR }, hub);
+    el('circle', { 'class': 'arc a1', r: HR + 14, stroke: '#EC6907', 'stroke-dasharray': (HR + 14) * 1.2 + ' ' + (HR + 14) * 5.1 }, hub);
+    el('circle', { 'class': 'arc a2', r: HR + 24, stroke: '#3D8FD1', 'stroke-dasharray': (HR + 24) * 0.6 + ' ' + (HR + 24) * 5.7 }, hub);
+    el('circle', { 'class': 'disc', r: HR }, hub);
+    var w1 = el('text', { 'class': 'word', y: -3, 'text-anchor': 'middle' }, hub); w1.textContent = 'córdoba';
+    var w2 = el('text', { 'class': 'word', y: 23, 'text-anchor': 'middle' }, hub); w2.textContent = 'acelera';
+
+    N.forEach(function (n) {
+      var attrs = { 'class': 'node', href: n.p.url, 'aria-label': n.p.name + '. Abrir sitio' };
+      if (/^https?:/.test(n.p.url)) { attrs.target = '_blank'; attrs.rel = 'noopener'; }
+      var a = el('a', attrs, G.nodes);
+      var g = el('g', {}, a), r = n.r;
+      el('circle', { 'class': 'arc a1', r: r + 10, stroke: n.p.color, 'stroke-dasharray': (r + 10) * 1.5 + ' ' + (r + 10) * 4.8 }, g);
+      el('circle', { 'class': 'arc a2', r: r + 18, stroke: COLORS[(n.k + 1) % 3], 'stroke-dasharray': (r + 18) * 0.7 + ' ' + (r + 18) * 5.6 }, g);
+      el('circle', { 'class': 'disc', r: r, stroke: n.p.color }, g);
+      var ini = el('text', { 'class': 'ini', y: 6, 'text-anchor': 'middle', fill: n.p.color }, g); ini.textContent = n.p.ini;
+      if (n.p.logo) {
+        ini.style.display = 'none';
+        var s = r * 1.5, im = el('image', { href: n.p.logo, x: -s / 2, y: -s / 2, width: s, height: s, preserveAspectRatio: 'xMidYMid meet' }, g);
+        im.addEventListener('error', function () { im.remove(); ini.style.display = ''; });
+      }
+      var lbl = el('text', { 'class': 'lbl', y: r + 28 + (mode === 'tall' ? 6 : 0), 'text-anchor': 'middle', 'font-size': L.lbl }, g); lbl.textContent = n.p.short;
+      n.a = a; n.g = g;
+      a.addEventListener('mouseenter', function () { show(n.k); }); a.addEventListener('mouseleave', hideSoon);
+      a.addEventListener('focus', function () { show(n.k); }); a.addEventListener('blur', hideSoon);
+    });
+
+    var hover = -1, hideT = null;
+    function show(k) { clearTimeout(hideT); if (k !== hover) setHover(k); }
+    function hideSoon() { clearTimeout(hideT); hideT = setTimeout(function () { setHover(-1); }, 280); }
+    tip.onmouseenter = function () { clearTimeout(hideT); };
+    tip.onmouseleave = hideSoon;
+    function setHover(k) {
+      hover = k; svg.classList.toggle('has-hover', k >= 0);
+      N.forEach(function (n) { n.a.classList.toggle('on', n.k === k); });
+      if (k < 0) { tip.hidden = true; return; }
+      var p = PROGRAMAS[k];
+      tip.style.setProperty('--pc', p.color);
+      tip.innerHTML = (p.logo ? '<span class="tip-logo"><img src="' + p.logo + '" alt="" onerror="this.parentNode.remove()"></span>' : '') +
+        '<b class="tip-name">' + p.name + '</b><p>' + p.desc + '</p>' +
+        '<a class="tip-go" href="' + p.url + '"' + ext(p.url) + '>Ver más ' + ICONS.right + '</a>';
+      tip.hidden = false; placeTip();
+    }
+    function placeTip() {
+      if (hover < 0 || tip.hidden) return;
+      var n = N[hover], box = svg.getBoundingClientRect(), wb = wrap.getBoundingClientRect(), k = box.width / L.w;
+      var x = box.left - wb.left + n.cx * k, y = box.top - wb.top + n.cy * k, tw = tip.offsetWidth, th = tip.offsetHeight, gap = (n.r + 22) * k;
+      var left = x + gap; if (left + tw > wb.width) left = x - gap - tw;
+      if (left < 0) { left = Math.max(0, Math.min(x - tw / 2, wb.width - tw)); y = y + gap + th / 2; }
+      tip.style.left = left + 'px'; tip.style.top = Math.max(0, Math.min(y - th / 2, wb.height - th)) + 'px';
+    }
+    function tickAt(n, f) {
+      var dx = n.cx - HX, dy = n.cy - HY, d = Math.hypot(dx, dy) || 1, ux = dx / d, uy = dy / d;
+      var px = HX + dx * f, py = HY + dy * f, s = 7;
+      return [px - uy * s, py + ux * s, px + uy * s, py - ux * s];
+    }
+    function frame(now) {
+      if (!svg.isConnected || svg._t !== token) return;
+      var m = reduce ? 0 : 1;
+      N.forEach(function (n) {
+        n.cx = n.x + m * 6 * Math.sin(now * 0.0005 + n.ph); n.cy = n.y + m * 7 * Math.cos(now * 0.00043 + n.ph);
+        var on = hover === n.k, dim = hover >= 0 && !on;
+        n.g.setAttribute('transform', 'translate(' + n.cx.toFixed(1) + ' ' + n.cy.toFixed(1) + ')' + (on ? ' scale(1.07)' : ''));
+        n.a.style.opacity = dim ? 0.35 : 1;
+        // El vínculo va del borde del centro al borde del nodo
+        var dx = n.cx - HX, dy = n.cy - HY, d = Math.hypot(dx, dy), ux = dx / d, uy = dy / d;
+        var x1 = HX + ux * (HR + 30), y1 = HY + uy * (HR + 30), x2 = n.cx - ux * (n.r + 22), y2 = n.cy - uy * (n.r + 22);
+        n.spoke.setAttribute('x1', x1.toFixed(1)); n.spoke.setAttribute('y1', y1.toFixed(1)); n.spoke.setAttribute('x2', x2.toFixed(1)); n.spoke.setAttribute('y2', y2.toFixed(1));
+        n.spoke.style.opacity = dim ? 0.15 : 1; n.spoke.style.strokeWidth = on ? 3 : '';
+        var tk = tickAt(n, (HR + 30) / d + 0.04);
+        n.tick.setAttribute('x1', tk[0].toFixed(1)); n.tick.setAttribute('y1', tk[1].toFixed(1)); n.tick.setAttribute('x2', tk[2].toFixed(1)); n.tick.setAttribute('y2', tk[3].toFixed(1));
+        n.tick.style.opacity = dim ? 0.15 : 1;
+        var f = reduce ? 0.5 : ((now / 2800 + n.k / N.length) % 1);
+        n.spark.setAttribute('cx', (x1 + (x2 - x1) * f).toFixed(1)); n.spark.setAttribute('cy', (y1 + (y2 - y1) * f).toFixed(1));
+        n.spark.style.opacity = dim ? 0 : (reduce ? 0 : Math.sin(f * Math.PI).toFixed(2));
+      });
+      peers.forEach(function (o) {
+        var on = hover === o.a.k || hover === o.b.k;
+        o.e.setAttribute('x1', o.a.cx.toFixed(1)); o.e.setAttribute('y1', o.a.cy.toFixed(1)); o.e.setAttribute('x2', o.b.cx.toFixed(1)); o.e.setAttribute('y2', o.b.cy.toFixed(1));
+        o.e.style.opacity = hover >= 0 ? (on ? 0.9 : 0.08) : 0.55;
+      });
+      decor.forEach(function (d) {
+        var dx = m * d.a * Math.sin(now * d.sp + d.ph), dy = m * d.a * Math.cos(now * d.sp * 0.8 + d.ph);
+        d.e.setAttribute('cx', (d.x + dx).toFixed(1)); d.e.setAttribute('cy', (d.y + dy).toFixed(1));
+        d.e.style.opacity = hover >= 0 ? 0.25 : 0.8;
+      });
+      placeTip();
+      requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+    if (!svg._rs) {
+      svg._rs = true; var lastMode = mode;
+      window.addEventListener('resize', function () {
+        if (!svg.isConnected) return;
+        var nm = wrap.clientWidth < 620 ? 'tall' : 'wide';
+        if (nm !== lastMode) { lastMode = nm; tip.hidden = true; runNet(svg); }
+      });
+    }
+  }
+
+  /* =========================================================
+     RUTEO
+     ========================================================= */
+  var QUIENES = { 'que-es': vQueEs, 'quienes-somos': vQueEs, 'nosotros': vQueEs, 'proposito': vProposito, 'cultura': vCultura, 'equipo': vEquipo };
+  function route() {
+    var h = (location.hash || '#inicio').slice(1), html, section = h;
+    if (QUIENES[h]) { html = QUIENES[h](); section = 'quienes'; }
+    else switch (h) {
+      case 'programas': html = vProgramas(); break;
+      case 'metas': html = vMetas(); break;
+      case 'novedades': html = vNovedades(); break;
+      case 'documentos': html = vDocumentos(); break;
+      default: html = vInicio(); section = 'inicio';
+    }
+    view.className = 'view v-' + section;
+    view.innerHTML = html;
+    wireLogos(); wireVideos();
+    void view.offsetWidth;
+    view.className = 'view enter v-' + section;
+    closeDrops(); nav.classList.remove('open'); burger.setAttribute('aria-expanded', 'false');
+
+    var label = '';
+    root.querySelectorAll('[data-nav]').forEach(function (a) {
+      if (a.getAttribute('data-nav') === section) { a.setAttribute('aria-current', 'page'); label = a.textContent.trim(); }
+      else a.removeAttribute('aria-current');
+    });
+    document.title = (section !== 'inicio' ? label + ' | ' : '') + 'Córdoba Acelera';
+    if (!first) {
+      var top = root.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: top, behavior: 'auto' });
+      var h1 = view.querySelector('h1'); if (h1) h1.focus({ preventScroll: true });
+    }
+    first = false;
+  }
+  function wireLogos() {
+    view.querySelectorAll('img[data-logo]').forEach(function (img) {
+      var box = img.closest('.plogo'); var fail = function () { if (box) box.classList.add('nologo'); };
+      img.addEventListener('error', fail); if (img.complete && img.naturalWidth === 0) fail();
+    });
+  }
+  function wireVideos() {
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    view.querySelectorAll('.vhero').forEach(function (s) {
+      var v = s.querySelector('video'), b = s.querySelector('[data-vplay]');
+      function set(paused) { b.innerHTML = paused ? ICONS.play : ICONS.pause; b.setAttribute('aria-label', paused ? 'Reproducir video' : 'Pausar video'); }
+      v.muted = true;
+      if (reduce) { v.removeAttribute('autoplay'); v.pause(); set(true); }
+      else { var pr = v.play(); if (pr && pr.catch) pr.catch(function () { set(true); }); }
+      b.addEventListener('click', function () { if (v.paused) { v.play(); set(false); } else { v.pause(); set(true); } });
+    });
+  }
+
+  // Menú
+  buildMenu(); buildFoot();
+  var nav = document.getElementById('cba-nav'), burger = root.querySelector('.burger');
+  var dropBtns = nav.querySelectorAll('button.nl');
+  function closeDrops(except) { dropBtns.forEach(function (b) { if (b !== except) { b.setAttribute('aria-expanded', 'false'); document.getElementById(b.getAttribute('aria-controls')).classList.remove('open'); } }); }
+  dropBtns.forEach(function (b) {
+    b.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var d = document.getElementById(b.getAttribute('aria-controls')), open = !d.classList.contains('open');
+      closeDrops(b); d.classList.toggle('open', open); b.setAttribute('aria-expanded', String(open));
+    });
+  });
+  nav.addEventListener('click', function (e) { if (e.target.closest('a')) { closeDrops(); nav.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); } });
+  burger.addEventListener('click', function () { var o = nav.classList.toggle('open'); burger.setAttribute('aria-expanded', String(o)); });
+  document.addEventListener('click', function (e) { if (!nav.contains(e.target)) closeDrops(); });
+  nav.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeDrops(); });
+
+  // Clics dentro de las vistas: tarjetas que giran y filtros
+  view.addEventListener('click', function (e) {
+    var fl = e.target.closest('.flip');
+    if (fl && !e.target.closest('a')) {
+      var on = !fl.classList.contains('is-flipped');
+      fl.classList.toggle('is-flipped', on);
+      return;
+    }
+    var f = e.target.closest('[data-filter]');
+    if (f) { docFilter = f.getAttribute('data-filter'); view.querySelector('.docs').innerHTML = docsList();
+      view.querySelectorAll('[data-filter]').forEach(function (b) { b.setAttribute('aria-pressed', String(b === f)); }); return; }
+    var mf = e.target.closest('[data-mfilter]');
+    if (mf) { view.querySelector('.mlist').innerHTML = metasList(mf.getAttribute('data-mfilter'));
+      view.querySelectorAll('[data-mfilter]').forEach(function (b) { b.setAttribute('aria-pressed', String(b === mf)); }); }
+  });
+
+  window.addEventListener('hashchange', route);
+  route();
+})();
+</script>
+</body>
+</html>

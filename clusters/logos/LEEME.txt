@@ -1,0 +1,4 @@
+Cada cluster tiene dos archivos:
+  <cluster>-icon.png  isotipo cuadrado (red del inicio, tarjetas y navegación)
+  <cluster>.png       logo completo (encabezado de la ficha)
+Para reemplazar un logo, subí un archivo con el mismo nombre.
