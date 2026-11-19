@@ -1,166 +1,280 @@
 {
- "actualizado": "2026-11-19T12:00-03:00",
+ "actualizado": "2026-11-19T12:17-03:00",
  "eventos": [
   {
-   "fecha": "2026-11-19",
-   "titulo": "Quality Tango Club: tributo a Julio Sosa",
-   "categoria": "Espectáculos",
-   "lugar": "Quality Arena (Córdoba)",
-   "link": "https://qualitycenter.com/shows/quality-tango-club/"
+   "fecha": "0206-07-04",
+   "titulo": "Adrián Abonizio - Laboratorio de canciones",
+   "categoria": "",
+   "lugar": "Medio Tono Club de Música",
+   "link": "",
+   "fin": "206-07-04"
+  },
+  {
+   "fecha": "0206-07-23",
+   "titulo": "Candlelight: Coldplay & Ed Sheeran",
+   "categoria": "",
+   "lugar": "Studio Theater",
+   "link": "",
+   "fin": "206-07-23"
+  },
+  {
+   "fecha": "0206-10-30",
+   "titulo": "Victor Heredia",
+   "categoria": "",
+   "lugar": "Studio Theater (Córdoba)",
+   "link": "https://www.edenentradas.ar/event/victor-heredia-301026",
+   "fin": "206-10-30"
+  },
+  {
+   "fecha": "0299-01-01",
+   "titulo": "FCF-B0424701",
+   "categoria": "",
+   "lugar": "Charla informativa sobre Movilidad Estudiantil Internacional y Doble Titulación.",
+   "link": "",
+   "fin": "299-01-01"
+  },
+  {
+   "fecha": "0323-01-01",
+   "titulo": "TCB-A73A14CD",
+   "categoria": "",
+   "lugar": "Córdoba Clásica – Concierto de apertura (Pablo Rocchietti)",
+   "link": "",
+   "fin": "323-01-01"
+  },
+  {
+   "fecha": "0651-03-01",
+   "titulo": "TCB-EBB106D4",
+   "categoria": "",
+   "lugar": "El Tigueraje – Segunda Edición con Anita B Queen",
+   "link": "",
+   "fin": "651-03-01"
+  },
+  {
+   "fecha": "0651-03-01",
+   "titulo": "TCB-EFDF11B8",
+   "categoria": "",
+   "lugar": "Tropicante Infernal – Peña en Club Paraguay",
+   "link": "",
+   "fin": "651-03-01"
   },
   {
    "fecha": "2026-11-19",
-   "titulo": "Mario Alonso Puig",
-   "categoria": "Espectáculos",
-   "lugar": "Quality Arena (Córdoba)",
-   "link": "https://qualitycenter.com/shows/mario-alonso-puig/"
-  },
-  {
-   "fecha": "2026-11-20",
    "titulo": "Jairo",
-   "categoria": "Espectáculos",
-   "lugar": "Quality Teatro (Córdoba)",
+   "categoria": "",
+   "lugar": "Teatro del Libertador (Córdoba)",
    "link": "https://qualitycenter.com/shows/jairo/"
   },
   {
    "fecha": "2026-11-20",
-   "titulo": "Moscow State Ballet",
-   "categoria": "Espectáculos",
-   "lugar": "Quality Espacio (Córdoba)",
-   "link": "https://qualitycenter.com/shows/moscow-state-ballet/"
-  },
-  {
-   "fecha": "2026-11-20",
-   "titulo": "Valeria Lynch",
-   "categoria": "Espectáculos",
-   "lugar": "Quality Arena (Córdoba)",
-   "link": "https://qualitycenter.com/shows/valeria-lynch/"
-  },
-  {
-   "fecha": "2026-11-20",
    "titulo": "Coti",
-   "categoria": "Espectáculos",
+   "categoria": "",
    "lugar": "Club Paraguay (Córdoba)",
    "link": "https://www.edenentradas.ar/event/coti-201126"
   },
   {
-   "fecha": "2026-11-21",
-   "titulo": "María Becerra",
-   "categoria": "Espectáculos",
-   "lugar": "Quality Arena (Córdoba)",
-   "link": "https://qualitycenter.com/shows/maria-becerra/"
+   "fecha": "2026-11-20",
+   "titulo": "Moscow State Ballet  - Cascanueces",
+   "categoria": "",
+   "lugar": "Quality Espacio",
+   "link": ""
   },
   {
-   "fecha": "2026-11-21",
-   "titulo": "Sabroso",
-   "categoria": "Espectáculos",
+   "fecha": "2026-11-20",
+   "titulo": "Valeria Lynch",
+   "categoria": "",
    "lugar": "Quality Arena (Córdoba)",
-   "link": "https://qualitycenter.com/shows/sabroso/"
+   "link": "https://qualitycenter.com/shows/valeria-lynch/"
   },
   {
    "fecha": "2026-11-21",
    "titulo": "The Jury Experience: El Asesinato del Millón de Dólares",
-   "categoria": "Espectáculos",
-   "lugar": "Teatro Cultural de la Cañada (Córdoba)",
-   "link": "https://feverup.com/m/603773"
-  },
-  {
-   "fecha": "2026-11-21",
-   "titulo": "Dani La Chepi",
-   "categoria": "Espectáculos",
-   "lugar": "Quality Arena (Córdoba)",
-   "link": "https://qualitycenter.com/shows/dani-la-chepi/"
-  },
-  {
-   "fecha": "2026-11-21",
-   "titulo": "Mamá soy un idiota",
-   "categoria": "Espectáculos",
-   "lugar": "Quality Teatro (Córdoba)",
-   "link": "https://qualitycenter.com/shows/mama-soy-un-idiota/"
+   "categoria": "",
+   "lugar": "Teatro La Cañada",
+   "link": ""
   },
   {
    "fecha": "2026-11-21",
    "titulo": "Nonpalidece",
-   "categoria": "Espectáculos",
+   "categoria": "",
    "lugar": "Club Paraguay (Córdoba)",
    "link": "https://www.edenentradas.ar/event/nonpalidece-211126"
   },
   {
    "fecha": "2026-11-22",
-   "titulo": "Parásitas",
-   "categoria": "Espectáculos",
-   "lugar": "Quality Espacio (Córdoba)",
-   "link": "https://qualitycenter.com/shows/parasitas/"
-  },
-  {
-   "fecha": "2026-11-22",
-   "titulo": "Banda XXI",
-   "categoria": "Espectáculos",
-   "lugar": "Quality Arena (Córdoba)",
-   "link": "https://qualitycenter.com/shows/banda-xxi/"
-  },
-  {
-   "fecha": "2026-11-22",
-   "titulo": "Instituto (1A) – Huracán (8B)",
-   "categoria": "Deportivo",
-   "lugar": "Estadio Presidente Perón (Córdoba)",
-   "link": "https://www.afa.com.ar/es/posts/la-agenda-de-la-afa"
-  },
-  {
-   "fecha": "2026-11-22",
    "titulo": "The Jazz Room: Tributo a Frank Sinatra y Louis Armstrong",
-   "categoria": "Espectáculos",
+   "categoria": "",
    "lugar": "Nido Club",
-   "link": "https://feverup.com/m/671987"
-  },
-  {
-   "fecha": "2026-11-22",
-   "titulo": "Gabriel Rolón",
-   "categoria": "Espectáculos",
-   "lugar": "Quality Arena (Córdoba)",
-   "link": "https://qualitycenter.com/shows/gabriel-rolon/"
-  },
-  {
-   "fecha": "2026-11-22",
-   "titulo": "Benja Torres",
-   "categoria": "Espectáculos",
-   "lugar": "Quality Teatro (Córdoba)",
-   "link": "https://qualitycenter.com/shows/benja-torres/"
+   "link": ""
   },
   {
    "fecha": "2026-11-26",
-   "titulo": "Lena Burke",
-   "categoria": "Espectáculos",
-   "lugar": "Quality Teatro (Córdoba)",
-   "link": "https://qualitycenter.com/shows/lena-burke/"
-  },
-  {
-   "fecha": "2026-11-26",
-   "titulo": "Gorillaz",
-   "categoria": "Espectáculos",
-   "lugar": "Estadio Mario Alberto Kempes (Córdoba)",
-   "link": "https://www.enigmatickets.com/event/3fe80ea4-579d-45e7-80e4-8ee8cb49902b"
-  },
-  {
-   "fecha": "2026-11-26",
-   "titulo": "Myriam Hernández",
-   "categoria": "Espectáculos",
+   "titulo": "Myriam Hernández - Tauro",
+   "categoria": "",
    "lugar": "Quality Espacio (Córdoba)",
    "link": "https://qualitycenter.com/shows/myriam-hernandez/"
   },
   {
+   "fecha": "2026-11-26",
+   "titulo": "Gorillaz",
+   "categoria": "",
+   "lugar": "Estadio Mario Kempes",
+   "link": "https://www.enigmatickets.com/event/3fe80ea4-579d-45e7-80e4-8ee8cb49902b"
+  },
+  {
+   "fecha": "2026-11-27",
+   "titulo": "Franja Visual",
+   "categoria": "",
+   "lugar": "Centro de Convenciones Córdoba (Córdoba)",
+   "link": "",
+   "fin": "2026-11-28"
+  },
+  {
+   "fecha": "2026-11-27",
+   "titulo": "Candlelight: Homenaje a Charly",
+   "categoria": "",
+   "lugar": "Centro Cultural UNC",
+   "link": ""
+  },
+  {
    "fecha": "2026-11-27",
    "titulo": "La fiesta de los jóvenes",
-   "categoria": "Espectáculos",
+   "categoria": "",
    "lugar": "Plaza de la Música (Córdoba)",
    "link": "https://www.edenentradas.ar/event/la-noche-de-los-jovenes-wh-20261127"
   },
   {
    "fecha": "2026-11-27",
-   "titulo": "Candlelight: Homenaje a Charly",
-   "categoria": "Espectáculos",
-   "lugar": "Centro Cultural UNC (Córdoba)",
-   "link": "https://feverup.com/m/657040"
+   "titulo": "Candlelight: Tributo a Taylor Swift",
+   "categoria": "",
+   "lugar": "Centro Cultural UNC",
+   "link": ""
+  },
+  {
+   "fecha": "2026-11-28",
+   "titulo": "La Música de las ideas",
+   "categoria": "",
+   "lugar": "Teatro Ciudad de las Artes (Córdoba)",
+   "link": "https://ventas.autoentrada.com/events/la-musica-de-las-ideas-2026729-281126-212240"
+  },
+  {
+   "fecha": "2026-11-28",
+   "titulo": "Elena Roger en concierto",
+   "categoria": "",
+   "lugar": "Teatro del Libertador",
+   "link": ""
+  },
+  {
+   "fecha": "2026-11-29",
+   "titulo": "Soy Luna",
+   "categoria": "",
+   "lugar": "Quality Arena (Córdoba)",
+   "link": ""
+  },
+  {
+   "fecha": "2026-11-29",
+   "titulo": "29° Feria del Peinado, la Moda y la Belleza - Artelleza",
+   "categoria": "",
+   "lugar": "Hotel Quinto Centenario",
+   "link": "",
+   "fin": "2026-11-30"
+  },
+  {
+   "fecha": "2026-12-02",
+   "titulo": "Power UP Orchestra - Anime All Starts",
+   "categoria": "",
+   "lugar": "Quality Arena (Córdoba)",
+   "link": ""
+  },
+  {
+   "fecha": "2026-12-05",
+   "titulo": "Animals, tributo a Pink Floyd",
+   "categoria": "",
+   "lugar": "Quality Lab",
+   "link": "https://qualitycenter.com/shows/animals/"
+  },
+  {
+   "fecha": "2026-12-06",
+   "titulo": "Boda Lyniel",
+   "categoria": "",
+   "lugar": "Quality Arena (Córdoba)",
+   "link": "https://qualitycenter.com/shows/boda-lyniel/"
+  },
+  {
+   "fecha": "2026-12-10",
+   "titulo": "Flor Bertotti",
+   "categoria": "",
+   "lugar": "Quality Arena (Córdoba)",
+   "link": ""
+  },
+  {
+   "fecha": "2026-12-10",
+   "titulo": "Candlelight: Coldplay & Ed Sheeran",
+   "categoria": "",
+   "lugar": "Studio Theater",
+   "link": ""
+  },
+  {
+   "fecha": "2026-12-10",
+   "titulo": "Candlelight: Queen vs Abba",
+   "categoria": "",
+   "lugar": "Studio Theater",
+   "link": ""
+  },
+  {
+   "fecha": "2026-12-13",
+   "titulo": "CAF",
+   "categoria": "",
+   "lugar": "Quality Arena (Córdoba)",
+   "link": "https://qualitycenter.com/shows/caf/"
+  },
+  {
+   "fecha": "2026-12-19",
+   "titulo": "Candlelight: Clásicos de Navidad",
+   "categoria": "",
+   "lugar": "Centro Cultural UNC",
+   "link": ""
+  },
+  {
+   "fecha": "2026-12-19",
+   "titulo": "Trofeo de Campeones",
+   "categoria": "",
+   "lugar": "Estadio Mario Alberto Kempes (Córdoba)",
+   "link": "https://www.afa.com.ar/es/posts/la-agenda-de-la-afa"
+  },
+  {
+   "fecha": "2027-02-18",
+   "titulo": "REIK",
+   "categoria": "",
+   "lugar": "Quality Arena (Córdoba)",
+   "link": ""
+  },
+  {
+   "fecha": "2027-02-20",
+   "titulo": "Los Kjarkas",
+   "categoria": "",
+   "lugar": "Quality Arena (Córdoba)",
+   "link": ""
+  },
+  {
+   "fecha": "2027-02-25",
+   "titulo": "Sin bandera",
+   "categoria": "",
+   "lugar": "Quality Arena (Córdoba)",
+   "link": "https://qualitycenter.com/shows/sin-bandera/"
+  },
+  {
+   "fecha": "2027-03-12",
+   "titulo": "Love the 90´s",
+   "categoria": "",
+   "lugar": "Estadio Instituto",
+   "link": ""
+  },
+  {
+   "fecha": "2027-04-04",
+   "titulo": "L'Étape Argentina",
+   "categoria": "",
+   "lugar": "Centro de Convenciones Córdoba",
+   "link": ""
   }
  ]
 }
