@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-19T12:17-03:00",
+ "actualizado": "2026-11-19T23:00-03:00",
  "eventos": [
   {
    "fecha": "0206-07-04",
@@ -66,10 +66,10 @@
   },
   {
    "fecha": "2026-11-20",
-   "titulo": "Coti",
+   "titulo": "Valeria Lynch",
    "categoria": "",
-   "lugar": "Club Paraguay (Córdoba)",
-   "link": "https://www.edenentradas.ar/event/coti-201126"
+   "lugar": "Quality Arena (Córdoba)",
+   "link": "https://qualitycenter.com/shows/valeria-lynch/"
   },
   {
    "fecha": "2026-11-20",
@@ -80,10 +80,10 @@
   },
   {
    "fecha": "2026-11-20",
-   "titulo": "Valeria Lynch",
+   "titulo": "Coti",
    "categoria": "",
-   "lugar": "Quality Arena (Córdoba)",
-   "link": "https://qualitycenter.com/shows/valeria-lynch/"
+   "lugar": "Club Paraguay (Córdoba)",
+   "link": "https://www.edenentradas.ar/event/coti-201126"
   },
   {
    "fecha": "2026-11-21",
@@ -108,17 +108,17 @@
   },
   {
    "fecha": "2026-11-26",
-   "titulo": "Myriam Hernández - Tauro",
-   "categoria": "",
-   "lugar": "Quality Espacio (Córdoba)",
-   "link": "https://qualitycenter.com/shows/myriam-hernandez/"
-  },
-  {
-   "fecha": "2026-11-26",
    "titulo": "Gorillaz",
    "categoria": "",
    "lugar": "Estadio Mario Kempes",
    "link": "https://www.enigmatickets.com/event/3fe80ea4-579d-45e7-80e4-8ee8cb49902b"
+  },
+  {
+   "fecha": "2026-11-26",
+   "titulo": "Myriam Hernández - Tauro",
+   "categoria": "",
+   "lugar": "Quality Espacio (Córdoba)",
+   "link": "https://qualitycenter.com/shows/myriam-hernandez/"
   },
   {
    "fecha": "2026-11-27",
@@ -151,24 +151,17 @@
   },
   {
    "fecha": "2026-11-28",
-   "titulo": "La Música de las ideas",
-   "categoria": "",
-   "lugar": "Teatro Ciudad de las Artes (Córdoba)",
-   "link": "https://ventas.autoentrada.com/events/la-musica-de-las-ideas-2026729-281126-212240"
-  },
-  {
-   "fecha": "2026-11-28",
    "titulo": "Elena Roger en concierto",
    "categoria": "",
    "lugar": "Teatro del Libertador",
    "link": ""
   },
   {
-   "fecha": "2026-11-29",
-   "titulo": "Soy Luna",
+   "fecha": "2026-11-28",
+   "titulo": "La Música de las ideas",
    "categoria": "",
-   "lugar": "Quality Arena (Córdoba)",
-   "link": ""
+   "lugar": "Teatro Ciudad de las Artes (Córdoba)",
+   "link": "https://ventas.autoentrada.com/events/la-musica-de-las-ideas-2026729-281126-212240"
   },
   {
    "fecha": "2026-11-29",
@@ -177,6 +170,13 @@
    "lugar": "Hotel Quinto Centenario",
    "link": "",
    "fin": "2026-11-30"
+  },
+  {
+   "fecha": "2026-11-29",
+   "titulo": "Soy Luna",
+   "categoria": "",
+   "lugar": "Quality Arena (Córdoba)",
+   "link": ""
   },
   {
    "fecha": "2026-12-02",
@@ -201,13 +201,6 @@
   },
   {
    "fecha": "2026-12-10",
-   "titulo": "Flor Bertotti",
-   "categoria": "",
-   "lugar": "Quality Arena (Córdoba)",
-   "link": ""
-  },
-  {
-   "fecha": "2026-12-10",
    "titulo": "Candlelight: Coldplay & Ed Sheeran",
    "categoria": "",
    "lugar": "Studio Theater",
@@ -221,6 +214,13 @@
    "link": ""
   },
   {
+   "fecha": "2026-12-10",
+   "titulo": "Flor Bertotti",
+   "categoria": "",
+   "lugar": "Quality Arena (Córdoba)",
+   "link": ""
+  },
+  {
    "fecha": "2026-12-13",
    "titulo": "CAF",
    "categoria": "",
@@ -229,17 +229,17 @@
   },
   {
    "fecha": "2026-12-19",
-   "titulo": "Candlelight: Clásicos de Navidad",
-   "categoria": "",
-   "lugar": "Centro Cultural UNC",
-   "link": ""
-  },
-  {
-   "fecha": "2026-12-19",
    "titulo": "Trofeo de Campeones",
    "categoria": "",
    "lugar": "Estadio Mario Alberto Kempes (Córdoba)",
    "link": "https://www.afa.com.ar/es/posts/la-agenda-de-la-afa"
+  },
+  {
+   "fecha": "2026-12-19",
+   "titulo": "Candlelight: Clásicos de Navidad",
+   "categoria": "",
+   "lugar": "Centro Cultural UNC",
+   "link": ""
   },
   {
    "fecha": "2027-02-18",
