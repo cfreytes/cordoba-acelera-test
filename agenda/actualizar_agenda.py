@@ -67,15 +67,25 @@ def main():
             ev['_' + nombre] = clave
 
     hoy = datetime.now(CBA).strftime('%Y-%m-%d')
+    a_revisar = []
     limite = (datetime.now(CBA) + timedelta(days=365)).strftime('%Y-%m-%d')
     salida = []
     for e in eventos:
         if 'DTSTART' not in e or e.get('STATUS') == 'CANCELLED':
             continue
-        fecha, hora = leer_fecha(e['_DTSTART'], e['DTSTART'])
-        fin, hora_fin = (leer_fecha(e['_DTEND'], e['DTEND']) if 'DTEND' in e else (fecha, ''))
+        try:
+            fecha, hora = leer_fecha(e['_DTSTART'], e['DTSTART'])
+            fin, hora_fin = (leer_fecha(e['_DTEND'], e['DTEND']) if 'DTEND' in e else (fecha, ''))
+        except ValueError:
+            continue
+        # Fechas mal cargadas en el calendario (por ejemplo, año 0206 en vez de 2026): no se publican
+        if not ('2000' <= fecha[:4] <= '2100'):
+            a_revisar.append({'fecha_cargada': fecha, 'titulo': desescapar(e.get('SUMMARY', '')), 'lugar': desescapar(e.get('LOCATION', ''))})
+            continue
         if not hora and fin > fecha:  # en los eventos de día completo, la fecha de fin es el día siguiente
-            fin = (datetime.strptime(fin, '%Y-%m-%d') - timedelta(days=1)).strftime('%Y-%m-%d')
+            fin = (datetime.strptime(fin, '%Y-%m-%d') - timedelta(days=1)).date().isoformat()
+        if not ('2000' <= fin[:4] <= '2100') or fin < fecha:
+            fin = fecha
         if fin < hoy or fecha > limite:
             continue
         desc = desescapar(e.get('DESCRIPTION', ''))
@@ -92,8 +102,12 @@ def main():
         print('El calendario no tiene eventos próximos. Dejo eventos.json como estaba.')
         return 0
     with open(SALIDA, 'w', encoding='utf-8') as f:
-        json.dump({'actualizado': datetime.now(CBA).isoformat(timespec='minutes'), 'eventos': salida}, f, ensure_ascii=False, indent=1)
+        json.dump({'actualizado': datetime.now(CBA).isoformat(timespec='minutes'), 'eventos': salida, 'a_revisar': a_revisar}, f, ensure_ascii=False, indent=1)
     print(f'Listo: {len(salida)} eventos guardados en agenda/eventos.json')
+    if a_revisar:
+        print(f'Ojo: {len(a_revisar)} eventos tienen la fecha mal cargada en el Google Calendar y no se publicaron:')
+        for r in a_revisar:
+            print(f"  {r['fecha_cargada']}  {r['titulo']}  ({r['lugar']})")
     return 0
 
 
