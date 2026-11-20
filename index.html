@@ -664,6 +664,8 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
 #cba .vtodo{position:absolute;top:24px;left:50%;transform:translateX(-50%);z-index:3;padding:10px 18px;border-radius:999px;background:#FFE14D;color:#1D1D1B;font:800 14px Montserrat,sans-serif;border:2px dashed #1D1D1B;white-space:nowrap;pointer-events:none}
 #cba .close .btn svg{width:18px;height:18px}
 @media (max-width:640px){#cba .vtodo{top:14px;font-size:12px;padding:8px 14px}}
+#cba .ag-count{scroll-margin-top:150px}
+#cba .filters[hidden]{display:none}
 </style>
 </head>
 <body style="margin:0;background:#FFFFFF">
@@ -1273,12 +1275,21 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
     if (m) { var repo = location.pathname.split('/')[1]; if (repo) urls.push('https://raw.githubusercontent.com/' + m[1] + '/' + repo + '/main/' + AGENDA.json); }
     urls.push(AGENDA.json);
     (function next(i) {
-      if (i >= urls.length) { EVENTOS = AGENDA_RESPALDO; return cb(EVENTOS); }
+      if (i >= urls.length) { EVENTOS = limpiar(AGENDA_RESPALDO); return cb(EVENTOS); }
       fetch(urls[i], { cache: 'no-store' }).then(function (r) { if (!r.ok) throw 0; return r.json(); })
-        .then(function (d) { var ev = d.eventos || d; if (!ev.length) throw 0; EVENTOS = ev; cb(EVENTOS); })
+        .then(function (d) { var ev = limpiar(d.eventos || d); if (!ev.length) throw 0; EVENTOS = ev; cb(EVENTOS); })
         .catch(function () { next(i + 1); });
     })(0);
   }
+  // Descarta eventos con fechas mal cargadas (ej.: año 0206) y corrige fechas de fin inválidas
+  function okFecha(f) { return /^\d{4}-\d{2}-\d{2}$/.test(f || '') && f.slice(0, 4) >= '2000' && f.slice(0, 4) <= '2100'; }
+  function limpiar(list) {
+    return list.filter(function (e) { return e && e.titulo && okFecha(e.fecha); }).map(function (e) {
+      if (!okFecha(e.fin) || e.fin < e.fecha) { e = Object.assign({}, e); delete e.fin; }
+      return e;
+    });
+  }
+  function porFecha(a, b) { return (a.fecha + (a.hora || '')).localeCompare(b.fecha + (b.hora || '')); }
   function enDia(e, d) { return e.fecha <= d && (e.fin || e.fecha) >= d; }
   function proximos() {
     var hoy = hoyISO();
@@ -1302,7 +1313,7 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
         '<a href="' + gcalLink(e) + '" target="_blank" rel="noopener">' + ICONS.cal + u('agendar') + '<span class="sr"> ' + e.titulo + '</span></a></div></li>';
   }
   function filtrados() {
-    var q = norm(agQ), base = agDay ? EVENTOS.filter(function (e) { return enDia(e, agDay); }) : proximos();
+    var q = norm(agQ), base = agDay ? EVENTOS.filter(function (e) { return enDia(e, agDay); }).sort(porFecha) : proximos();
     return base.filter(function (e) { return (agCat === '*' || e.categoria === agCat) && (!q || norm(e.titulo + ' ' + e.lugar + ' ' + e.categoria).indexOf(q) >= 0); });
   }
   function agendaList() {
@@ -1364,6 +1375,7 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
   function pintarAgenda() {
     var box = view.querySelector('[data-ag-list]'); if (!box) return;
     var cats = ['*'].concat(proximos().map(function (e) { return e.categoria; }).filter(function (c, i, a) { return c && a.indexOf(c) === i; }).sort());
+    view.querySelector('[data-ag-cats]').hidden = cats.length < 2;
     view.querySelector('[data-ag-cats]').innerHTML = cats.map(function (c) {
       return '<button type="button" data-ag-cat="' + c + '" aria-pressed="' + (c === agCat) + '">' + (c === '*' ? u('todos') : c) + '</button>';
     }).join('');
@@ -1623,7 +1635,11 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
     var ac = e.target.closest('[data-ag-cat]');
     if (ac) { agCat = ac.getAttribute('data-ag-cat'); agMax = 20; pintarAgenda(); return; }
     var dd = e.target.closest('[data-ag-day]');
-    if (dd) { agDay = agDay === dd.getAttribute('data-ag-day') ? null : dd.getAttribute('data-ag-day'); agMax = 20; pintarAgenda(); return; }
+    if (dd) {
+      agDay = agDay === dd.getAttribute('data-ag-day') ? null : dd.getAttribute('data-ag-day'); agMax = 20; pintarAgenda();
+      if (agDay && window.innerWidth < 1000) { var c = view.querySelector('[data-ag-count]'); if (c) c.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      return;
+    }
     var am = e.target.closest('[data-ag-mes]');
     if (am) { agMonth = new Date(agMonth.getFullYear(), agMonth.getMonth() + (+am.getAttribute('data-ag-mes')), 1); view.querySelector('[data-ag-cal]').innerHTML = calendario(); return; }
     if (e.target.closest('[data-ag-clear]')) { agDay = null; pintarAgenda(); return; }
