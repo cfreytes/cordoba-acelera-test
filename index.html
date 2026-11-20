@@ -666,6 +666,70 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
 @media (max-width:640px){#cba .vtodo{top:14px;font-size:12px;padding:8px 14px}}
 #cba .ag-count{scroll-margin-top:150px}
 #cba .filters[hidden]{display:none}
+
+/* ---------- v6 ---------- */
+/* Ficha horizontal */
+#cba .ficha.fh{position:static;margin-top:36px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:22px 40px;align-items:center;padding:30px 34px;background:var(--ink) var(--net-light) no-repeat right -50px bottom -80px/240px auto}
+#cba .ficha.fh .ficha-top{grid-row:1/3;align-self:stretch;justify-content:center}
+#cba .ficha.fh .ficha-top{flex-direction:column;align-items:flex-start;gap:6px;padding:0 36px 0 0;border-bottom:0;border-right:1px solid rgba(255,255,255,.18)}
+#cba .ficha.fh dl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px 28px}
+#cba .ficha.fh dd{font-size:15px}
+#cba .ficha.fh .ficha-go{grid-column:2;justify-self:start;white-space:nowrap}
+@media (max-width:1100px){#cba .ficha.fh{grid-template-columns:minmax(0,1fr)}#cba .ficha.fh .ficha-go{grid-column:1}#cba .ficha.fh .ficha-top{grid-row:auto;flex-direction:row;align-items:baseline;border-right:0;padding:0 0 16px;border-bottom:1px solid rgba(255,255,255,.18)}#cba .ficha.fh dl{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){#cba .ficha.fh dl{grid-template-columns:minmax(0,1fr)}}
+
+/* Desplegable Córdoba Acelera */
+#cba .drop.cadrop{min-width:640px;padding:12px;left:50%;transform:translateX(-50%)}
+#cba .cagrid{display:grid;grid-template-columns:230px minmax(0,1fr);gap:10px}
+#cba .drop .cafeat{display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:22px;border-radius:16px;background:var(--orange) var(--net-light) no-repeat right -60px bottom -40px/260px auto;color:var(--ink);line-height:1.3}
+#cba .drop .cafeat:hover{background-color:var(--orange-hi);color:#fff}
+#cba .cafeat .ci{width:48px;height:48px;border-radius:14px;background:var(--ink);color:#fff;display:grid;place-items:center}
+#cba .cafeat .ci svg{width:26px;height:26px}
+#cba .cafeat b{font-size:18px;font-weight:800;letter-spacing:-.015em}
+#cba .drop .cafeat small{font-size:13px;font-weight:600;line-height:1.4;color:inherit;opacity:.9}
+#cba .cafeat .cago{margin-top:auto;display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:800}
+#cba .cafeat .cago svg{width:14px;height:14px}
+#cba .calist{display:flex;flex-direction:column;gap:2px}
+#cba .cal-lbl{font-size:12px;font-weight:800;color:var(--orange-hi);padding:8px 12px 4px}
+#cba .cal-sep{height:1px;background:var(--line);margin:6px 12px}
+#cba .drop .caitem{display:flex;align-items:center;gap:14px;padding:9px 12px;border-radius:14px;line-height:1.3}
+#cba .drop .caitem:hover{background:var(--surface)}
+#cba .caitem .ci{width:40px;height:40px;border-radius:12px;color:#fff;display:grid;place-items:center;flex:none}
+#cba .caitem .ci svg{width:21px;height:21px}
+#cba .caitem b{display:block;font-size:14.5px;font-weight:800}
+#cba .drop .caitem small{display:block;font-size:12.5px;font-weight:500;color:var(--soft);margin-top:2px}
+@media (max-width:1120px){#cba .drop.cadrop{min-width:0;transform:none;padding:8px 0}#cba .cagrid{grid-template-columns:minmax(0,1fr)}#cba .drop .cafeat{padding:16px}}
+
+/* Encabezado de la agenda */
+#cba .ag-head{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:20px 56px;align-items:end;padding-bottom:28px;border-bottom:1px solid var(--line)}
+#cba .ag-claim{display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:800;color:var(--orange-hi);margin-bottom:12px}
+#cba .ag-claim::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 5px var(--orange-wash);animation:cbaBlink 1.8s ease-in-out infinite}
+@keyframes cbaBlink{50%{box-shadow:0 0 0 9px rgba(236,105,7,0)}}
+#cba .ag-desc{display:flex;flex-direction:column;gap:10px}
+#cba .ag-desc p{font-size:16px;line-height:1.55;color:var(--muted);max-width:62ch}
+#cba .ag-desc p:first-child{color:#2A2927;font-weight:500}
+#cba .ag-layout{margin-top:36px}
+@media (max-width:1000px){#cba .ag-head{grid-template-columns:minmax(0,1fr)}}
+
+/* Tarjetas Propósito / Cultura / Equipo con ícono */
+#cba .flip.mini.ico .front{background:#fff;overflow:hidden}
+#cba .mi-ico{width:56px;height:56px;border-radius:16px;background:var(--c);color:#fff;display:grid;place-items:center;position:relative;z-index:1;transition:transform .3s}
+#cba .mi-ico svg{width:30px;height:30px}
+#cba .mi-bg{position:absolute;right:-34px;bottom:-34px;width:150px;height:150px;color:var(--c);opacity:.13;transition:transform .5s}
+#cba .mi-bg svg{width:100%;height:100%}
+#cba .flip.mini.ico .front .ft{position:relative;z-index:1;margin-top:auto}
+#cba .flip.mini.ico .front .turn{position:relative;z-index:1}
+#cba .flip.mini.ico .back{background:var(--c);color:#fff}
+#cba .flip.mini.ico .back .desc{color:#fff}
+#cba .flip.mini.ico:hover .mi-bg{transform:rotate(-12deg) scale(1.08)}
+#cba .flip.mini.ico{border-radius:var(--radius-l)}
+#cba .flip.mini.ico .front{border-top:4px solid var(--c)}
+
+/* Logo al centro de la red */
+#cba .web .hub .disc{fill:#fff;stroke:var(--orange);stroke-width:4}
+#cba .web .hub.nologo .disc{fill:var(--orange)}
+#cba .hx-core{fill:#fff;stroke:var(--orange);stroke-width:4}
+#cba .view.v-agenda::before{display:none}
 </style>
 </head>
 <body style="margin:0;background:#FFFFFF">
@@ -710,6 +774,7 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
   // Mientras sea true, se ve un cartel sobre el video. Cuando pongan el video nuevo, cambialo a false.
   var VIDEO_PENDIENTE = true;
 
+  var LOGO_CA = 'https://cordobaacelera.com.ar/wp-content/uploads/2025/06/Cordoba-Acelera-horizontal-Fondo-Blanco.png';
   var BROCHURE = UP + '2025/12/Brochure-Cordoba-Acelera-ES.pdf';
   var NEWSLETTER = 'https://v3.envialosimple.com/form/renderwidget/format/html/AdministratorID/186890/FormID/1/Lang/es';
   var EMAIL = 'hola@cordobaacelera.com.ar';
@@ -822,10 +887,11 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
   ];
 
   // Resumen de las tarjetas del inicio
+  // [link, título, resumen, ícono, color]
   var RESUMENES = [
-    ['#proposito', { es: 'Propósito', en: 'Purpose' }, { es: 'Impulsamos la transformación y el crecimiento del ecosistema productivo de Córdoba.', en: 'We drive the transformation and growth of Córdoba’s productive ecosystem.' }],
-    ['#cultura', { es: 'Cultura', en: 'Culture' }, { es: 'Pensamos global y actuamos local, con visión estratégica de largo plazo.', en: 'We think globally and act locally, with a long-term strategic vision.' }],
-    ['#equipo', { es: 'Equipo', en: 'Team' }, { es: 'Un directorio de funcionarios municipales y un consejo consultivo del sector privado.', en: 'A board of municipal officials and a private-sector advisory council.' }]
+    ['#proposito', { es: 'Propósito', en: 'Purpose' }, { es: 'Impulsamos la transformación y el crecimiento del ecosistema productivo de Córdoba.', en: 'We drive the transformation and growth of Córdoba’s productive ecosystem.' }, 'target', '#EC6907'],
+    ['#cultura', { es: 'Cultura', en: 'Culture' }, { es: 'Pensamos global y actuamos local, con visión estratégica de largo plazo.', en: 'We think globally and act locally, with a long-term strategic vision.' }, 'globe', '#3D8FD1'],
+    ['#equipo', { es: 'Equipo', en: 'Team' }, { es: 'Un directorio de funcionarios municipales y un consejo consultivo del sector privado.', en: 'A board of municipal officials and a private-sector advisory council.' }, 'people', '#6BAF4A']
   ];
 
   // Equipo (sin fotos). [nombre, cargo, LinkedIn]
@@ -936,7 +1002,10 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
     agenda: ['Agenda multisectorial', 'Multisector agenda'], novedades: ['Novedades', 'News'], metas: ['Metas públicas', 'Public goals'],
     queEs: ['¿Qué es Córdoba Acelera?', 'What is Córdoba Acelera?'], nosotros: ['Nosotros', 'About us'],
     proposito: ['Propósito', 'Purpose'], cultura: ['Cultura', 'Culture'], equipo: ['Equipo', 'Team'], anuarios: ['Anuarios', 'Annual reports'],
-    todosProg: ['Todos los programas', 'All programs'], menu: ['Menú', 'Menu'],
+    todosProg: ['Todos los programas', 'All programs'],
+    queEsCorto: ['Ente autárquico de la Municipalidad de Córdoba que trabaja bajo el modelo de la triple hélice.', 'Autonomous agency of the Municipality of Córdoba working under the triple helix model.'],
+    anuCorto: ['Lo que hicimos cada año, con sus datos destacados.', 'What we did each year, with its highlights.'],
+    conocer: ['Conocer', 'Learn more'], menu: ['Menú', 'Menu'],
     conoceProg: ['Conocé nuestros programas', 'Explore our programs'],
     pasaMouse: ['Pasá el mouse o tocá', 'Hover or tap'], abrirDetalle: ['Abrir detalle', 'Open details'],
     hintRed: ['Pasá el mouse por un programa para ver de qué se trata y hacé clic para visitarlo.', 'Hover over a program to learn about it, and click to visit it.'],
@@ -974,6 +1043,11 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
     file: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>',
     cal: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/></svg>',
     search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>',
+    target: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/><path d="M15.5 8.5 21 3M17 3h4v4"/></svg>',
+    globe: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>',
+    people: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6"/></svg>',
+    book: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2 2 2 0 0 0 2 2h13"/><path d="M8 13l3-3 2 2 3-4"/></svg>',
+    hub: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="3.5" r="1.8"/><circle cx="4.5" cy="17" r="1.8"/><circle cx="19.5" cy="17" r="1.8"/><path d="M12 9V5.3M9.4 13.5l-3.4 2.3M14.6 13.5l3.4 2.3"/></svg>',
     pause: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>',
     play: '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5v14l12-7z"/></svg>',
     in: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>',
@@ -1017,9 +1091,10 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
       '</span></article>';
   }
   function miniFlip(r) {
-    return '<article class="flip mini" tabindex="0" data-href="' + r[0] + '" aria-label="' + t(r[1]) + '">' +
+    return '<article class="flip mini ico" tabindex="0" data-href="' + r[0] + '" aria-label="' + t(r[1]) + '" style="--c:' + r[4] + '">' +
       '<span class="flip-inner">' +
-        '<span class="face front motif"><span class="ft">' + t(r[1]) + '</span><span class="turn">' + ICONS.turn + u('pasaMouse') + '</span></span>' +
+        '<span class="face front"><span class="mi-ico">' + ICONS[r[3]] + '</span><span class="mi-bg" aria-hidden="true">' + ICONS[r[3]] + '</span>' +
+          '<span class="ft">' + t(r[1]) + '</span><span class="turn">' + ICONS.turn + u('pasaMouse') + '</span></span>' +
         '<span class="face back"><span class="desc">' + t(r[2]) + '</span>' +
           '<span class="go"><a href="' + r[0] + '">' + u('abrirDetalle') + ' ' + ICONS.right + '</a></span></span>' +
       '</span></article>';
@@ -1037,10 +1112,15 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
      ========================================================= */
   function buildChrome() {
     document.documentElement.lang = LANG;
-    var dropCA = '<a href="#que-es"><span class="dot"></span>' + u('queEs') + '</a>' +
-      '<div class="glabel">' + u('nosotros') + '</div><div class="sub">' +
-        '<a href="#proposito">' + u('proposito') + '</a><a href="#cultura">' + u('cultura') + '</a><a href="#equipo">' + u('equipo') + '</a></div>' +
-      '<a href="#anuarios"><span class="dot"></span>' + u('anuarios') + '</a>';
+    function caItem(href, ico, color, title, desc) {
+      return '<a class="caitem" href="' + href + '"><span class="ci" style="background:' + color + '">' + ICONS[ico] + '</span><span><b>' + title + '</b><small>' + desc + '</small></span></a>';
+    }
+    var dropCA = '<div class="cagrid">' +
+      '<a class="cafeat" href="#que-es"><span class="ci">' + ICONS.hub + '</span><b>' + u('queEs') + '</b><small>' + u('queEsCorto') + '</small><span class="cago">' + u('conocer') + ' ' + ICONS.right + '</span></a>' +
+      '<div class="calist"><span class="cal-lbl">' + u('nosotros') + '</span>' +
+        RESUMENES.map(function (r) { return caItem(r[0], r[3], r[4], t(r[1]), t(r[2])); }).join('') +
+        '<span class="cal-sep"></span>' + caItem('#anuarios', 'book', '#1D1D1B', u('anuarios'), u('anuCorto')) +
+      '</div></div>';
     var dropP = '<a class="all" href="#programas">' + u('todosProg') + ' ' + ICONS.right + '</a><div class="pgrid">' +
       PROGRAMAS.map(function (p) {
         return '<a class="pitem" href="' + p.url + '"' + ext(p.url) + '><span class="pl" style="background:' + p.color + '">' +
@@ -1048,11 +1128,11 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
       }).join('') + '</div>';
     document.getElementById('cba-menu').innerHTML =
       '<li><a class="nl" href="#inicio" data-nav="inicio">' + u('inicio') + '</a></li>' +
-      '<li><button type="button" class="nl" data-nav="ca" aria-expanded="false" aria-controls="cba-dq">' + u('ca') + ' ' + ICONS.down + '</button><div class="drop" id="cba-dq">' + dropCA + '</div></li>' +
+      '<li><button type="button" class="nl" data-nav="ca" aria-expanded="false" aria-controls="cba-dq">' + u('ca') + ' ' + ICONS.down + '</button><div class="drop cadrop" id="cba-dq">' + dropCA + '</div></li>' +
       '<li><button type="button" class="nl" data-nav="programas" aria-expanded="false" aria-controls="cba-dp">' + u('programas') + ' ' + ICONS.down + '</button><div class="drop progs" id="cba-dp">' + dropP + '</div></li>' +
       '<li><a class="nl" href="#agenda" data-nav="agenda">' + u('agenda') + '</a></li>' +
       '<li><a class="nl" href="#novedades" data-nav="novedades">' + u('novedades') + '</a></li>' +
-      '<li><a class="nl pill-metas" href="#metas" data-nav="metas">' + u('metas') + '</a></li>';
+      '<li><a class="nl" href="#metas" data-nav="metas">' + u('metas') + '</a></li>';
     wireDrops();
     root.querySelectorAll('[data-lang]').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === LANG)); });
     burger.setAttribute('aria-label', u('menu'));
@@ -1098,12 +1178,12 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
   function vQueEs() {
     return '<div class="wrap">' + crumbs([[u('inicio'), '#inicio'], ['Córdoba Acelera']]) + caTabs('que-es') +
       '<h1 class="h-xl" tabindex="-1">' + u('queEs') + '</h1>' +
-      '<div class="que-grid"><div><div class="que-txt"><p class="fx-text">' + t(DEFINICION) + '</p><p class="fx-text muted">' + t(TRIPLE) + '</p></div></div>' +
-        '<aside class="ficha" aria-label="Córdoba Acelera">' +
+      '<div class="que-txt"><p class="fx-text">' + t(DEFINICION) + '</p><p class="fx-text muted">' + t(TRIPLE) + '</p></div>' +
+        '<aside class="ficha fh" aria-label="Córdoba Acelera">' +
           '<div class="ficha-top"><span class="ficha-mark" aria-hidden="true">2022</span><span>' + u('anioCreacion') + '</span></div>' +
           '<dl>' + FICHA.map(function (f) { return '<div><dt>' + t(f[0]) + '</dt><dd>' + t(f[1]) + '</dd></div>'; }).join('') + '</dl>' +
           '<a class="ficha-go" href="#equipo">' + u('conoceEquipo') + ' ' + ICONS.right + '</a>' +
-        '</aside></div>' +
+        '</aside>' +
       '<section class="section-gap" aria-labelledby="cba-hx">' +
         '<h2 class="h-l" id="cba-hx">' + t(HELICE.titulo) + ' <span class="muted-h">' + t(HELICE.bajada) + '</span></h2>' +
         '<div class="hx">' + helixMarkup() + '<div class="hx-panel" aria-live="polite" data-hx-panel></div></div>' +
@@ -1139,8 +1219,9 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
       flow('pub', 'M450 128 L450 196') + flow('aca', 'M218 330 L300 330') + flow('pri', 'M682 330 L600 330') +
       flow('dir', 'M260 596 L360 440') + flow('con', 'M640 596 L540 440') +
       '<g class="hx-spin"><circle class="hx-orbit" cx="' + cx + '" cy="' + cy + '" r="' + R + '"/><g class="hx-links">' + links + '</g></g>' +
-      '<circle class="hx-core" cx="' + cx + '" cy="' + cy + '" r="58"/>' +
-      '<text class="hx-word" x="' + cx + '" y="' + (cy - 3) + '" text-anchor="middle">córdoba</text><text class="hx-word" x="' + cx + '" y="' + (cy + 20) + '" text-anchor="middle">acelera</text>' +
+      '<circle class="hx-core" cx="' + cx + '" cy="' + cy + '" r="62"/>' +
+      '<image href="' + LOGO_CA + '" x="' + (cx - 50) + '" y="' + (cy - 30) + '" width="100" height="60" preserveAspectRatio="xMidYMid meet"/>' +
+      
       ring +
       box('pub', 450, 82, 300, 88) + box('aca', 120, 330, 196, 88) + box('pri', 780, 330, 196, 88) +
       box('dir', 230, 640, 340, 76) + box('con', 670, 640, 340, 76) +
@@ -1360,8 +1441,8 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
     agMax = 20;
     setTimeout(function () { cargarEventos(pintarAgenda); }, 0);
     return '<div class="wrap">' + crumbs([[u('inicio'), '#inicio'], [u('agenda')]]) +
-      '<h1 class="h-xl" tabindex="-1">' + u('agenda') + '</h1>' +
-      '<div class="ag-intro"><p class="claim">' + t(AGENDA.claim) + '</p><div>' + AGENDA.textos.map(function (x, i) { return '<p class="fx-text' + (i ? ' muted' : '') + '">' + t(x) + '</p>'; }).join('') + '</div></div>' +
+      '<header class="ag-head"><div><p class="ag-claim">' + t(AGENDA.claim) + '</p><h1 class="h-xl" tabindex="-1">' + u('agenda') + '</h1></div>' +
+        '<div class="ag-desc">' + AGENDA.textos.map(function (x) { return '<p>' + t(x) + '</p>'; }).join('') + '</div></header>' +
       '<div class="ag-layout">' +
         '<aside class="ag-side"><div class="cal" data-ag-cal></div>' +
           '<div class="ag-sub"><p>' + u('sumarTxt') + '</p><a class="btn btn-primary" href="https://calendar.google.com/calendar/render?cid=' + encodeURIComponent(AGENDA.calendarId) + '" target="_blank" rel="noopener">' + ICONS.cal + u('sumarCal') + '</a></div></aside>' +
@@ -1447,6 +1528,9 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
     el('circle', { 'class': 'disc', r: HR }, hub);
     var w1 = el('text', { 'class': 'word', y: -3, 'text-anchor': 'middle' }, hub); w1.textContent = 'córdoba';
     var w2 = el('text', { 'class': 'word', y: 23, 'text-anchor': 'middle' }, hub); w2.textContent = 'acelera';
+    w1.style.display = w2.style.display = 'none';
+    var lw = HR * 1.62, logo = el('image', { href: LOGO_CA, x: -lw / 2, y: -lw * 0.3, width: lw, height: lw * 0.6, preserveAspectRatio: 'xMidYMid meet' }, hub);
+    logo.addEventListener('error', function () { logo.remove(); w1.style.display = w2.style.display = ''; hub.classList.add('nologo'); });
 
     N.forEach(function (n) {
       var attrs = { 'class': 'node', href: n.p.url, 'aria-label': t(n.p.name) + '. ' + t(n.p.cta) };
