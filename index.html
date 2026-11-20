@@ -1032,7 +1032,7 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
     anuDatos: ['Datos destacados', 'Highlights'], anuPend: ['[Datos destacados del año: a completar]', '[Highlights of the year: to be added]'],
     anuBajar: ['Descargar anuario', 'Download report'],
     metasLead: ['Nuestras metas en el Plan de Metas 2024–2027 de la Municipalidad de Córdoba. Avance a ', 'Our goals in the Municipality of Córdoba 2024–2027 Goals Plan. Progress as of '],
-    metasN: ['metas', 'goals'], metasProm: ['avance promedio', 'average progress'], avanceGral: ['Avance general', 'Overall progress'], metasOk: ['alcanzadas o superadas', 'met or exceeded'], metasRun: ['en curso', 'in progress'],
+    metasN: ['metas', 'goals'], metasProm: ['avance promedio', 'average progress'], avanceGral: ['Avance general', 'Overall progress'], anualHasta: ['Anual hasta 2027', 'Yearly until 2027'], metasOk: ['alcanzadas o superadas', 'met or exceeded'], metasRun: ['en curso', 'in progress'],
     todas: ['Todas', 'All'], todos: ['Todos', 'All'], indicador: ['Indicador', 'Indicator'], plazo: ['Plazo', 'Deadline'],
     avance: ['Avance', 'Progress'], avanceAc: ['Avance acumulado a', 'Cumulative progress as of'], evidencia: ['Ver evidencia', 'See evidence'],
     leerNota: ['Leer la nota', 'Read the article'], todasNov: ['Ver todas las novedades', 'See all news'],
@@ -1323,12 +1323,17 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
   };
   function est(s) { var e = ESTADOS[(s || '').toLowerCase()] || [s, s, 'idle']; return { txt: e[LANG === 'en' ? 1 : 0], k: e[2] }; }
   function pctTxt(n) { return String(Math.round(n * 100) / 100).replace('.', LANG === 'en' ? '.' : ',') + '%'; }
+  // Estado y avance que se muestran: en las metas anuales, los del último año
+  function vista(m) {
+    var anual = /anual/i.test(m.fin) && m.anios && m.anios.length, ult = anual ? m.anios[m.anios.length - 1] : null;
+    return { anual: anual, ult: ult, e: est(anual ? ult[1] : m.estado), pct: anual ? ult[2] : m.avance };
+  }
   var metaFiltro = '*';
   function vMetas() {
     metaFiltro = '*';
-    var ok = METAS.filter(function (m) { return est(m.estado).k === 'ok'; }).length;
-    var run = METAS.filter(function (m) { return est(m.estado).k === 'run'; }).length;
-    var prom = METAS.reduce(function (acc, m) { return acc + Math.min(100, m.avance); }, 0) / METAS.length;
+    var ok = METAS.filter(function (m) { return vista(m).e.k === 'ok'; }).length;
+    var run = METAS.filter(function (m) { return vista(m).e.k === 'run'; }).length;
+    var prom = METAS.reduce(function (acc, m) { return acc + Math.min(100, vista(m).pct); }, 0) / METAS.length;
     var progs = METAS.map(function (m) { return m.programa; }).filter(function (k, i, a) { return a.indexOf(k) === i; });
     return '<div class="wrap">' + crumbs([[u('inicio'), '#inicio'], [u('metas')]]) +
       '<h1 class="h-xl" tabindex="-1">' + u('metas') + '</h1>' +
@@ -1347,13 +1352,14 @@ html.cba-lock,html.cba-lock body{overflow:hidden}
     var list = METAS.filter(function (m) { return f === '*' || m.programa === f; }), out = '', obj = '';
     list.forEach(function (m) {
       if (m.objetivo !== obj) { obj = m.objetivo; out += '<h2 class="mobj">' + obj + '</h2>'; }
-      var e = est(m.estado);
+      // Metas anuales: se muestra el último año (como antes); el resto, el avance general
+      var v = vista(m), anual = v.anual, ult = v.ult, e = v.e, pct = v.pct;
       out += '<article class="mrow' + (e.k === 'ok' ? ' done' : '') + '"><div>' +
-        '<div class="mtop"><span class="mid">' + m.id + '</span><span class="mprog">' + m.programa + '</span><span class="meje">' + u('plazo') + ': ' + m.fin + '</span></div>' +
+        '<div class="mtop"><span class="mid">' + m.id + '</span><span class="mprog">' + m.programa + '</span><span class="meje">' + u('plazo') + ': ' + (anual ? u('anualHasta') : m.fin) + '</span></div>' +
         '<h3>' + m.meta + '</h3><p class="mind"><b>' + u('indicador') + ':</b> ' + m.indicador + '</p></div>' +
-        '<div class="mside"><span class="mlbl">' + u('avanceGral') + '</span>' +
-          '<div class="mpct"><strong>' + pctTxt(m.avance) + '</strong><span class="mbadge s-' + e.k + '">' + e.txt + '</span></div>' +
-          '<div class="pbar"><i style="width:' + Math.min(100, m.avance) + '%"></i></div>' +
+        '<div class="mside"><span class="mlbl">' + (anual ? u('avance') + ' ' + ult[0] : u('avanceGral')) + '</span>' +
+          '<div class="mpct"><strong>' + pctTxt(pct) + '</strong><span class="mbadge s-' + e.k + '">' + e.txt + '</span></div>' +
+          '<div class="pbar"><i style="width:' + Math.min(100, pct) + '%"></i></div>' +
           (m.anios && m.anios.length ? '<div class="manios">' + m.anios.map(function (a) { var ea = est(a[1]); return '<div><span>' + a[0] + '</span><span class="mbadge s-' + ea.k + '">' + ea.txt + ' · ' + pctTxt(a[2]) + '</span></div>'; }).join('') + '</div>' : '') +
           (m.evidencia ? '<a class="mev" href="' + m.evidencia + '" target="_blank" rel="noopener">' + u('evidencia') + ' ' + ICONS.arrow + '</a>' : '') +
         '</div></article>';
