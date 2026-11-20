@@ -1,19 +1,19 @@
 {
- "actualizado": "2026-11-20T09:40-03:00",
+ "actualizado": "2026-11-20T14:32-03:00",
  "eventos": [
-  {
-   "fecha": "2026-11-20",
-   "titulo": "Moscow State Ballet  - Cascanueces",
-   "categoria": "",
-   "lugar": "Quality Espacio",
-   "link": ""
-  },
   {
    "fecha": "2026-11-20",
    "titulo": "Valeria Lynch",
    "categoria": "",
    "lugar": "Quality Arena (Córdoba)",
    "link": "https://qualitycenter.com/shows/valeria-lynch/"
+  },
+  {
+   "fecha": "2026-11-20",
+   "titulo": "Moscow State Ballet  - Cascanueces",
+   "categoria": "",
+   "lugar": "Quality Espacio",
+   "link": ""
   },
   {
    "fecha": "2026-11-20",
@@ -24,17 +24,17 @@
   },
   {
    "fecha": "2026-11-21",
-   "titulo": "The Jury Experience: El Asesinato del Millón de Dólares",
-   "categoria": "",
-   "lugar": "Teatro La Cañada",
-   "link": ""
-  },
-  {
-   "fecha": "2026-11-21",
    "titulo": "Nonpalidece",
    "categoria": "",
    "lugar": "Club Paraguay (Córdoba)",
    "link": "https://www.edenentradas.ar/event/nonpalidece-211126"
+  },
+  {
+   "fecha": "2026-11-21",
+   "titulo": "The Jury Experience: El Asesinato del Millón de Dólares",
+   "categoria": "",
+   "lugar": "Teatro La Cañada",
+   "link": ""
   },
   {
    "fecha": "2026-11-22",
@@ -59,13 +59,6 @@
   },
   {
    "fecha": "2026-11-27",
-   "titulo": "Candlelight: Homenaje a Charly",
-   "categoria": "",
-   "lugar": "Centro Cultural UNC",
-   "link": ""
-  },
-  {
-   "fecha": "2026-11-27",
    "titulo": "La fiesta de los jóvenes",
    "categoria": "",
    "lugar": "Plaza de la Música (Córdoba)",
@@ -73,7 +66,7 @@
   },
   {
    "fecha": "2026-11-27",
-   "titulo": "Candlelight: Tributo a Taylor Swift",
+   "titulo": "Candlelight: Homenaje a Charly",
    "categoria": "",
    "lugar": "Centro Cultural UNC",
    "link": ""
@@ -85,6 +78,13 @@
    "lugar": "Centro de Convenciones Córdoba (Córdoba)",
    "link": "",
    "fin": "2026-11-28"
+  },
+  {
+   "fecha": "2026-11-27",
+   "titulo": "Candlelight: Tributo a Taylor Swift",
+   "categoria": "",
+   "lugar": "Centro Cultural UNC",
+   "link": ""
   },
   {
    "fecha": "2026-11-28",
@@ -166,17 +166,17 @@
   },
   {
    "fecha": "2026-12-19",
-   "titulo": "Candlelight: Clásicos de Navidad",
-   "categoria": "",
-   "lugar": "Centro Cultural UNC",
-   "link": ""
-  },
-  {
-   "fecha": "2026-12-19",
    "titulo": "Trofeo de Campeones",
    "categoria": "",
    "lugar": "Estadio Mario Alberto Kempes (Córdoba)",
    "link": "https://www.afa.com.ar/es/posts/la-agenda-de-la-afa"
+  },
+  {
+   "fecha": "2026-12-19",
+   "titulo": "Candlelight: Clásicos de Navidad",
+   "categoria": "",
+   "lugar": "Centro Cultural UNC",
+   "link": ""
   },
   {
    "fecha": "2027-02-18",
@@ -216,98 +216,8 @@
  ],
  "a_revisar": [
   {
-   "fecha_cargada": "0299-01-01",
-   "titulo": "FCF-B0424701",
-   "lugar": "Charla informativa sobre Movilidad Estudiantil Internacional y Doble Titulación."
-  },
-  {
-   "fecha_cargada": "0323-01-01",
-   "titulo": "TCB-A73A14CD",
-   "lugar": "Córdoba Clásica – Concierto de apertura (Pablo Rocchietti)"
-  },
-  {
-   "fecha_cargada": "1955-01-01",
-   "titulo": "",
-   "lugar": "ESPACIO CULTURAL MUSEO DE LAS MUJERES"
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "0651-03-01",
-   "titulo": "TCB-EFDF11B8",
-   "lugar": "Tropicante Infernal – Peña en Club Paraguay"
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
    "fecha_cargada": "1969-12-31",
    "titulo": "Gabriel Rolon \"Palabra Plena\"",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "0206-07-04",
-   "titulo": "Adrián Abonizio - Laboratorio de canciones",
-   "lugar": "Medio Tono Club de Música"
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "#REF!",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1130-01-01",
-   "titulo": "",
-   "lugar": "HOYTaller Moto Puma: Carburación y puesta a punto"
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "0122-01-01",
-   "titulo": "",
-   "lugar": "HOYTejiendo arte en el Tejeda"
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "0206-07-23",
-   "titulo": "Candlelight: Coldplay & Ed Sheeran",
-   "lugar": "Studio Theater"
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "#ERROR!",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
    "lugar": ""
   },
   {
@@ -329,6 +239,96 @@
    "fecha_cargada": "1969-12-31",
    "titulo": "",
    "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "0122-01-01",
+   "titulo": "",
+   "lugar": "HOYTejiendo arte en el Tejeda"
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "#REF!",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1130-01-01",
+   "titulo": "",
+   "lugar": "HOYTaller Moto Puma: Carburación y puesta a punto"
+  },
+  {
+   "fecha_cargada": "0323-01-01",
+   "titulo": "TCB-A73A14CD",
+   "lugar": "Córdoba Clásica – Concierto de apertura (Pablo Rocchietti)"
+  },
+  {
+   "fecha_cargada": "1955-01-01",
+   "titulo": "",
+   "lugar": "ESPACIO CULTURAL MUSEO DE LAS MUJERES"
+  },
+  {
+   "fecha_cargada": "0206-07-23",
+   "titulo": "Candlelight: Coldplay & Ed Sheeran",
+   "lugar": "Studio Theater"
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "#ERROR!",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "0299-01-01",
+   "titulo": "FCF-B0424701",
+   "lugar": "Charla informativa sobre Movilidad Estudiantil Internacional y Doble Titulación."
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "0651-03-01",
+   "titulo": "TCB-EFDF11B8",
+   "lugar": "Tropicante Infernal – Peña en Club Paraguay"
+  },
+  {
+   "fecha_cargada": "0206-07-04",
+   "titulo": "Adrián Abonizio - Laboratorio de canciones",
+   "lugar": "Medio Tono Club de Música"
   },
   {
    "fecha_cargada": "0206-10-30",
