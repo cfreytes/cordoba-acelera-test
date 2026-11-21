@@ -1,26 +1,12 @@
 {
- "actualizado": "2026-11-20T22:57-03:00",
+ "actualizado": "2026-11-21T13:36-03:00",
  "eventos": [
   {
-   "fecha": "2026-11-20",
-   "titulo": "Moscow State Ballet  - Cascanueces",
-   "categoria": "",
-   "lugar": "Quality Espacio",
-   "link": ""
-  },
-  {
-   "fecha": "2026-11-20",
-   "titulo": "Valeria Lynch",
-   "categoria": "",
-   "lugar": "Quality Arena (Córdoba)",
-   "link": "https://qualitycenter.com/shows/valeria-lynch/"
-  },
-  {
-   "fecha": "2026-11-20",
-   "titulo": "Coti",
+   "fecha": "2026-11-21",
+   "titulo": "Nonpalidece",
    "categoria": "",
    "lugar": "Club Paraguay (Córdoba)",
-   "link": "https://www.edenentradas.ar/event/coti-201126"
+   "link": "https://www.edenentradas.ar/event/nonpalidece-211126"
   },
   {
    "fecha": "2026-11-21",
@@ -28,13 +14,6 @@
    "categoria": "",
    "lugar": "Teatro La Cañada",
    "link": ""
-  },
-  {
-   "fecha": "2026-11-21",
-   "titulo": "Nonpalidece",
-   "categoria": "",
-   "lugar": "Club Paraguay (Córdoba)",
-   "link": "https://www.edenentradas.ar/event/nonpalidece-211126"
   },
   {
    "fecha": "2026-11-22",
@@ -45,31 +24,17 @@
   },
   {
    "fecha": "2026-11-26",
-   "titulo": "Gorillaz",
-   "categoria": "",
-   "lugar": "Estadio Mario Kempes",
-   "link": "https://www.enigmatickets.com/event/3fe80ea4-579d-45e7-80e4-8ee8cb49902b"
-  },
-  {
-   "fecha": "2026-11-26",
    "titulo": "Myriam Hernández - Tauro",
    "categoria": "",
    "lugar": "Quality Espacio (Córdoba)",
    "link": "https://qualitycenter.com/shows/myriam-hernandez/"
   },
   {
-   "fecha": "2026-11-27",
-   "titulo": "Candlelight: Tributo a Taylor Swift",
+   "fecha": "2026-11-26",
+   "titulo": "Gorillaz",
    "categoria": "",
-   "lugar": "Centro Cultural UNC",
-   "link": ""
-  },
-  {
-   "fecha": "2026-11-27",
-   "titulo": "Candlelight: Homenaje a Charly",
-   "categoria": "",
-   "lugar": "Centro Cultural UNC",
-   "link": ""
+   "lugar": "Estadio Mario Kempes",
+   "link": "https://www.enigmatickets.com/event/3fe80ea4-579d-45e7-80e4-8ee8cb49902b"
   },
   {
    "fecha": "2026-11-27",
@@ -81,17 +46,24 @@
   },
   {
    "fecha": "2026-11-27",
+   "titulo": "Candlelight: Homenaje a Charly",
+   "categoria": "",
+   "lugar": "Centro Cultural UNC",
+   "link": ""
+  },
+  {
+   "fecha": "2026-11-27",
+   "titulo": "Candlelight: Tributo a Taylor Swift",
+   "categoria": "",
+   "lugar": "Centro Cultural UNC",
+   "link": ""
+  },
+  {
+   "fecha": "2026-11-27",
    "titulo": "La fiesta de los jóvenes",
    "categoria": "",
    "lugar": "Plaza de la Música (Córdoba)",
    "link": "https://www.edenentradas.ar/event/la-noche-de-los-jovenes-wh-20261127"
-  },
-  {
-   "fecha": "2026-11-28",
-   "titulo": "Elena Roger en concierto",
-   "categoria": "",
-   "lugar": "Teatro del Libertador",
-   "link": ""
   },
   {
    "fecha": "2026-11-28",
@@ -101,12 +73,11 @@
    "link": "https://ventas.autoentrada.com/events/la-musica-de-las-ideas-2026729-281126-212240"
   },
   {
-   "fecha": "2026-11-29",
-   "titulo": "29° Feria del Peinado, la Moda y la Belleza - Artelleza",
+   "fecha": "2026-11-28",
+   "titulo": "Elena Roger en concierto",
    "categoria": "",
-   "lugar": "Hotel Quinto Centenario",
-   "link": "",
-   "fin": "2026-11-30"
+   "lugar": "Teatro del Libertador",
+   "link": ""
   },
   {
    "fecha": "2026-11-29",
@@ -114,6 +85,14 @@
    "categoria": "",
    "lugar": "Quality Arena (Córdoba)",
    "link": ""
+  },
+  {
+   "fecha": "2026-11-29",
+   "titulo": "29° Feria del Peinado, la Moda y la Belleza - Artelleza",
+   "categoria": "",
+   "lugar": "Hotel Quinto Centenario",
+   "link": "",
+   "fin": "2026-11-30"
   },
   {
    "fecha": "2026-12-02",
@@ -166,17 +145,17 @@
   },
   {
    "fecha": "2026-12-19",
-   "titulo": "Candlelight: Clásicos de Navidad",
-   "categoria": "",
-   "lugar": "Centro Cultural UNC",
-   "link": ""
-  },
-  {
-   "fecha": "2026-12-19",
    "titulo": "Trofeo de Campeones",
    "categoria": "",
    "lugar": "Estadio Mario Alberto Kempes (Córdoba)",
    "link": "https://www.afa.com.ar/es/posts/la-agenda-de-la-afa"
+  },
+  {
+   "fecha": "2026-12-19",
+   "titulo": "Candlelight: Clásicos de Navidad",
+   "categoria": "",
+   "lugar": "Centro Cultural UNC",
+   "link": ""
   },
   {
    "fecha": "2027-02-18",
@@ -216,14 +195,24 @@
  ],
  "a_revisar": [
   {
-   "fecha_cargada": "0206-07-23",
-   "titulo": "Candlelight: Coldplay & Ed Sheeran",
-   "lugar": "Studio Theater"
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
   },
   {
-   "fecha_cargada": "0323-01-01",
-   "titulo": "TCB-A73A14CD",
-   "lugar": "Córdoba Clásica – Concierto de apertura (Pablo Rocchietti)"
+   "fecha_cargada": "1969-12-31",
+   "titulo": "Gabriel Rolon \"Palabra Plena\"",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "0651-03-01",
+   "titulo": "TCB-EBB106D4",
+   "lugar": "El Tigueraje – Segunda Edición con Anita B Queen"
   },
   {
    "fecha_cargada": "1969-12-31",
@@ -231,9 +220,9 @@
    "lugar": ""
   },
   {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
+   "fecha_cargada": "0651-03-01",
+   "titulo": "TCB-EFDF11B8",
+   "lugar": "Tropicante Infernal – Peña en Club Paraguay"
   },
   {
    "fecha_cargada": "1969-12-31",
@@ -241,9 +230,9 @@
    "lugar": ""
   },
   {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
+   "fecha_cargada": "0299-01-01",
+   "titulo": "FCF-B0424701",
+   "lugar": "Charla informativa sobre Movilidad Estudiantil Internacional y Doble Titulación."
   },
   {
    "fecha_cargada": "1969-12-31",
@@ -262,28 +251,8 @@
   },
   {
    "fecha_cargada": "1969-12-31",
-   "titulo": "#ERROR!",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
    "titulo": "",
    "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1130-01-01",
-   "titulo": "",
-   "lugar": "HOYTaller Moto Puma: Carburación y puesta a punto"
   },
   {
    "fecha_cargada": "0122-01-01",
@@ -291,9 +260,9 @@
    "lugar": "HOYTejiendo arte en el Tejeda"
   },
   {
-   "fecha_cargada": "0651-03-01",
-   "titulo": "TCB-EBB106D4",
-   "lugar": "El Tigueraje – Segunda Edición con Anita B Queen"
+   "fecha_cargada": "1130-01-01",
+   "titulo": "",
+   "lugar": "HOYTaller Moto Puma: Carburación y puesta a punto"
   },
   {
    "fecha_cargada": "1969-12-31",
@@ -301,14 +270,24 @@
    "lugar": ""
   },
   {
-   "fecha_cargada": "0299-01-01",
-   "titulo": "FCF-B0424701",
-   "lugar": "Charla informativa sobre Movilidad Estudiantil Internacional y Doble Titulación."
-  },
-  {
    "fecha_cargada": "1969-12-31",
    "titulo": "",
    "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "#ERROR!",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "0206-07-23",
+   "titulo": "Candlelight: Coldplay & Ed Sheeran",
+   "lugar": "Studio Theater"
+  },
+  {
+   "fecha_cargada": "0323-01-01",
+   "titulo": "TCB-A73A14CD",
+   "lugar": "Córdoba Clásica – Concierto de apertura (Pablo Rocchietti)"
   },
   {
    "fecha_cargada": "1955-01-01",
@@ -317,13 +296,13 @@
   },
   {
    "fecha_cargada": "1969-12-31",
-   "titulo": "Gabriel Rolon \"Palabra Plena\"",
+   "titulo": "",
    "lugar": ""
   },
   {
-   "fecha_cargada": "0651-03-01",
-   "titulo": "TCB-EFDF11B8",
-   "lugar": "Tropicante Infernal – Peña en Club Paraguay"
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
   },
   {
    "fecha_cargada": "1969-12-31",
