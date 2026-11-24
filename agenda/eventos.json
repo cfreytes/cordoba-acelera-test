@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-23T17:52-03:00",
+ "actualizado": "2026-11-24T02:08-03:00",
  "eventos": [
   {
    "fecha": "2026-11-26",
@@ -17,6 +17,20 @@
   },
   {
    "fecha": "2026-11-27",
+   "titulo": "La fiesta de los jóvenes",
+   "categoria": "",
+   "lugar": "Plaza de la Música (Córdoba)",
+   "link": "https://www.edenentradas.ar/event/la-noche-de-los-jovenes-wh-20261127"
+  },
+  {
+   "fecha": "2026-11-27",
+   "titulo": "Candlelight: Homenaje a Charly",
+   "categoria": "",
+   "lugar": "Centro Cultural UNC",
+   "link": ""
+  },
+  {
+   "fecha": "2026-11-27",
    "titulo": "Franja Visual",
    "categoria": "",
    "lugar": "Centro de Convenciones Córdoba (Córdoba)",
@@ -31,18 +45,11 @@
    "link": ""
   },
   {
-   "fecha": "2026-11-27",
-   "titulo": "Candlelight: Homenaje a Charly",
+   "fecha": "2026-11-28",
+   "titulo": "Elena Roger en concierto",
    "categoria": "",
-   "lugar": "Centro Cultural UNC",
+   "lugar": "Teatro del Libertador",
    "link": ""
-  },
-  {
-   "fecha": "2026-11-27",
-   "titulo": "La fiesta de los jóvenes",
-   "categoria": "",
-   "lugar": "Plaza de la Música (Córdoba)",
-   "link": "https://www.edenentradas.ar/event/la-noche-de-los-jovenes-wh-20261127"
   },
   {
    "fecha": "2026-11-28",
@@ -50,13 +57,6 @@
    "categoria": "",
    "lugar": "Teatro Ciudad de las Artes (Córdoba)",
    "link": "https://ventas.autoentrada.com/events/la-musica-de-las-ideas-2026729-281126-212240"
-  },
-  {
-   "fecha": "2026-11-28",
-   "titulo": "Elena Roger en concierto",
-   "categoria": "",
-   "lugar": "Teatro del Libertador",
-   "link": ""
   },
   {
    "fecha": "2026-11-29",
@@ -96,9 +96,9 @@
   },
   {
    "fecha": "2026-12-10",
-   "titulo": "Candlelight: Coldplay & Ed Sheeran",
+   "titulo": "Flor Bertotti",
    "categoria": "",
-   "lugar": "Studio Theater",
+   "lugar": "Quality Arena (Córdoba)",
    "link": ""
   },
   {
@@ -110,9 +110,9 @@
   },
   {
    "fecha": "2026-12-10",
-   "titulo": "Flor Bertotti",
+   "titulo": "Candlelight: Coldplay & Ed Sheeran",
    "categoria": "",
-   "lugar": "Quality Arena (Córdoba)",
+   "lugar": "Studio Theater",
    "link": ""
   },
   {
@@ -124,17 +124,17 @@
   },
   {
    "fecha": "2026-12-19",
-   "titulo": "Trofeo de Campeones",
-   "categoria": "",
-   "lugar": "Estadio Mario Alberto Kempes (Córdoba)",
-   "link": "https://www.afa.com.ar/es/posts/la-agenda-de-la-afa"
-  },
-  {
-   "fecha": "2026-12-19",
    "titulo": "Candlelight: Clásicos de Navidad",
    "categoria": "",
    "lugar": "Centro Cultural UNC",
    "link": ""
+  },
+  {
+   "fecha": "2026-12-19",
+   "titulo": "Trofeo de Campeones",
+   "categoria": "",
+   "lugar": "Estadio Mario Alberto Kempes (Córdoba)",
+   "link": "https://www.afa.com.ar/es/posts/la-agenda-de-la-afa"
   },
   {
    "fecha": "2027-02-18",
@@ -174,44 +174,44 @@
  ],
  "a_revisar": [
   {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "#REF!",
-   "lugar": ""
+   "fecha_cargada": "0206-07-04",
+   "titulo": "Adrián Abonizio - Laboratorio de canciones",
+   "lugar": "Medio Tono Club de Música"
   },
   {
    "fecha_cargada": "0651-03-01",
-   "titulo": "TCB-EBB106D4",
-   "lugar": "El Tigueraje – Segunda Edición con Anita B Queen"
+   "titulo": "TCB-EFDF11B8",
+   "lugar": "Tropicante Infernal – Peña en Club Paraguay"
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "0206-07-23",
+   "titulo": "Candlelight: Coldplay & Ed Sheeran",
+   "lugar": "Studio Theater"
   },
   {
    "fecha_cargada": "0299-01-01",
    "titulo": "FCF-B0424701",
    "lugar": "Charla informativa sobre Movilidad Estudiantil Internacional y Doble Titulación."
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "Gabriel Rolon \"Palabra Plena\"",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "0122-01-01",
-   "titulo": "",
-   "lugar": "HOYTejiendo arte en el Tejeda"
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
   },
   {
    "fecha_cargada": "1955-01-01",
@@ -224,9 +224,39 @@
    "lugar": ""
   },
   {
-   "fecha_cargada": "0206-07-04",
-   "titulo": "Adrián Abonizio - Laboratorio de canciones",
-   "lugar": "Medio Tono Club de Música"
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "#REF!",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "Gabriel Rolon \"Palabra Plena\"",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "#ERROR!",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "0122-01-01",
+   "titulo": "",
+   "lugar": "HOYTejiendo arte en el Tejeda"
+  },
+  {
+   "fecha_cargada": "0651-03-01",
+   "titulo": "TCB-EBB106D4",
+   "lugar": "El Tigueraje – Segunda Edición con Anita B Queen"
   },
   {
    "fecha_cargada": "1130-01-01",
@@ -239,49 +269,19 @@
    "lugar": ""
   },
   {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "#ERROR!",
-   "lugar": ""
-  },
-  {
    "fecha_cargada": "0323-01-01",
    "titulo": "TCB-A73A14CD",
    "lugar": "Córdoba Clásica – Concierto de apertura (Pablo Rocchietti)"
   },
   {
-   "fecha_cargada": "0206-07-23",
-   "titulo": "Candlelight: Coldplay & Ed Sheeran",
-   "lugar": "Studio Theater"
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
   },
   {
-   "fecha_cargada": "0651-03-01",
-   "titulo": "TCB-EFDF11B8",
-   "lugar": "Tropicante Infernal – Peña en Club Paraguay"
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
   },
   {
    "fecha_cargada": "1969-12-31",
