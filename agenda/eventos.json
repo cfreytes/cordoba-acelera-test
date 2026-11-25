@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25T00:57-03:00",
+ "actualizado": "2026-11-25T15:58-03:00",
  "eventos": [
   {
    "fecha": "2026-11-26",
@@ -24,10 +24,11 @@
   },
   {
    "fecha": "2026-11-27",
-   "titulo": "Candlelight: Homenaje a Charly",
+   "titulo": "Franja Visual",
    "categoria": "",
-   "lugar": "Centro Cultural UNC",
-   "link": ""
+   "lugar": "Centro de Convenciones Córdoba (Córdoba)",
+   "link": "",
+   "fin": "2026-11-28"
   },
   {
    "fecha": "2026-11-27",
@@ -38,11 +39,10 @@
   },
   {
    "fecha": "2026-11-27",
-   "titulo": "Franja Visual",
+   "titulo": "Candlelight: Homenaje a Charly",
    "categoria": "",
-   "lugar": "Centro de Convenciones Córdoba (Córdoba)",
-   "link": "",
-   "fin": "2026-11-28"
+   "lugar": "Centro Cultural UNC",
+   "link": ""
   },
   {
    "fecha": "2026-11-28",
@@ -60,18 +60,18 @@
   },
   {
    "fecha": "2026-11-29",
-   "titulo": "Soy Luna",
-   "categoria": "",
-   "lugar": "Quality Arena (Córdoba)",
-   "link": ""
-  },
-  {
-   "fecha": "2026-11-29",
    "titulo": "29° Feria del Peinado, la Moda y la Belleza - Artelleza",
    "categoria": "",
    "lugar": "Hotel Quinto Centenario",
    "link": "",
    "fin": "2026-11-30"
+  },
+  {
+   "fecha": "2026-11-29",
+   "titulo": "Soy Luna",
+   "categoria": "",
+   "lugar": "Quality Arena (Córdoba)",
+   "link": ""
   },
   {
    "fecha": "2026-12-02",
@@ -96,16 +96,16 @@
   },
   {
    "fecha": "2026-12-10",
-   "titulo": "Flor Bertotti",
+   "titulo": "Candlelight: Coldplay & Ed Sheeran",
    "categoria": "",
-   "lugar": "Quality Arena (Córdoba)",
+   "lugar": "Studio Theater",
    "link": ""
   },
   {
    "fecha": "2026-12-10",
-   "titulo": "Candlelight: Coldplay & Ed Sheeran",
+   "titulo": "Flor Bertotti",
    "categoria": "",
-   "lugar": "Studio Theater",
+   "lugar": "Quality Arena (Córdoba)",
    "link": ""
   },
   {
@@ -174,76 +174,6 @@
  ],
  "a_revisar": [
   {
-   "fecha_cargada": "1130-01-01",
-   "titulo": "",
-   "lugar": "HOYTaller Moto Puma: Carburación y puesta a punto"
-  },
-  {
-   "fecha_cargada": "0122-01-01",
-   "titulo": "",
-   "lugar": "HOYTejiendo arte en el Tejeda"
-  },
-  {
-   "fecha_cargada": "0323-01-01",
-   "titulo": "TCB-A73A14CD",
-   "lugar": "Córdoba Clásica – Concierto de apertura (Pablo Rocchietti)"
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "0206-07-04",
-   "titulo": "Adrián Abonizio - Laboratorio de canciones",
-   "lugar": "Medio Tono Club de Música"
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "0206-07-23",
-   "titulo": "Candlelight: Coldplay & Ed Sheeran",
-   "lugar": "Studio Theater"
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "#REF!",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1955-01-01",
-   "titulo": "",
-   "lugar": "ESPACIO CULTURAL MUSEO DE LAS MUJERES"
-  },
-  {
    "fecha_cargada": "1969-12-31",
    "titulo": "",
    "lugar": ""
@@ -264,9 +194,34 @@
    "lugar": ""
   },
   {
-   "fecha_cargada": "0299-01-01",
-   "titulo": "FCF-B0424701",
-   "lugar": "Charla informativa sobre Movilidad Estudiantil Internacional y Doble Titulación."
+   "fecha_cargada": "1969-12-31",
+   "titulo": "#REF!",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "Gabriel Rolon \"Palabra Plena\"",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "0206-07-23",
+   "titulo": "Candlelight: Coldplay & Ed Sheeran",
+   "lugar": "Studio Theater"
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "0323-01-01",
+   "titulo": "TCB-A73A14CD",
+   "lugar": "Córdoba Clásica – Concierto de apertura (Pablo Rocchietti)"
+  },
+  {
+   "fecha_cargada": "0122-01-01",
+   "titulo": "",
+   "lugar": "HOYTejiendo arte en el Tejeda"
   },
   {
    "fecha_cargada": "0651-03-01",
@@ -274,8 +229,23 @@
    "lugar": "Tropicante Infernal – Peña en Club Paraguay"
   },
   {
+   "fecha_cargada": "1955-01-01",
+   "titulo": "",
+   "lugar": "ESPACIO CULTURAL MUSEO DE LAS MUJERES"
+  },
+  {
    "fecha_cargada": "1969-12-31",
-   "titulo": "Gabriel Rolon \"Palabra Plena\"",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "0299-01-01",
+   "titulo": "FCF-B0424701",
+   "lugar": "Charla informativa sobre Movilidad Estudiantil Internacional y Doble Titulación."
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
    "lugar": ""
   },
   {
@@ -285,7 +255,37 @@
   },
   {
    "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "0206-07-04",
+   "titulo": "Adrián Abonizio - Laboratorio de canciones",
+   "lugar": "Medio Tono Club de Música"
+  },
+  {
+   "fecha_cargada": "1130-01-01",
+   "titulo": "",
+   "lugar": "HOYTaller Moto Puma: Carburación y puesta a punto"
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
    "titulo": "#ERROR!",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
    "lugar": ""
   },
   {
