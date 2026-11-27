@@ -1,20 +1,6 @@
 {
- "actualizado": "2026-11-26T15:49-03:00",
+ "actualizado": "2026-11-27T00:29-03:00",
  "eventos": [
-  {
-   "fecha": "2026-11-26",
-   "titulo": "Gorillaz",
-   "categoria": "",
-   "lugar": "Estadio Mario Kempes",
-   "link": "https://www.enigmatickets.com/event/3fe80ea4-579d-45e7-80e4-8ee8cb49902b"
-  },
-  {
-   "fecha": "2026-11-26",
-   "titulo": "Myriam Hernández - Tauro",
-   "categoria": "",
-   "lugar": "Quality Espacio (Córdoba)",
-   "link": "https://qualitycenter.com/shows/myriam-hernandez/"
-  },
   {
    "fecha": "2026-11-27",
    "titulo": "Franja Visual",
@@ -46,17 +32,17 @@
   },
   {
    "fecha": "2026-11-28",
-   "titulo": "La Música de las ideas",
-   "categoria": "",
-   "lugar": "Teatro Ciudad de las Artes (Córdoba)",
-   "link": "https://ventas.autoentrada.com/events/la-musica-de-las-ideas-2026729-281126-212240"
-  },
-  {
-   "fecha": "2026-11-28",
    "titulo": "Elena Roger en concierto",
    "categoria": "",
    "lugar": "Teatro del Libertador",
    "link": ""
+  },
+  {
+   "fecha": "2026-11-28",
+   "titulo": "La Música de las ideas",
+   "categoria": "",
+   "lugar": "Teatro Ciudad de las Artes (Córdoba)",
+   "link": "https://ventas.autoentrada.com/events/la-musica-de-las-ideas-2026729-281126-212240"
   },
   {
    "fecha": "2026-11-29",
@@ -96,6 +82,13 @@
   },
   {
    "fecha": "2026-12-10",
+   "titulo": "Candlelight: Coldplay & Ed Sheeran",
+   "categoria": "",
+   "lugar": "Studio Theater",
+   "link": ""
+  },
+  {
+   "fecha": "2026-12-10",
    "titulo": "Candlelight: Queen vs Abba",
    "categoria": "",
    "lugar": "Studio Theater",
@@ -106,13 +99,6 @@
    "titulo": "Flor Bertotti",
    "categoria": "",
    "lugar": "Quality Arena (Córdoba)",
-   "link": ""
-  },
-  {
-   "fecha": "2026-12-10",
-   "titulo": "Candlelight: Coldplay & Ed Sheeran",
-   "categoria": "",
-   "lugar": "Studio Theater",
    "link": ""
   },
   {
@@ -179,34 +165,39 @@
    "lugar": ""
   },
   {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "",
-   "lugar": ""
-  },
-  {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "Gabriel Rolon \"Palabra Plena\"",
-   "lugar": ""
-  },
-  {
    "fecha_cargada": "0122-01-01",
    "titulo": "",
    "lugar": "HOYTejiendo arte en el Tejeda"
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1130-01-01",
+   "titulo": "",
+   "lugar": "HOYTaller Moto Puma: Carburación y puesta a punto"
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "#ERROR!",
+   "lugar": ""
+  },
+  {
+   "fecha_cargada": "0651-03-01",
+   "titulo": "TCB-EFDF11B8",
+   "lugar": "Tropicante Infernal – Peña en Club Paraguay"
+  },
+  {
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
   },
   {
    "fecha_cargada": "1955-01-01",
@@ -224,14 +215,9 @@
    "lugar": ""
   },
   {
-   "fecha_cargada": "0323-01-01",
-   "titulo": "TCB-A73A14CD",
-   "lugar": "Córdoba Clásica – Concierto de apertura (Pablo Rocchietti)"
-  },
-  {
-   "fecha_cargada": "0651-03-01",
-   "titulo": "TCB-EFDF11B8",
-   "lugar": "Tropicante Infernal – Peña en Club Paraguay"
+   "fecha_cargada": "0299-01-01",
+   "titulo": "FCF-B0424701",
+   "lugar": "Charla informativa sobre Movilidad Estudiantil Internacional y Doble Titulación."
   },
   {
    "fecha_cargada": "1969-12-31",
@@ -259,9 +245,9 @@
    "lugar": ""
   },
   {
-   "fecha_cargada": "1130-01-01",
-   "titulo": "",
-   "lugar": "HOYTaller Moto Puma: Carburación y puesta a punto"
+   "fecha_cargada": "0323-01-01",
+   "titulo": "TCB-A73A14CD",
+   "lugar": "Córdoba Clásica – Concierto de apertura (Pablo Rocchietti)"
   },
   {
    "fecha_cargada": "1969-12-31",
@@ -269,9 +255,9 @@
    "lugar": ""
   },
   {
-   "fecha_cargada": "0206-07-04",
-   "titulo": "Adrián Abonizio - Laboratorio de canciones",
-   "lugar": "Medio Tono Club de Música"
+   "fecha_cargada": "1969-12-31",
+   "titulo": "",
+   "lugar": ""
   },
   {
    "fecha_cargada": "0651-03-01",
@@ -279,14 +265,14 @@
    "lugar": "El Tigueraje – Segunda Edición con Anita B Queen"
   },
   {
-   "fecha_cargada": "0299-01-01",
-   "titulo": "FCF-B0424701",
-   "lugar": "Charla informativa sobre Movilidad Estudiantil Internacional y Doble Titulación."
+   "fecha_cargada": "1969-12-31",
+   "titulo": "Gabriel Rolon \"Palabra Plena\"",
+   "lugar": ""
   },
   {
-   "fecha_cargada": "1969-12-31",
-   "titulo": "#ERROR!",
-   "lugar": ""
+   "fecha_cargada": "0206-07-04",
+   "titulo": "Adrián Abonizio - Laboratorio de canciones",
+   "lugar": "Medio Tono Club de Música"
   },
   {
    "fecha_cargada": "0206-10-30",
